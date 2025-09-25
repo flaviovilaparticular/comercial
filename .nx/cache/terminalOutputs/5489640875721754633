@@ -1,0 +1,39 @@
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/9b0e8583-a0d6-4410-bb73-53891d7a8610[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[ ready ] http://localhost:3000
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "backend/tsconfig.app.json"[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./backend/src/main.ts"[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mInvalid config file due to following: No inputs were found in config file 'tsconfig.json'. Specified 'include' paths were '["**/*"]' and 'exclude' paths were '[]'.[0m [1m[35m[plugin nx-watch-plugin][0m
+
+    /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/node_modules/@nx/js/src/utils/typescript/run-type-check.js:62:14:
+[37m      62 │         throw [32m[37mnew Error(`Invalid config file due to following: ${errorMessages}`);
+         ╵               [32m^[0m
+
+    at setupTypeScript (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/node_modules/@nx/js/src/utils/typescript/run-type-check.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async runTypeCheck (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/node_modules/@nx/js/src/utils/typescript/run-type-check.js:33:70)
+    at async runTypeCheck (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/src/executors/esbuild/esbuild.impl.js:168:34)
+    at async /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/src/executors/esbuild/esbuild.impl.js:82:64
+    at async /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/esbuild/lib/main.js:1496:27
+
+  This error came from the "onEnd" callback registered here:
+
+    /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/src/executors/esbuild/esbuild.impl.js:80:42:
+[37m      80 │                                     build.[32monEnd[37m(async (result) => {
+         ╵                                           [32m~~~~~[0m
+
+    at setup (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/src/executors/esbuild/esbuild.impl.js:80:43)
+    at handlePlugins (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/esbuild/lib/main.js:1293:21)
+    at buildOrContextImpl (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/esbuild/lib/main.js:979:5)
+    at Object.buildOrContext (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/esbuild/lib/main.js:788:5)
+    at /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/esbuild/lib/main.js:2223:68
+    at new Promise (<anonymous>)
+    at Object.context (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/esbuild/lib/main.js:2223:27)
+    at Object.context (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/esbuild/lib/main.js:2048:58)
+    at /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/src/executors/esbuild/esbuild.impl.js:72:43
+
+[1m[31mWatch error: Daemon closed the connection[39m[22m

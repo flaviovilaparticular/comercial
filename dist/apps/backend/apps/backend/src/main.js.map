@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../apps/backend/src/main.ts"],
+  "sourcesContent": ["import express from 'express';\n\nconst host = process.env.HOST ?? 'localhost';\nconst port = process.env.PORT ? Number(process.env.PORT) : 3000;\n\nconst app = express();\n\napp.get('/', (req, res) => {\n  res.send({ message: 'Hello API' });\n});\n\napp.listen(port, host, () => {\n  console.log(`[ ready ] http://${host}:${port}`);\n});\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;AAAA,qBAAoB;AAEpB,MAAM,OAAO,QAAQ,IAAI,QAAQ;AACjC,MAAM,OAAO,QAAQ,IAAI,OAAO,OAAO,QAAQ,IAAI,IAAI,IAAI;AAE3D,MAAM,UAAM,eAAAA,SAAQ;AAEpB,IAAI,IAAI,KAAK,CAAC,KAAK,QAAQ;AACzB,MAAI,KAAK,EAAE,SAAS,YAAY,CAAC;AACnC,CAAC;AAED,IAAI,OAAO,MAAM,MAAM,MAAM;AAC3B,UAAQ,IAAI,oBAAoB,IAAI,IAAI,IAAI,EAAE;AAChD,CAAC;",
+  "names": ["express"]
+}

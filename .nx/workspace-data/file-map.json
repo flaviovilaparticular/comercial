@@ -1,0 +1,1977 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.5.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".git/objects/66/2db2493c6a00e5d8b60a3bbe4f1aa32ca51b7a",
+        "hash": "34265902236913926"
+      },
+      {
+        "file": "dist/apps/backend/apps/backend/src/main.js",
+        "hash": "17680270101311576596"
+      },
+      {
+        "file": ".git/objects/22/2e2bf37ccdf68e2a00486104bec32399fd1e1f",
+        "hash": "2810945256993085259"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/9673da2ff42769cc.json",
+        "hash": "1401296974983414394"
+      },
+      {
+        "file": "dist/backend/main.js",
+        "hash": "17020540477785384161"
+      },
+      {
+        "file": ".git/objects/e1/e1108111eb780382afeab84f7b62ae35640914",
+        "hash": "3373173307905426689"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/0da45d63f9598462.json",
+        "hash": "13037910002954230279"
+      },
+      {
+        "file": ".git/objects/5c/18aa86f62fce7d215fd7f7e72d8c30d503e8c6",
+        "hash": "17078080769353428440"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c31ae75e3570a656.json",
+        "hash": "7165332413638451337"
+      },
+      {
+        "file": ".git/objects/73/fd9fbb7addfbbc76c9693ac0d38c954b8deb33",
+        "hash": "13491805398579901668"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4b88bc9cf1353699.json",
+        "hash": "6035049325507031040"
+      },
+      {
+        "file": ".nx/workspace-data/eslint-2654242865465226088.hash",
+        "hash": "7134869872958934097"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ffc4efac921ac52a.json",
+        "hash": "9476907190163539457"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e05f3a89c3a80f12.json",
+        "hash": "3615833919798885182"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/147c5531157a8ec5.json",
+        "hash": "7119870099450857090"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/84333979e98fdad9.json",
+        "hash": "16783846342918794966"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4cd55a907ec5bf43.json",
+        "hash": "15865104908771616752"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2f2f070e2a1ea6cd.json",
+        "hash": "9645326149544673359"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ab810be1fb76d5b6.json",
+        "hash": "5388449577228842334"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6fe827b019c6a93e.json",
+        "hash": "6712183086650440333"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/448a0d97973b5f01.json",
+        "hash": "6094919568884922724"
+      },
+      {
+        "file": ".git/objects/a4/a73782bb3ffd494a5615a4dc59e11af2fcbcc8",
+        "hash": "443468238602122068"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a44e0815e451b07a.json",
+        "hash": "8748796715401548262"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c0696e36c513633b.json",
+        "hash": "2004567616716893485"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f8a064e54409cc7f.json",
+        "hash": "15769983788049783769"
+      },
+      {
+        "file": ".git/objects/4b/962633372a986f74707b1a3bd08253fdfa09db",
+        "hash": "4226513862113363127"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/dcdff05fb8c35650.json",
+        "hash": "5735475210369313812"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/dd332e46962fb79b176ae91bfa4faaf0d4aa4a0f/0.pack",
+        "hash": "9519687361361521895"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ec4bad45ea4f9a4d.json",
+        "hash": "2452032745731999558"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8817d4c13f323a56.json",
+        "hash": "16082937377238578843"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f7630c8e944b38ac.json",
+        "hash": "12106671556330271600"
+      },
+      {
+        "file": ".git/objects/1e/603764fdde5dc4f4e49d626d3470458d76e179",
+        "hash": "13471630578601073689"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14508511091007246065"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/618bc95240283739.json",
+        "hash": "12579955282563888543"
+      },
+      {
+        "file": ".git/objects/5e/d01d2dd5b552933e021ac69aa29e6763ffe891",
+        "hash": "16104939807925880599"
+      },
+      {
+        "file": "package.json",
+        "hash": "7656714278969280905"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/9e990bc526daee13.json",
+        "hash": "15520885449413278821"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/816cbb70ebdf79d89ec7881d51bf3af005b3fce0/index.pack",
+        "hash": "16524786247351621575"
+      },
+      {
+        "file": ".git/objects/4c/tmp_obj_FCFL2r",
+        "hash": "8384239254657760126"
+      },
+      {
+        "file": ".git/objects/04/547cb88550421e797676b1533038b82d9b666f",
+        "hash": "6727727843328463318"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1a4e80fc80246a01.json",
+        "hash": "2849452818202149860"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e578881468910c1c.json",
+        "hash": "17013644127175205338"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/64c17201e74070ea.json",
+        "hash": "9630229034180324867"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/642799e48bf192b0.json",
+        "hash": "17551512660951474164"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e38cec1b1df1afc0.json",
+        "hash": "14791892376685423185"
+      },
+      {
+        "file": ".git/objects/fa/0e1cdc607845ab4d6e711ef3dc1dbf8c947809",
+        "hash": "244138384808699148"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/449bd2c05052ed79.json",
+        "hash": "12783711531722309723"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b3897df810bebc54.json",
+        "hash": "9326985913426430681"
+      },
+      {
+        "file": "dist/apps/backend/main.js.map",
+        "hash": "11745474158684826345"
+      },
+      {
+        "file": ".git/hooks/applypatch-msg.sample",
+        "hash": "3740124940738663445"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/17828a80fbfa31b3.json",
+        "hash": "13940430092255015492"
+      },
+      {
+        "file": ".git/objects/56/d0d06685d8bf89ebf25c77cde36434f9f7426f",
+        "hash": "11689785409970835465"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/475027a3fbbe1869.json",
+        "hash": "14834973913530168047"
+      },
+      {
+        "file": ".git/objects/36/c65684089123a2b941a9735d0b8641fcd9d876",
+        "hash": "5923318851804371965"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/56589040474249db.json",
+        "hash": "11800265470256499662"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/31e20b3d58d0bf5c.json",
+        "hash": "17235266665538635012"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4692530aa4abe2c8.json",
+        "hash": "2848810373659942770"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/462b45148172ce9b.json",
+        "hash": "15055839158146169531"
+      },
+      {
+        "file": ".git/objects/0c/3c860f5e449c497cc652a3ec93dc46fccf9fe1",
+        "hash": "16292738149790312238"
+      },
+      {
+        "file": ".git/objects/b6/20e06cea96d876df9de9b7d20c7beb8e1d765b",
+        "hash": "4016344694572355756"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/75805be621e9af72.json",
+        "hash": "10360991813483698866"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/25fbd8ee798a5b84.json",
+        "hash": "10557125186284806127"
+      },
+      {
+        "file": ".git/objects/26/2c8bf85a4589987a667c1f843f06667c2359af",
+        "hash": "3522898252265232721"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1fd065631c17b266.json",
+        "hash": "12761986661278647312"
+      },
+      {
+        "file": "dist/apps/backend/package.json",
+        "hash": "6407439426896037991"
+      },
+      {
+        "file": ".git/objects/2e/3268c8dcef6789a267e835a04c31b4fe43304b",
+        "hash": "6768397904842561652"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5ff81e30e8cb4960.json",
+        "hash": "5192450333949610165"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e9a1c9f6bbbd88e2.json",
+        "hash": "16604970206064119118"
+      },
+      {
+        "file": ".git/objects/ce/510846a446a0dc7bb5c2a1371d65522fc6a94a",
+        "hash": "18427807444236739817"
+      },
+      {
+        "file": ".git/objects/db/8951fa3f5433463f8e6ac521533bd48d8e562b",
+        "hash": "1512560644882227602"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/816cbb70ebdf79d89ec7881d51bf3af005b3fce0/index.pack.old",
+        "hash": "13207763364350804594"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/38692d2811b99673.json",
+        "hash": "6403014023331235120"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/55abeb7ffecc2627.json",
+        "hash": "8995816655036925518"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/dd332e46962fb79b176ae91bfa4faaf0d4aa4a0f/2.pack",
+        "hash": "16854968317574370958"
+      },
+      {
+        "file": ".git/objects/b1/49045a62ffb32ea24e3704a8b898850fb369e6",
+        "hash": "10505634942963247709"
+      },
+      {
+        "file": ".git/objects/d0/587f68ab0c01201641c8374809bb631c8e2412",
+        "hash": "1959671019259943667"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c7d31f072ec8fec7.json",
+        "hash": "11532492779750378396"
+      },
+      {
+        "file": "README.md",
+        "hash": "736736864670633800"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/985b4e6a14255c75.json",
+        "hash": "17971165412598156739"
+      },
+      {
+        "file": ".git/objects/99/7438a1113e8b503d7ba145e46c677b751b005f",
+        "hash": "771175236078681453"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ea08b958c1f1d5be.json",
+        "hash": "1217636727493630418"
+      },
+      {
+        "file": "dist/backend/backend/src/main.js.map",
+        "hash": "12485994912732455126"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/75b790a92ef10ed1.json",
+        "hash": "15681404521854597514"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/43f8469e9f9097c7.json",
+        "hash": "16130255575556702684"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/c907d500f4890c1220e175bb9ec87eb8200285b3/0.pack",
+        "hash": "7446201768026894500"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "17554676857246940898"
+      },
+      {
+        "file": ".git/info/exclude",
+        "hash": "2084763735014985388"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4b56cc52ab34771b.json",
+        "hash": "12100418748410744250"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f6a8b4464a551834.json",
+        "hash": "11248640003657204819"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ab723cdffb79766c.json",
+        "hash": "4921016483267277858"
+      },
+      {
+        "file": ".git/objects/20/a886c8480739d85b80f6fc367363d065f0e61e",
+        "hash": "14920692321438004186"
+      },
+      {
+        "file": ".git/objects/e3/2fc4cc152c0844d9dfc6d4b0bbd9728234b06a",
+        "hash": "8336581297088257268"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2dc85a35c06765b1.json",
+        "hash": "1839765244612704790"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/17cbe80491ab4c9b.json",
+        "hash": "239446880270275600"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b77673de92953896.json",
+        "hash": "16299655771049792580"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/23b2d72824247f52.json",
+        "hash": "4471661013223992547"
+      },
+      {
+        "file": ".git/objects/85/4f9170c34881281e21ec10f05b22afbe8b01f9",
+        "hash": "3754914926330064606"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8f426957c83ea511.json",
+        "hash": "17279728992782672515"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/61759a335a2c9413.json",
+        "hash": "9238273720265270279"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/9150562fb8d761ab.json",
+        "hash": "871758296606996395"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7a1584ea5c322330.json",
+        "hash": "10435097359884307291"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6dcf3b6d1a9544ea.json",
+        "hash": "16244350185998386982"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e674b9944864e168.json",
+        "hash": "5226900185243560925"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4b93fc5a580cc419.json",
+        "hash": "9403526017581029793"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/711ab00587ea98c2.json",
+        "hash": "13977430829119460103"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/3b53f0e3cad3ffb2.json",
+        "hash": "6994949582168098900"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e4d828b1dfd5caa2.json",
+        "hash": "16846635276983743634"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/854f669ddc8932bf.json",
+        "hash": "3067263369902969251"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5f0dff223dbad28a.json",
+        "hash": "18118178217054842178"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d60a32fb280a292d.json",
+        "hash": "5686049008123744380"
+      },
+      {
+        "file": ".git/objects/f4/tmp_obj_MtRS0O",
+        "hash": "3327429058700500997"
+      },
+      {
+        "file": ".git/hooks/pre-merge-commit.sample",
+        "hash": "5691533144974613569"
+      },
+      {
+        "file": ".git/objects/76/1f9e732ded05ded91d614a4d1180be82d37fa7",
+        "hash": "9791351893882205094"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/36bb82543617f5c0.json",
+        "hash": "6269387184106940744"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/9a84107397aa8795.json",
+        "hash": "13782667574930015000"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1c5ca3aea8c892ae.json",
+        "hash": "15680471957058784909"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/32cd29f04331f17a.json",
+        "hash": "15559427274360241776"
+      },
+      {
+        "file": ".git/objects/28/b1d7bd6ddc8b196ee6f288657b1874996937bd",
+        "hash": "8794514680964523102"
+      },
+      {
+        "file": "dist/apps/backend/apps/backend/src/main.js.map",
+        "hash": "3271059350686281934"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/0c57905d14788b12.json",
+        "hash": "8570915790812736778"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/364ed78474880a94.json",
+        "hash": "16036517765880198811"
+      },
+      {
+        "file": ".git/objects/55/ec560f9d66edb8312a3ddf66e05931a8b21ca4",
+        "hash": "7428493687787906371"
+      },
+      {
+        "file": ".git/objects/1b/tmp_obj_9gIlv2",
+        "hash": "6378377523795164407"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e7e97a27ead12984.json",
+        "hash": "1767906790623719144"
+      },
+      {
+        "file": ".git/objects/26/6c5ee338a9c850860b64a2e4383fcd53e44363",
+        "hash": "4341429523666420518"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/05381c6e6f2420c2.json",
+        "hash": "5402710821569413645"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/966b1b8e9c390760.json",
+        "hash": "9320952094031415356"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d95f23c45974dec3.json",
+        "hash": "16400815691775273041"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4f91111dd8f6180e.json",
+        "hash": "3501428628748618737"
+      },
+      {
+        "file": ".git/objects/c2/5aac5b591cb7c95842e2bbf659a29ab8d7d61c",
+        "hash": "15576958310731135380"
+      },
+      {
+        "file": ".git/objects/72/f377eff8eabf665cdeb593fa7b6e836942f955",
+        "hash": "17609220019410394729"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/bb5b9b8b3d1ab9c3.json",
+        "hash": "4670367096876744185"
+      },
+      {
+        "file": ".git/objects/ab/c7d96888b69a5230f610201c19f9dc26576276",
+        "hash": "5459970448728520800"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "5407418692668764289"
+      },
+      {
+        "file": ".git/objects/f4/7dcb119a2c5ab4c467ad0c346585198d51dbc8",
+        "hash": "10531177775239795195"
+      },
+      {
+        "file": ".git/objects/86/6417d6fb0d26f68cca1628e4a49a9eb12f4101",
+        "hash": "5913120389324155485"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ef898713a53dbe52.json",
+        "hash": "1910260717418437593"
+      },
+      {
+        "file": ".nx/workspace-data/playwright-5186013267177752385.hash",
+        "hash": "16741161315980847625"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a904a8c1dd0e2771.json",
+        "hash": "13464583866453114207"
+      },
+      {
+        "file": ".git/objects/a9/2203f9d907c45b61a812f77e4da0a712619c8a",
+        "hash": "10329747106576685111"
+      },
+      {
+        "file": ".git/hooks/pre-rebase.sample",
+        "hash": "15784748353859782246"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/bf126a56895abf11.json",
+        "hash": "1919097727117735293"
+      },
+      {
+        "file": "tmp/backend/main-with-require-overrides.js",
+        "hash": "5632968825117400376"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/48911bd790c2609a.json",
+        "hash": "6525871277849832551"
+      },
+      {
+        "file": ".git/objects/f7/b050a3d7da1d984a6b009c7e28e2e79ac0400d",
+        "hash": "16985731363552994098"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6903406d767014f6.json",
+        "hash": "17383610101659447044"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c4084af06ed131a7.json",
+        "hash": "10489517937342904120"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a888ad80025a5b3d.json",
+        "hash": "12706038070991442478"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d2ee212a7869a387.json",
+        "hash": "4225057054130094222"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "6605472408721685902"
+      },
+      {
+        "file": ".git/hooks/commit-msg.sample",
+        "hash": "11930680668000581900"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/fc30c8ab192a43b8.json",
+        "hash": "13506723551790104757"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/dd332e46962fb79b176ae91bfa4faaf0d4aa4a0f/1.pack",
+        "hash": "4020777240940003245"
+      },
+      {
+        "file": ".git/objects/e1/ad904f9289acaafb31c24349724772d5ddb76b",
+        "hash": "9647860771889673571"
+      },
+      {
+        "file": ".git/objects/b3/daaccfc12cdb3a62e957ea448b3030d4969b60",
+        "hash": "16247453260705362343"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/c907d500f4890c1220e175bb9ec87eb8200285b3/index.pack",
+        "hash": "5204992828947175920"
+      },
+      {
+        "file": ".git/objects/b1/1bf659c9c60adb5ddc83eeb69faed7ffe4e64f",
+        "hash": "2960647301364153211"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c9ea51ec157dee26.json",
+        "hash": "7268093648897439555"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2e2af8f3aa9bfe37.json",
+        "hash": "8171184599515157749"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e33ae4d8122ba7e9.json",
+        "hash": "2348027372008093018"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/707b4e2d9724d48d.json",
+        "hash": "974775175450462868"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f41ee637701f1a34.json",
+        "hash": "8315599106810368763"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/cad126cd3ca7b71e.json",
+        "hash": "9658167327574772980"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5fdd22d0210c1afd.json",
+        "hash": "16193333636575916902"
+      },
+      {
+        "file": "dist/backend/package.json",
+        "hash": "6407439426896037991"
+      },
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "10776960604726851518"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4fa22e634df81680.json",
+        "hash": "16639485747724973210"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/257823ece44b8c77.json",
+        "hash": "16469845919987397490"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/3675e97751230326.json",
+        "hash": "5878685992003513949"
+      },
+      {
+        "file": ".git/objects/9f/b18288d5c9f28426e5fe14b4b410223d4fdf85",
+        "hash": "10725166356598681964"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6be47718a548a53d.json",
+        "hash": "1544921055958213915"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/150d46cee72460ca.json",
+        "hash": "4592171546590493977"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/377306d6d3b4ee51.json",
+        "hash": "11779654965366216554"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b4d85eb6c6aa9f05.json",
+        "hash": "15575778456429765606"
+      },
+      {
+        "file": ".git/objects/c5/bba72a467a57718c3de5e9c9fcb94bc4ec466b",
+        "hash": "14667619300255187321"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/521992efd6f3dd36.json",
+        "hash": "5968325465110317500"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1c462faa05a3cd03.json",
+        "hash": "9209119218766323084"
+      },
+      {
+        "file": ".git/objects/82/fd096f61d0a241037252799d9ee6defd755401",
+        "hash": "7923909212730810421"
+      },
+      {
+        "file": ".git/hooks/post-update.sample",
+        "hash": "16498975149454253769"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/47a957f7a278a50c.json",
+        "hash": "8279067866414112605"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/afe82c780db56fb097d9418c761815131883895a/index.pack",
+        "hash": "9276118883163508923"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c791cb4bd23a8a1c.json",
+        "hash": "14596622845982611875"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c5d8ac89e75eaaa8.json",
+        "hash": "13428005441444284167"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/539b02e056b50a29.json",
+        "hash": "181913951165551410"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/bbd8165c9f78c14e.json",
+        "hash": "1310400382224160956"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6ec7715c5eb0ab31.json",
+        "hash": "11525662446856378057"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d50086f2834cdddc.json",
+        "hash": "7625117684939300187"
+      },
+      {
+        "file": ".git/hooks/fsmonitor-watchman.sample",
+        "hash": "5775573213843170127"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b7e174909a9eb479.json",
+        "hash": "13101494648045340439"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7d9df4e09d9abeb1.json",
+        "hash": "7666014055533095677"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2eef246833407d60.json",
+        "hash": "2769637184317394687"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/08154e025de79205.json",
+        "hash": "10063939438296895629"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/246b5526ead5671c.json",
+        "hash": "4336138286940747559"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/058495af013b3639.json",
+        "hash": "11349232120501855757"
+      },
+      {
+        "file": ".git/objects/da/f94674962276ad62ef3344634edb7de8e80210",
+        "hash": "3758802307174962657"
+      },
+      {
+        "file": ".git/objects/29/tmp_obj_XFRdRS",
+        "hash": "3249660659837710395"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1c368b322694fe7a.json",
+        "hash": "4545568702703747711"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f2b5da73f409bfb1.json",
+        "hash": "3788878808652827662"
+      },
+      {
+        "file": ".git/objects/0c/f01fd075f83554fb15ae12556731a7bdd47ac0",
+        "hash": "16314842649297516497"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b7302bfd769cc33e.json",
+        "hash": "8898471876846870555"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/88f64f1f448d0915.json",
+        "hash": "17589155472167906385"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6c9b60a62641b31c.json",
+        "hash": "5720977831916080344"
+      },
+      {
+        "file": ".git/objects/24/af40f7a56e01fca24e622f1ce9982114cd861a",
+        "hash": "15296005705171382845"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f6a360683b181007.json",
+        "hash": "911644175792477778"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/708586e446df8f4f.json",
+        "hash": "5736269283251779385"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/25ce4215e4576705.json",
+        "hash": "5681883089787266266"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/0ef9a5cc6fd0563f.json",
+        "hash": "12263706959860589313"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2ddb159a50042344.json",
+        "hash": "4939720696405279155"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d75760e1064b6890.json",
+        "hash": "9231602882437329535"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/bd0c35e14507b2d3.json",
+        "hash": "17713291647116023109"
+      },
+      {
+        "file": ".git/objects/11/2057f938338fdcf5ad9fee4332a1f118fe039f",
+        "hash": "7622726545485513262"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/fcd2f1a40a0df748.json",
+        "hash": "9849126985441455623"
+      },
+      {
+        "file": ".git/objects/ce/6361dbe775dffac9fdff78e78f39a1b99eccf3",
+        "hash": "8107833788156830493"
+      },
+      {
+        "file": ".git/objects/e3/b4a208170b8e9ed0041913ed214f45d58d84c5",
+        "hash": "5792775192851824143"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/bfeefdfc2949db0c.json",
+        "hash": "11044880922075189189"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f9da508d967f04c8.json",
+        "hash": "13705095247081602502"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/cdde5f2abc574cb1.json",
+        "hash": "9946680351535883068"
+      },
+      {
+        "file": ".git/objects/a8/a478e4ad7cada14271655e8bb8591e5b9a592c",
+        "hash": "12453123469319027665"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "10770449096712831357"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/59e23120bcc9da31.json",
+        "hash": "15722701138629597485"
+      },
+      {
+        "file": ".git/objects/8c/509ec74fa0a7bc04f908ebdccddf30f4d33ec2",
+        "hash": "3994337556720515563"
+      },
+      {
+        "file": ".git/objects/76/f524c12a61c53fe311331b70b21fe313696919",
+        "hash": "4678650258235855683"
+      },
+      {
+        "file": ".git/description",
+        "hash": "6589616779641096119"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e102eda2592363d2.json",
+        "hash": "13589351078134241043"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b557d4c8e6384d16.json",
+        "hash": "14634232131324899456"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ff603a4c980178f0.json",
+        "hash": "7921196947655236193"
+      },
+      {
+        "file": ".git/objects/1b/5f298302a8729cd1b2dbb2e0d8dd32ce61f93d",
+        "hash": "4625987342453493322"
+      },
+      {
+        "file": ".git/objects/73/8df60dd0c92058d8599604d1c7219e1c79a980",
+        "hash": "8047969718444261361"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c5212ea683d645f0.json",
+        "hash": "12974982631375389052"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/dee6f178bc42cee8.json",
+        "hash": "2873345528431248334"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/3fa044723559835b.json",
+        "hash": "901549635042493589"
+      },
+      {
+        "file": ".git/objects/c0/a42d632ae8d3932b136267245a3043f40d3ffb",
+        "hash": "1734932853798391305"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/abc4dede45ae1cbd.json",
+        "hash": "4588685856341267588"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ead59eae405c563e.json",
+        "hash": "4045401005544428700"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c4ca3023aab4f00d.json",
+        "hash": "11506860757912408625"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/856faf4a78058360.json",
+        "hash": "17275370773605524033"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f9ad000aae17d61d.json",
+        "hash": "104132812302471269"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e94f17d1c1850e44.json",
+        "hash": "3221792748938001828"
+      },
+      {
+        "file": ".git/hooks/push-to-checkout.sample",
+        "hash": "5194610557431485830"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/84d2cdb174cd0ba2.json",
+        "hash": "14207609854250886105"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c329c981a8a03c96.json",
+        "hash": "14077112830875396661"
+      },
+      {
+        "file": ".git/objects/1a/4c0fae167a3c3f180d0837aafbdd2a267d1ff0",
+        "hash": "13110140028853427829"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/81a8d4d5d6cd2d3d.json",
+        "hash": "14785852935194490387"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1f3a625c6329de0e.json",
+        "hash": "2395139869397869310"
+      },
+      {
+        "file": ".git/objects/6d/cb8623a2937b5323d0cb52836641a8588f75a0",
+        "hash": "4002913151258136042"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8a5c2c17f2f87af7.json",
+        "hash": "13925203479674419791"
+      },
+      {
+        "file": ".git/hooks/update.sample",
+        "hash": "14696759095365231402"
+      },
+      {
+        "file": "dist/backend/package-lock.json",
+        "hash": "18270848759717728601"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7c5eb500d4d0993d.json",
+        "hash": "11962381537112972314"
+      },
+      {
+        "file": ".git/objects/ef/b33882c5c22a2b252134760a23be8652d375f4",
+        "hash": "10722455233513341577"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/71d97e014ce28d98.json",
+        "hash": "14605092972679700508"
+      },
+      {
+        "file": ".git/hooks/pre-push.sample",
+        "hash": "3666369642558647280"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7714f15c97f0890f.json",
+        "hash": "6833556746481704198"
+      },
+      {
+        "file": ".git/objects/f5/5e48a752ac8d2207ffdee158109077d8544729",
+        "hash": "1936689518758525294"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c11dc51f2aa5c8cb.json",
+        "hash": "6294851568128982043"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4e27228c4778137a.json",
+        "hash": "6816926991891940161"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/79a60d21816b72fd.json",
+        "hash": "2183530285761455554"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ff086649c264923d.json",
+        "hash": "12765959967427058328"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f57d147468ed46d6.json",
+        "hash": "18224618558005704625"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d331e8a9b7376147.json",
+        "hash": "40589449802605939"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ee3285750d9a7461.json",
+        "hash": "11908815031924889286"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d82919ae9c199379.json",
+        "hash": "14553188263910784457"
+      },
+      {
+        "file": ".git/objects/4f/842a630fc17f4425a7013a693bbd15a91b159c",
+        "hash": "11960265451548657449"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/816cbb70ebdf79d89ec7881d51bf3af005b3fce0/0.pack",
+        "hash": "13235939740533504594"
+      },
+      {
+        "file": ".git/hooks/pre-receive.sample",
+        "hash": "8999430056057037490"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/344c100e48771413.json",
+        "hash": "4829609825468499552"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c954ab23fc131b28.json",
+        "hash": "4034257755506089808"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ff8601e1b215b434.json",
+        "hash": "11349315982494082469"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2d9cad571317b858.json",
+        "hash": "4559828902294695718"
+      },
+      {
+        "file": "dist/backend/backend/src/main.js",
+        "hash": "17680270101311576596"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4a817b59b8dfc80b.json",
+        "hash": "485846102439750572"
+      },
+      {
+        "file": ".git/objects/cb/472e1aa2114daaeca38b3fedb633e37a48c18f",
+        "hash": "9258016019728659494"
+      },
+      {
+        "file": ".git/objects/dd/fb8e46827b1682876e5a3cb93a420768f07aaa",
+        "hash": "2835417809555127746"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/20966460a9d0fd88.json",
+        "hash": "10540994878885927960"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/796f4a81344c9124.json",
+        "hash": "4674410613186038700"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/152f5859b1aadd19.json",
+        "hash": "13765261995402267586"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/63b286498b79702b.json",
+        "hash": "9990715990277495705"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/9889c1b0dd3c1e8e.json",
+        "hash": "17951896503710641883"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/283751fd344b747c.json",
+        "hash": "4118238044064724030"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/cb2b0ee27840d83a.json",
+        "hash": "6615059626649156492"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/048e1e4f1bd7133a.json",
+        "hash": "14587283634353529483"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f549bc6749593382.json",
+        "hash": "16251988272474001650"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f1dba968fd0e1412.json",
+        "hash": "11798381669814922989"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/38d7e41f806698e1.json",
+        "hash": "7916057627125703246"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/07f7f0f77f552772.json",
+        "hash": "9194438534936292679"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/0657ecb4d3a4bd32.json",
+        "hash": "14512413463931504898"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/816cbb70ebdf79d89ec7881d51bf3af005b3fce0/2.pack",
+        "hash": "4990733087834127583"
+      },
+      {
+        "file": ".git/objects/51/22303795a36b8cd1d9e6ad20bb0e19f4a81e69",
+        "hash": "17956617508119140781"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/9d2391d4a3f62a11.json",
+        "hash": "9426030723707798950"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b10d752f0da48a31.json",
+        "hash": "6485354630522736887"
+      },
+      {
+        "file": ".git/config",
+        "hash": "16762722716030554442"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/00b3356653273cf7.json",
+        "hash": "12485986437784655647"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4952dcd7600fc806.json",
+        "hash": "11342467284812937027"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/485f63c646eedc8b.json",
+        "hash": "6523110212710762374"
+      },
+      {
+        "file": ".git/objects/91/b99351871926eef9b5857512fe5cc91491fe43",
+        "hash": "10746654530488313741"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c4e9b0d0d8bf36e1.json",
+        "hash": "18076094087138268666"
+      },
+      {
+        "file": ".nx/workspace-data/source-maps.json",
+        "hash": "17869623735260845886"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/95b206468ecd8d4d.json",
+        "hash": "3081748461037522284"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/953fc6814a2c122a.json",
+        "hash": "3911543909472896008"
+      },
+      {
+        "file": ".git/objects/e8/a500253eb084f75801f686b7f6d75e8f9e7e1b",
+        "hash": "10122262224650814620"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/38e4b43e02b21576.json",
+        "hash": "5898998116346408930"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/09cfb1f4f6869025.json",
+        "hash": "6962592481718617771"
+      },
+      {
+        "file": ".git/objects/ed/cff5ac49dfd3b497024843bb75e9b4082b9fba",
+        "hash": "2450832275489414817"
+      },
+      {
+        "file": ".git/objects/5f/16f821f0183e8cdcb47028376ec5c33770bab6",
+        "hash": "15602105665234390204"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e61e051c0808401e.json",
+        "hash": "6815713019912779647"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/42619cc875b74482.json",
+        "hash": "4098041326622648978"
+      },
+      {
+        "file": ".git/objects/15/a342d108f6e3fd167496f1e08e02f06d5cb401",
+        "hash": "18026636270220084490"
+      },
+      {
+        "file": ".git/objects/db/4bc72992c3f1efde954d7a0c2ae3fb65d5d157",
+        "hash": "15199786819823256400"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4e8495e06b32620b.json",
+        "hash": "614816893190667822"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f109fece8315da6e.json",
+        "hash": "11457792932760510248"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e503ae8fa2fc0d2f.json",
+        "hash": "18321529674609861457"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5d0a00852208ddb7.json",
+        "hash": "14871170944841114401"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/72271dfe292cb5e3.json",
+        "hash": "11359352209922157141"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4074eafbbd835f9b.json",
+        "hash": "17830634359787366322"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c166d5fd12c69645.json",
+        "hash": "12256391325055181783"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8f28181a0eb41400.json",
+        "hash": "16327631695348653757"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8f827f108ae2b4fc.json",
+        "hash": "14234717427522780332"
+      },
+      {
+        "file": ".git/objects/50/aaebccb87e087d7a3bab4a839e78dc66f86319",
+        "hash": "5981410612483649004"
+      },
+      {
+        "file": ".git/objects/b4/b8f8d8243be5211c6071b494bbeafafcd250bf",
+        "hash": "6666400059933019094"
+      },
+      {
+        "file": ".git/objects/73/tmp_obj_7ZKaRJ",
+        "hash": "2688589005150977377"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/e47a3d40a98cea65.json",
+        "hash": "15693432084316675049"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b5704a33b7356b03.json",
+        "hash": "17993155104115935753"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/71d0ae47fbc28c35.json",
+        "hash": "10569748885181107551"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5a0bf8c639976377.json",
+        "hash": "9097930616892098109"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7f598b76abe34025.json",
+        "hash": "13986364820597138396"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a0207cb6243a9297.json",
+        "hash": "4782999997692528323"
+      },
+      {
+        "file": ".git/objects/3d/6769fd15a6944ede40c9f28869f02e11905f08",
+        "hash": "2263637553921742463"
+      },
+      {
+        "file": "dist/apps/backend/main.js",
+        "hash": "14213313213548955176"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6f1d0f53f5d83666.json",
+        "hash": "1117938531266082961"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6826686eb3e14e7a.json",
+        "hash": "16348144332624728843"
+      },
+      {
+        "file": ".git/objects/20/16b2fb46bb2f5176fd67e1137433240533cedc",
+        "hash": "9708079881856981747"
+      },
+      {
+        "file": ".git/objects/ec/bd003ee71401103df2f7c19faac4d964949327",
+        "hash": "3459247925194643995"
+      },
+      {
+        "file": ".git/objects/c7/34f3d206fc1c8d508f8db7dd9f1239792fa7e4",
+        "hash": "8535019542887482975"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/43aa374f44e50020.json",
+        "hash": "8949359524560690286"
+      },
+      {
+        "file": ".git/objects/51/8dfb8db1a090577bb1d84b43a0317dcc7ba014",
+        "hash": "451593108413587663"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c25dab6a53728344.json",
+        "hash": "12727919640737831520"
+      },
+      {
+        "file": ".git/objects/81/e9bae53b1be51d5bdcfb38786060bf86a7cf77",
+        "hash": "261759631566829539"
+      },
+      {
+        "file": ".git/hooks/prepare-commit-msg.sample",
+        "hash": "4009645067798984574"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c49bb0681045dcd1.json",
+        "hash": "12487345636759853179"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8f6df7f807b4ad48.json",
+        "hash": "13173163297496110862"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/42c840e53eec4be3.json",
+        "hash": "9626207076595743132"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1a755c51e08eecf6.json",
+        "hash": "3291339516741606604"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/3f4c48b472133c5c.json",
+        "hash": "4426772900687605704"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/afe82c780db56fb097d9418c761815131883895a/index.pack.old",
+        "hash": "13430629106606283615"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f54bc9ff796caac6.json",
+        "hash": "14983635062785362501"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c41ef15e7177a017.json",
+        "hash": "13602468788818356755"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/b2ee35ec0b4311e0.json",
+        "hash": "7672188112457756477"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/dd332e46962fb79b176ae91bfa4faaf0d4aa4a0f/index.pack",
+        "hash": "3610299451577610338"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c2b5a3cf79403255.json",
+        "hash": "1674546893438323255"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7325698e2a3ab5e1.json",
+        "hash": "10735937323968348386"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c398d3b13e41c697.json",
+        "hash": "16304062155603161042"
+      },
+      {
+        "file": ".git/objects/e6/a226fcd6166a02a44f70be4f9daa22aaf11616",
+        "hash": "10390573865998075273"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/43b850a23020d514.json",
+        "hash": "18285862420116212703"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c6bdb38bfeede99a.json",
+        "hash": "13711216582450414674"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2f4455355c99bd4c.json",
+        "hash": "4447597793083431646"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/588ea7fba759ca0f.json",
+        "hash": "12251427225912451309"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/dd332e46962fb79b176ae91bfa4faaf0d4aa4a0f/index.pack.old",
+        "hash": "14112333304348728437"
+      },
+      {
+        "file": ".git/objects/83/fb29888e9e77faa8b3a88fd7853cf71985ee0c",
+        "hash": "11755833560422623855"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/db2a8ce245ee3fa8.json",
+        "hash": "14912717952130799643"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/f9baa6af2260735d.json",
+        "hash": "6123549125410421734"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ab433728808edf0f.json",
+        "hash": "2955907993129862067"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/0c0f3d2713fcce0d.json",
+        "hash": "17450903731333216861"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7ba8feb78442f11a.json",
+        "hash": "16477470066274581761"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/aa9fa0776ae30a44.json",
+        "hash": "4190435612548248216"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/562db35819cb178f.json",
+        "hash": "711980890308471914"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/467133bbfff51941.json",
+        "hash": "7009624569932777165"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8734685d3815463e.json",
+        "hash": "634420014914200369"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/64aadeab0ed92af9.json",
+        "hash": "10598836084258179532"
+      },
+      {
+        "file": ".git/hooks/pre-applypatch.sample",
+        "hash": "1595391782482835178"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "2478217381773231556"
+      },
+      {
+        "file": ".git/objects/33/51295f0288de1b1a893996f0222c14a7bb726b",
+        "hash": "11599994595234896710"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/528afed9ad3761c2.json",
+        "hash": "4954465259826186299"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8a563e6365db77c1.json",
+        "hash": "3650680591163592416"
+      },
+      {
+        "file": ".git/HEAD",
+        "hash": "11710400652189793685"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/97aea0ebff62506b.json",
+        "hash": "7236602600256157869"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a6777a3b235bcf31.json",
+        "hash": "3189886658520162278"
+      },
+      {
+        "file": ".git/objects/c9/b9aa28222a412ea968a6dd55b8be0dc93328e4",
+        "hash": "15894671548338120998"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/816cbb70ebdf79d89ec7881d51bf3af005b3fce0/1.pack",
+        "hash": "7922968198456989630"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/72ac8c5227fddc07.json",
+        "hash": "10331261882643653545"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/0909da46f5cb40f7.json",
+        "hash": "8259184167799086653"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a9f83c8ca7784715.json",
+        "hash": "647061003876831581"
+      },
+      {
+        "file": ".git/objects/22/f9d18d3782bbaa809303b549c7bd710d2f7499",
+        "hash": "10748992568801945703"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4c816a13c5cb84f5.json",
+        "hash": "14388042072018222805"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/6ac93817bd558560.json",
+        "hash": "13841156340191017079"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8f5854b15939c5ce.json",
+        "hash": "10417513967874339023"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/afe82c780db56fb097d9418c761815131883895a/0.pack",
+        "hash": "749877548812650584"
+      },
+      {
+        "file": ".git/objects/3a/7cf0cd439e9515994b062f3ac991912345ae76",
+        "hash": "6690037204568043600"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c25374b7cebbf4a5.json",
+        "hash": "7590609592343796737"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/874added5a1d4fe8.json",
+        "hash": "16470185875735936233"
+      },
+      {
+        "file": ".git/objects/69/2dc052ac8deee819cd47773003d3f8f760bd07",
+        "hash": "9990625632089059498"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/054d10cad250c2f7.json",
+        "hash": "14641870903692140744"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7c524a24f7286a82.json",
+        "hash": "7428759699516029141"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/94052d135f1a07dc.json",
+        "hash": "5420668659822714657"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5f4bf27494991446.json",
+        "hash": "9826823500017224952"
+      },
+      {
+        "file": ".git/objects/33/cd855d32085d123bf649009b77a1d199faeb08",
+        "hash": "6148418961718924025"
+      },
+      {
+        "file": ".git/objects/0c/91c81609819d2cfe0a7ad034a2c3fa4b694036",
+        "hash": "17154612295761819016"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ae8fc8bc0b0198e5.json",
+        "hash": "7243946755565040128"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/7e4cc62b41110ed1.json",
+        "hash": "5980249220459781092"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a652452e9a26de9b.json",
+        "hash": "18152498413476444786"
+      },
+      {
+        "file": ".git/objects/f8/cd7da18472ee43c33c0e3492a3abc21bf08409",
+        "hash": "7520947827347394995"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/4185a944ebb557e2.json",
+        "hash": "9863470603095907393"
+      },
+      {
+        "file": "dist/backend/main.js.map",
+        "hash": "2042493394002382123"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/43f35e1d6837f482.json",
+        "hash": "6645646746544324831"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8694ad2f9a4cdef5.json",
+        "hash": "15854175285448356348"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/2adce023281cc2b2.json",
+        "hash": "8447575344044602436"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8a0531c9e5e693d1.json",
+        "hash": "9911320015280999883"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/311482b7d51173ad.json",
+        "hash": "18376946931031421943"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/a9ff8f27a7f822b6.json",
+        "hash": "1595590760953054065"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/58f60506feaeae0d.json",
+        "hash": "194371378130042647"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/ea7f1d02d57cbe51.json",
+        "hash": "319326949595035594"
+      },
+      {
+        "file": ".git/objects/03/1e67be0f81689f278496b611cce0987d2aa071",
+        "hash": "11072860266880646710"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5c719c0d814d6d79.json",
+        "hash": "1317009403635958985"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/3d8b12ddd8b8c550.json",
+        "hash": "11542735094294586679"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/029cb8620add4693.json",
+        "hash": "3957864057136978304"
+      },
+      {
+        "file": ".git/objects/1c/964f1ed2fdd13f727c031939d6345e1c14c0b2",
+        "hash": "9296503064217173868"
+      },
+      {
+        "file": ".git/objects/18/57ae6e38df0321695981fe47baa59ff9ea27e7",
+        "hash": "12130388139221790172"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "3990185857357996398"
+      },
+      {
+        "file": ".git/hooks/pre-commit.sample",
+        "hash": "10258126878297473471"
+      },
+      {
+        "file": ".git/objects/14/9263b279bbf44dec697c654acf7c158bd77140",
+        "hash": "16278026355580376536"
+      },
+      {
+        "file": ".git/objects/a3/551750d6caebdae1c66873d41af176ed67956b",
+        "hash": "17965543355441841422"
+      },
+      {
+        "file": ".git/objects/44/54b46cb5764f7bffb05328749cd7b0cff8bbd0",
+        "hash": "6126851122238597842"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8e5bb424ea494cd2.json",
+        "hash": "1875275036574747901"
+      },
+      {
+        "file": ".git/objects/0b/13300a09f0eed29f95f100dbdf80b85c5b6611",
+        "hash": "8699145580950809945"
+      },
+      {
+        "file": ".git/objects/0e/6d8cd0492676e1410b1155e5e68420e071e202",
+        "hash": "6961490193724865428"
+      },
+      {
+        "file": ".git/objects/da/f9dc8171b75be9fc7cebe4d52d50e9e7ee6715",
+        "hash": "10500571639112379300"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/5098746a5739593e.json",
+        "hash": "5340335947714446681"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/656a6b59a6ea7dde.json",
+        "hash": "13037532000553473839"
+      },
+      {
+        "file": ".git/objects/fd/3cb1d9f5312d14eea2cf32d3d12ea464955308",
+        "hash": "1805257023534118987"
+      },
+      {
+        "file": ".angular/cache/20.2.2/angular-webpack/afe82c780db56fb097d9418c761815131883895a/1.pack",
+        "hash": "3135676672536054541"
+      },
+      {
+        "file": ".git/objects/d5/871b4bba72271dfdd84c6f5ce39ad741fc438e",
+        "hash": "12416239824273060299"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/1b79980e4da60cb3.json",
+        "hash": "4518817380217856201"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c8b440aa31701178.json",
+        "hash": "4218580807503949112"
+      },
+      {
+        "file": ".git/objects/50/8b3265b0b3af53d1a4362aff2c68fc7feb6c83",
+        "hash": "14727290129762844352"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/d858f61095fb1fb3.json",
+        "hash": "8461242731227610813"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/c914d8a27ad528df.json",
+        "hash": "8606902225188147496"
+      },
+      {
+        "file": ".git/objects/19/c498473a3c416a8625f0064da7a63feba5ae6a",
+        "hash": "18002061367056980879"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/365d177c4d491a86.json",
+        "hash": "4095182045936976717"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "4096405435740804"
+      },
+      {
+        "file": ".git/objects/9c/6e7da3fde29404ac3339e3f1fd765f3c841a50",
+        "hash": "2468208561452275093"
+      },
+      {
+        "file": "dist/apps/backend/package-lock.json",
+        "hash": "18270848759717728601"
+      },
+      {
+        "file": ".angular/cache/20.2.2/babel-webpack/8ebf49662bd0348d.json",
+        "hash": "8566549775946743692"
+      }
+    ],
+    "projectFileMap": {
+      "frontend-e2e": [
+        {
+          "file": "apps/frontend-e2e/eslint.config.cjs",
+          "hash": "5108899909509588183",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/playwright.config.ts",
+          "hash": "4535250053304126287",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/project.json",
+          "hash": "16623643415870234688"
+        },
+        {
+          "file": "apps/frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/tsconfig.json",
+          "hash": "2249461092017240593"
+        }
+      ],
+      "frontend": [
+        {
+          "file": "apps/frontend/eslint.config.cjs",
+          "hash": "6863544995924746399",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/frontend/jest.config.ts",
+          "hash": "14458212970000463922"
+        },
+        {
+          "file": "apps/frontend/project.json",
+          "hash": "2314431848623846208"
+        },
+        {
+          "file": "apps/frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/frontend/src/app/app.config.ts",
+          "hash": "4515289115773032281",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.html",
+          "hash": "11987652264972370457"
+        },
+        {
+          "file": "apps/frontend/src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/app.spec.ts",
+          "hash": "4413189374395491596",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.ts",
+          "hash": "11833690593705296219",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/nx-welcome.ts",
+          "hash": "7357349489891353751",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/index.html",
+          "hash": "10958459893752702268"
+        },
+        {
+          "file": "apps/frontend/src/main.ts",
+          "hash": "3314327030169821486",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/frontend/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/frontend/tsconfig.app.json",
+          "hash": "12834270188132019223"
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "6343381516642186316"
+        },
+        {
+          "file": "apps/frontend/tsconfig.spec.json",
+          "hash": "1029128818174064697"
+        }
+      ],
+      "backend": [
+        {
+          "file": "apps/backend/eslint.config.js",
+          "hash": "17012108287991280227"
+        },
+        {
+          "file": "apps/backend/jest.config.ts",
+          "hash": "16609340234475223037"
+        },
+        {
+          "file": "apps/backend/project.json",
+          "hash": "16786491704758682369"
+        },
+        {
+          "file": "apps/backend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/backend/src/main.ts",
+          "hash": "12003555863464044675",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/backend/tsconfig.app.json",
+          "hash": "13873300146573233437"
+        },
+        {
+          "file": "apps/backend/tsconfig.json",
+          "hash": "9420862676426701392"
+        },
+        {
+          "file": "apps/backend/tsconfig.spec.json",
+          "hash": "17313551537729802733"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "16053124095806488291"
+}
