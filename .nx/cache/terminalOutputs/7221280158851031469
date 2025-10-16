@@ -1,0 +1,385 @@
+- Generating browser application bundles (phase: setup)...
+[1m[33m    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility[39m[22m
+[1m[33m    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mvendor.js[39m[37m            [2m | [22m[2mvendor[22m       [2m | [22m  [36m3.20 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mpolyfills.js[39m[37m         [2m | [22m[2mpolyfills[22m    [2m | [22m[36m238.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m       [2m | [22m[36m125.06 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mmain.js[39m[37m              [2m | [22m[2mmain[22m         [2m | [22m [36m12.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m      [2m | [22m  [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                    [2m | [22m[1mInitial total[22m[2m | [22m  [1m3.58 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:04:45.604Z[39m[37m[22m - Hash: [1m[37mee7054b9a6fb2952[39m[37m[22m - Time: [1m[37m4356[39m[37m[22mms[0m[39m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/app.component.html[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'app-nx-welcome' is not a known element:[39m[22m
+[1m[31m1. If 'app-nx-welcome' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'app-nx-welcome' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <app-nx-welcome></app-nx-welcome>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/app.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './app.component.html', // Ensure this file exists or update the path[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m12.32 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:08:22.998Z[39m[37m[22m - Hash: [1m[37mdf28a3d8b4004505[39m[37m[22m - Time: [1m[37m1357[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/app.config.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/auth.service.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/nx-welcome.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/services/auth.serice.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/services/user.services.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/users/login/login.component.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialC[39m[22m[1m[33mompraVenta/ComercialCompraVenta/apps/frontend/src/app/users/register/register.component.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m12.32 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:08:23.553Z[39m[37m[22m - Hash: [1m[37m3e3979630d8b7207[39m[37m[22m - Time: [1m[37m514[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m15.88 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:32:55.984Z[39m[37m[22m - Hash: [1m[37m264377d276fcbd30[39m[37m[22m - Time: [1m[37m1302[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m20.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:35:00.481Z[39m[37m[22m - Hash: [1m[37m1b496cafd4cde5a2[39m[37m[22m - Time: [1m[37m1151[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/frontend/src/app/home/home.component.css?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31m[39m[22m
+[1m[31mSyntaxError[39m[22m
+[1m[31m[39m[22m
+[1m[31m(1411:5) /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/home/home.component.css Unknown word <header[39m[22m
+[1m[31m[39m[22m
+[1m[31m [90m 1409 | [39m[31m[33m.contact[39m[31m [33m.php-email-form[39m[31m button[33m[[39m[31mtype=submit[33m][39m[31m [33m{[39m[31m[39m[22m
+[1m[31m [90m 1410 | [39m[31m    color[33m:[39m[31m [36mvar[39m[31m[36m(--contrast-color)[39m[31m[33m;[39m[31m[39m[22m
+[1m[31m[1m[31m>[39m[31m[22m[1m[90m 1411 | [39m[31m    <header id=[32m"header"[39m[31m class=[32m"h[39m[31m[39m[22m
+[1m[31m [90m      | [39m[31m    [1m[31m^[39m[31m[22m[1m[39m[22m
+[1m[31m [90m 1412 | [39m[31m <a routerLink=[32m"/about"[39m[31m class=[32m"btn-get-started"[39m[31m>About Me</a></div></div></div></section></main><footer id=[32m"footer"[39m[31m class=[32m"footer light-background"[39m[31m><div class=[32m"container"[39m[31m><div class=[32m"copyright text-center"[39m[31m><p>© <strong class=[32m"px-1 sitename"[39m[31m>Kelly</strong>All Rights Reserved</p></div><div class=[32m"social-links d-flex justify-content-center"[39m[31m><a href=[32m"#"[39m[31m><i class=[32m"bi bi-twitter-x"[39m[31m></i></a><a href=[32m"#"[39m[31m><i class=[32m"bi bi-facebook"[39m[31m></i></a><a href=[32m"#"[39m[31m><i class=[32m"bi bi-instagram"[39m[31m></i></a><a href=[32m"#"[39m[31m><i class=[32m"bi bi-linkedin"[39m[31m></i></a></div><div class=[32m"credits"[39m[31m>Designed by <a href=[32m"https://bootstrapmade.com/"[39m[31m>BootstrapMade</a></div></div></footer><header id=[32m"header"[39m[31m class=[32m"header d-flex align-items-center light-background sticky-top"[39m[31m><div class=[32m"container-fluid position-relative d-flex align-items-center justify-content-between"[39m[31m><a href=[32m"#"[39m[31m class=[32m"logo d-flex align-items-center me-auto me-xl-0"[39m[31m><h1 class=[32m"sitename"[39m[31m>Kelly</h1></a><nav id=[32m"navmenu"[39m[31m class=[32m"navmenu"[39m[31m><ul><li><a routerLink=[32m"/home"[39m[31m clas[39m[22m[1m[31ms=[32m"active"[39m[31m>Home</a></li><li><a routerLink=[32m"/about"[39m[31m>About</a></li><li><a routerLink=[32m"/resume"[39m[31m>Resume</a></li><li><a routerLink=[32m"/services"[39m[31m>Services</a></li><li><a routerLink=[32m"/portfolio"[39m[31m>Portfolio</a></li><li class=[32m"dropdown"[39m[31m><a href=[32m"#"[39m[31m><span>Dropdown</span><i class=[32m"bi bi-chevron-down toggle-dropdown"[39m[31m></i></a><ul><li><a href=[32m"#"[39m[31m>Dropdown 1</a></li><li class=[32m"dropdown"[39m[31m><a href=[32m"#"[39m[31m><span>Deep Dropdown</span><i class=[32m"bi bi-chevron-down toggle-dropdown"[39m[31m></i></a><ul><li><a href=[32m"#"[39m[31m>Deep Dropdown 1</a></li><li><a href=[32m"#"[39m[31m>Deep Dropdown 2</a></li></ul></li></ul></li><li><a routerLink=[32m"/contact"[39m[31m>Contact</a></li></ul><i class=[32m"mobile-nav-toggle d-xl-none bi bi-list"[39m[31m></i></nav></div></header><main class=[32m"main"[39m[31m><section id=[32m"hero"[39m[31m class=[32m"hero section"[39m[31m><img src=[32m"assets/img/hero-bg.jpg"[39m[31m alt=[32m""[39m[31m data-aos=[32m"fade-in"[39m[31m><div class=[32m"container text-center"[39m[31m data-aos=[32m"zoom-out"[39m[31m data-aos-delay=[32m"100"[39m[31m><div class=[32m"row justify-content-center"[39m[31m><div class=[32m"col-lg-8"[39m[31m><h2>Kelly Adams</h2><p>I[32m'm[39m[31m a professional illustrator from San Francisco</p>[39m[22m
+[1m[31m [90m 1413 | [39m[31m <a routerLink=[32m"/about"[39m[31m class=[32m"btn-get-started"[39m[31m>About Me</a></div></div></div></section></main><footer id=[32m"footer"[39m[31m class=[32m"footer light-background"[39m[31m><div class=[32m"container"[39m[31m><div class=[32m"copyright text-center"[39m[31m><p>© <strong class=[32m"px-1 sitename"[39m[31m>Kelly</strong>All Rights Reserved</p></div><div class=[32m"social-links d-flex justify-content-center"[39m[31m><a href=[32m"#"[39m[31m><i class=[32m"bi bi-twitter-x"[39m[31m></i></a><a href=[32m"#"[39m[31m><i class=[32m"bi bi-facebook"[39m[31m></i></a><a href=[32m"#"[39m[31m><i class=[32m"bi bi-instagram"[39m[31m></i></a><a href=[32m"#"[39m[31m><i class=[32m"bi bi-linkedin"[3[39m[22m[1m[31m9m></i></a></div><div class=[32m"credits"[39m[31m>Designed by <a href=[32m"https://bootstrapmade.com/"[39m[31m>BootstrapMade</a></div></div></footer>1[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m37.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:39:01.124Z[39m[37m[22m - Hash: [1m[37m5e74e69aad834467[39m[37m[22m - Time: [1m[37m965[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m24.77 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:46:47.145Z[39m[37m[22m - Hash: [1m[37mb9e42b979013eed7[39m[37m[22m - Time: [1m[37m958[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m24.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:48:57.793Z[39m[37m[22m - Hash: [1m[37m8c8f9acc19a1ef0c[39m[37m[22m - Time: [1m[37m1037[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m24.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:49:19.779Z[39m[37m[22m - Hash: [1m[37m09fb7e6b6a7646ed[39m[37m[22m - Time: [1m[37m545[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m28.43 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:49:27.713Z[39m[37m[22m - Hash: [1m[37m7492a6f4d69578c6[39m[37m[22m - Time: [1m[37m575[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m24.77 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:49:44.981Z[39m[37m[22m - Hash: [1m[37m57d850dea0271473[39m[37m[22m - Time: [1m[37m540[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m37.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:49:59.370Z[39m[37m[22m - Hash: [1m[37m4788e941737e77c5[39m[37m[22m - Time: [1m[37m522[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m32.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T14:54:28.091Z[39m[37m[22m - Hash: [1m[37mb1eb6fadc42dac78[39m[37m[22m - Time: [1m[37m887[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m[36m32.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-10-13T15:05:41.553Z[39m[37m[22m - Hash: [1m[37m1479c2e02580c729[39m[37m[22m - Time: [1m[37m662[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m8[0m:[93m27[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m8[0m   imports: [RouterModule, HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m [0m [93m                          ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/home/home.component.ts[0m:[93m9[0m:[93m43[0m - [93mwarning[0m[90m NG8113: [0mHeaderComponent is not used within the template of HomeComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m9[0m     imports: [CommonModule, RouterModule, HeaderComponent],[39m[22m
+[1m[33m[7m [0m [93m                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m

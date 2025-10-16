@@ -1,0 +1,182 @@
+/*--------------------------------------------------------------
+# Font & Color Variables
+--------------------------------------------------------------*/
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+
+    /* Global Colors */
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #222222;
+    --accent-color: #34b7a7;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+
+    /* Nav Colors */
+    --nav-color: #444444;
+    --nav-hover-color: #34b7a7;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #444444;
+    --nav-dropdown-hover-color: #34b7a7;
+
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* ✅ evita desplazamiento lateral */
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    background-color: var(--background-color);
+    color: var(--default-color);
+    padding: 15px 0;
+    position: fixed;
+    /* ✅ hace que quede arriba fijo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--heading-color);
+}
+
+/*--------------------------------------------------------------
+# Hero Section (corregido)
+--------------------------------------------------------------*/
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    /* ✅ resta header fijo */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    /* ✅ espacio interno */
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    /* ✅ capa oscura sobre la imagen */
+    z-index: 2;
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 3;
+    color: var(--contrast-color);
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.hero .btn-get-started {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.4s;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.hero .btn-get-started:hover {
+    background: color-mix(in srgb, var(--accent-color) 85%, white 15%);
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Footer (limpio)
+--------------------------------------------------------------*/
+.footer {
+    background: var(--background-color);
+    color: var(--default-color);
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}

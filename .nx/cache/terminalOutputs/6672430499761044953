@@ -1,0 +1,26 @@
+[4m[34mapps/backend/src/users/user.controller.ts:1:42[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module '@andes/core' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m { [33mMongoQuery[39m[33m,[39m [33mResourceBase[39m } from [32m'@andes/core'[39m[33m;[39m[0m
+[0m [90m   | [39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { [33mUser[39m } from [32m'./user.schema'[39m[33m;[39m [90m// [39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39m[36mclass[39m [33mUsersResource[39m [36mextends[39m [33mResourceBase[39m {[0m
+
+[4m[34mapps/backend/src/users/user.controller.ts:2:10[39m[24m - [31m[1merror[22m[39m [90mTS2724[39m: '"./user.schema"' has no exported member named 'User'. Did you mean 'IUser'?
+
+[0m [90m 1 | [39m[36mimport[39m { [33mMongoQuery[39m[33m,[39m [33mResourceBase[39m } from [32m'@andes/core'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m { [33mUser[39m } from [32m'./user.schema'[39m[33m;[39m [90m// [39m[0m
+[0m [90m   | [39m         [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39m[36mclass[39m [33mUsersResource[39m [36mextends[39m [33mResourceBase[39m {[0m
+[0m [90m 5 | [39m  [33mModel[39m [33m=[39m [33mUser[39m[33m;[39m[0m
+
+[4m[34mapps/backend/src/users/user.controller.ts:41:37[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'makeRoutes' does not exist on type 'UsersResource'.
+
+[0m [90m 39 | [39m[36mexport[39m [36mconst[39m [33mUsersCtr[39m [33m=[39m [36mnew[39m [33mUsersResource[39m()[33m;[39m[0m
+[0m [90m 40 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 41 | [39m[36mexport[39m [36mconst[39m [33mUsersRouter[39m [33m=[39m [33mUsersCtr[39m[33m.[39mmakeRoutes()[33m;[39m[0m
+[0m [90m    | [39m                                    [31m[1m^[22m[39m[0m
+[0m [90m 42 | [39m[0m
+
+Found 3 errors.

@@ -19,56 +19,48 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "14508511091007246065"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "16936441711144470533"
-      },
-      {
-        "file": "package.json",
-        "hash": "3621724240651244608"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "17554676857246940898"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "6870352021923392442"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "4067013731070042399"
+        "file": "README.md",
+        "hash": "736736864670633800"
       },
       {
         "file": "package-lock.json",
-        "hash": "14364620805529276336"
+        "hash": "7973927942988880058"
+      },
+      {
+        "file": "package.json",
+        "hash": "1504463023335505867"
       },
       {
         "file": "eslint.config.mjs",
         "hash": "10770449096712831357"
       },
       {
-        "file": "README.md",
-        "hash": "736736864670633800"
+        "file": "nx.json",
+        "hash": "14508511091007246065"
       },
       {
-        "file": ".env",
-        "hash": "14916536556917804475"
+        "file": ".vscode/extensions.json",
+        "hash": "17554676857246940898"
       },
       {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
+        "file": ".prettierignore",
+        "hash": "5407418692668764289"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
       },
       {
         "file": "tmp/backend/main-with-require-overrides.js",
         "hash": "5632968825117400376"
       },
       {
-        "file": ".prettierignore",
-        "hash": "5407418692668764289"
+        "file": ".gitignore",
+        "hash": "4067013731070042399"
+      },
+      {
+        "file": ".env",
+        "hash": "10677983660510315994"
       },
       {
         "file": "eslint.config.js",
@@ -77,9 +69,259 @@
       {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       }
     ],
     "projectFileMap": {
+      "frontend": [
+        {
+          "file": "apps/frontend/eslint.config.cjs",
+          "hash": "6863544995924746399",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/frontend/jest.config.ts",
+          "hash": "14458212970000463922"
+        },
+        {
+          "file": "apps/frontend/project.json",
+          "hash": "2314431848623846208"
+        },
+        {
+          "file": "apps/frontend/public/1fondo.jpg",
+          "hash": "2657183088120438635"
+        },
+        {
+          "file": "apps/frontend/public/assets/img/fondo.jpg",
+          "hash": "2657183088120438635"
+        },
+        {
+          "file": "apps/frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/frontend/public/fondo.jpg",
+          "hash": "11268789831368261628"
+        },
+        {
+          "file": "apps/frontend/src/app/app.component.html",
+          "hash": "16498897523005705592"
+        },
+        {
+          "file": "apps/frontend/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/app.component.ts",
+          "hash": "2437915676969886576",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.config.ts",
+          "hash": "9179942204212291300",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.routes.ts",
+          "hash": "12562937992397108643",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.spec.ts",
+          "hash": "12452868872971256122",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/auth.service.ts",
+          "hash": "4650545581445060177",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:jwt-decode"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/header/header.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/header/header.component.html",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/header/header.component.ts",
+          "hash": "12052765805124241375",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/home/home.component.css",
+          "hash": "4956047619746518043"
+        },
+        {
+          "file": "apps/frontend/src/app/home/home.component.html",
+          "hash": "12305908748339164265"
+        },
+        {
+          "file": "apps/frontend/src/app/home/home.component.ts",
+          "hash": "8118467294348759101",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/layout/layout.component.css",
+          "hash": "15729015180812572082"
+        },
+        {
+          "file": "apps/frontend/src/app/layout/layout.component.html",
+          "hash": "16094518539644805800"
+        },
+        {
+          "file": "apps/frontend/src/app/layout/layout.component.ts",
+          "hash": "6352329673413999942",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/menu/menu.component.css",
+          "hash": "14319128641068965847"
+        },
+        {
+          "file": "apps/frontend/src/app/menu/menu.component.html",
+          "hash": "2702276351943626218"
+        },
+        {
+          "file": "apps/frontend/src/app/menu/menu.component.ts",
+          "hash": "10083195294646586761",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/nx-welcome.ts",
+          "hash": "7357349489891353751",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/auth.serice.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/services/user.services.ts",
+          "hash": "4527188193835887282",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/users/login/login.component.css",
+          "hash": "8649542678395083985"
+        },
+        {
+          "file": "apps/frontend/src/app/users/login/login.component.html",
+          "hash": "16000395286660793604"
+        },
+        {
+          "file": "apps/frontend/src/app/users/login/login.component.ts",
+          "hash": "9405250552517325344",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/users/register/register.component.css",
+          "hash": "7627706482786325077"
+        },
+        {
+          "file": "apps/frontend/src/app/users/register/register.component.html",
+          "hash": "13162859366627482253"
+        },
+        {
+          "file": "apps/frontend/src/app/users/register/register.component.ts",
+          "hash": "3254310726490296425",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/index.html",
+          "hash": "10958459893752702268"
+        },
+        {
+          "file": "apps/frontend/src/main.ts",
+          "hash": "15107112416046276589",
+          "deps": [
+            "npm:@angular/platform-browser",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/frontend/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/frontend/tsconfig.app.json",
+          "hash": "12834270188132019223"
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "6343381516642186316"
+        },
+        {
+          "file": "apps/frontend/tsconfig.spec.json",
+          "hash": "1029128818174064697"
+        }
+      ],
       "frontend-e2e": [
         {
           "file": "apps/frontend-e2e/eslint.config.cjs",
@@ -131,6 +373,26 @@
           "hash": "3244421341483603138"
         },
         {
+          "file": "apps/backend/src/auth/auth.routes.spec.ts",
+          "hash": "7994992334558270509",
+          "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/backend/src/auth/auth.routes.ts",
+          "hash": "805467265078793124",
+          "deps": [
+            "npm:express",
+            "npm:dotenv",
+            "npm:jsonwebtoken",
+            [
+              "npm:bcryptjs",
+              "dynamic"
+            ]
+          ]
+        },
+        {
           "file": "apps/backend/src/config/database.ts",
           "hash": "10839514560754011331",
           "deps": [
@@ -139,7 +401,7 @@
         },
         {
           "file": "apps/backend/src/main.ts",
-          "hash": "7587059624484513646",
+          "hash": "2932134298702281214",
           "deps": [
             "npm:express",
             "npm:cors",
@@ -169,120 +431,57 @@
           ]
         },
         {
+          "file": "apps/backend/src/users/router/usuarios.router.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/backend/src/users/schema/usuarios.schema.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/backend/src/users/user.controller.ts",
+          "hash": "15498479370384743342",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/backend/src/users/user.interface.ts",
+          "hash": "427559797674711197",
+          "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/backend/src/users/user.models.ts",
+          "hash": "12337638964619029120",
+          "deps": [
+            "npm:mongoose",
+            "npm:bcryptjs"
+          ]
+        },
+        {
+          "file": "apps/backend/src/users/user.schema.ts",
+          "hash": "5237726221845606302",
+          "deps": [
+            "npm:mongoose",
+            "npm:bcryptjs"
+          ]
+        },
+        {
           "file": "apps/backend/tsconfig.app.json",
           "hash": "13873300146573233437"
         },
         {
           "file": "apps/backend/tsconfig.json",
-          "hash": "9420862676426701392"
+          "hash": "4777661850070462522"
         },
         {
           "file": "apps/backend/tsconfig.spec.json",
           "hash": "17313551537729802733"
         }
-      ],
-      "frontend": [
-        {
-          "file": "apps/frontend/eslint.config.cjs",
-          "hash": "6863544995924746399",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "apps/frontend/jest.config.ts",
-          "hash": "14458212970000463922"
-        },
-        {
-          "file": "apps/frontend/project.json",
-          "hash": "2314431848623846208"
-        },
-        {
-          "file": "apps/frontend/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/frontend/src/app/app.config.ts",
-          "hash": "4515289115773032281",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/app.html",
-          "hash": "11987652264972370457"
-        },
-        {
-          "file": "apps/frontend/src/app/app.routes.ts",
-          "hash": "6185150965714414910",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/app.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/app/app.spec.ts",
-          "hash": "4413189374395491596",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/app.ts",
-          "hash": "11833690593705296219",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/nx-welcome.ts",
-          "hash": "7357349489891353751",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/index.html",
-          "hash": "10958459893752702268"
-        },
-        {
-          "file": "apps/frontend/src/main.ts",
-          "hash": "3314327030169821486",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/styles.scss",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "apps/frontend/src/test-setup.ts",
-          "hash": "1917999429567095215",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "apps/frontend/tsconfig.app.json",
-          "hash": "12834270188132019223"
-        },
-        {
-          "file": "apps/frontend/tsconfig.json",
-          "hash": "6343381516642186316"
-        },
-        {
-          "file": "apps/frontend/tsconfig.spec.json",
-          "hash": "1029128818174064697"
-        }
       ]
     }
   },
-  "externalNodesHash": "4329912551087826547"
+  "externalNodesHash": "1800754961118044205"
 }

@@ -1,0 +1,29 @@
+<!-- login.component.html -->
+<!-- <app-home></app-home> solo el header, no todo Home -->
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+
+            <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+                <div class="mb-3">
+                    <label for="dni" class="form-label">DNI:</label>
+                    <input id="dni" name="dni" [(ngModel)]="dni" required class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="password" required
+                           class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+
+                <div *ngIf="errorMessage" class="text-danger mt-2 text-center">
+                    {{ errorMessage }}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
