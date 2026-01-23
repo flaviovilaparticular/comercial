@@ -1,0 +1,123 @@
+<app-header></app-header>
+
+<div class="contenedor-principal">
+    <div class="container-fluid mt-4 px-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="card shadow rounded-3">
+                    <div class="card-body">
+
+                        <div class="text-center mb-4">
+                            <h2 class="titulo-seccion">Parámetros / Centros de Costos</h2>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="d-flex justify-content-end mb-3">
+                            <button class="btn btn-outline-secondary me-2" (click)="volver()" title="Volver">
+                                <i class="fas fa-door-open"></i>
+                            </button>
+                            <button class="btn btn-success" (click)="abrirModal()" title="Nuevo Centro de Costos">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+
+                        <!-- Tabla -->
+                        <div class="table-responsive">
+                            <table class="table table-striped align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Dirección</th>
+                                        <th>Teléfono</th>
+                                        <th>Email</th>
+                                        <th>Gerente</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let c of centros">
+                                        <td>{{ c.nombre }}</td>
+                                        <td>{{ c.direccion }}</td>
+                                        <td>{{ c.telefono }}</td>
+                                        <td>{{ c.email }}</td>
+                                        <td>{{ c.gerenteGeneral }}</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-primary btn-sm me-2" (click)="abrirModal(c)"
+                                                    title="Editar">
+                                                <i class="fas fa-pen"></i>
+                                            </button>
+                                            <button class="btn btn-success btn-sm"
+                                                    [routerLink]="['/centrocostos', c._id]"
+                                                    [queryParams]="{ nombre: c.nombre }">
+                                                <i class="fas fa-code-branch"></i>
+                                            </button>
+
+
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div *ngIf="mostrarModal" class="modal-overlay">
+        <div class="modal-custom animate__animated animate__fadeInDown">
+
+            <div class="modal-header">
+                <h5 class="modal-title">{{ esEdicion ? 'Editar Centro' : 'Nuevo Centro' }}</h5>
+                <button type="button" class="btn-close" (click)="cerrarModal()"></button>
+            </div>
+
+            <div class="modal-body">
+                <form (ngSubmit)="guardarCentro()" #formCentro="ngForm">
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control"
+                               [(ngModel)]="nuevoCentro.nombre" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" id="direccion" name="direccion" class="form-control"
+                               [(ngModel)]="nuevoCentro.direccion" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" class="form-control"
+                               [(ngModel)]="nuevoCentro.telefono" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control"
+                               [(ngModel)]="nuevoCentro.email" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="gerenteGeneral" class="form-label">Gerente General</label>
+                        <input type="text" id="gerenteGeneral" name="gerenteGeneral" class="form-control"
+                               [(ngModel)]="nuevoCentro.gerenteGeneral" />
+                    </div>
+
+                    <div class="modal-footer d-flex justify-content-end">
+                        <button class="btn btn-primary" type="submit" [disabled]="formCentro.invalid">
+                            {{ esEdicion ? 'Actualizar' : 'Guardar' }}
+                        </button>
+                        <button class="btn btn-secondary ms-2" type="button" (click)="cerrarModal()">Cancelar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

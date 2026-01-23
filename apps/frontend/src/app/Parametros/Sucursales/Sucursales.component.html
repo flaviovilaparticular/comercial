@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<div class="contenedor-principal">
+    <div class="container-fluid mt-4 px-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="card shadow rounded-3">
+                    <div class="card-body">
+
+                        <!-- Título -->
+                        <div class="text-center mb-4">
+                            <h2 class="titulo-seccion">Sucursales</h2>
+                            <div class="text-muted">
+                                Centro de Costos: <strong>{{ nombreCentro }}</strong>
+                            </div>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="d-flex justify-content-end mb-3">
+                            <button class="btn btn-outline-secondary me-2" (click)="volver()">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+
+                            <button class="btn btn-success">
+                                <i class="fas fa-plus"></i> Nueva Sucursal
+                            </button>
+                        </div>
+
+                        <!-- Placeholder -->
+                        <div class="alert alert-info text-center">
+                            Próximo paso: listado y ABM de sucursales
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+<app-header></app-header>
+<div class="contenedor-principal">
+
+
+    <div class="container-fluid mt-4 px-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Título -->
+                        <div class="text-center mb-4">
+                            <h2 class="m-0">Parametros/Usuarios</h2>
+                        </div>
+
+                        <!-- Botón nueva -->
+                        <div class="d-flex justify-content-end mb-3">
+
+                            <button class="btn btn-secondary" (click)="volver()">
+                                <i class="fas fa-arrow-left me-2"></i> VOLVER
+                            </button>
+
+
+                            <button class="btn btn-success" (click)="abrirModal()">
+                                <i class="fas fa-plus me-2"></i> NUEVO
+                            </button>
+                        </div>
+
+                        <!-- Tabla -->
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>DNI</th>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                    <th>Rol</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let u of usuarios">
+                                    <td>{{ u.dni }}</td>
+                                    <td>{{ u.nombre }}</td>
+                                    <td>{{ u.email }}</td>
+                                    <td>{{ u.rol }}</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm me-2" (click)="abrirModal(u)">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-sm" (click)="eliminarUsuario(u._id)">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Modal personalizado -->
+                <div *ngIf="mostrarModal" class="modal-overlay">
+                    <div class="modal-custom">
+                        <div class="modal-header d-flex justify-content-between align-items-center">
+                            <h5 class="modal-title">{{ esEdicion ? 'Editar Usuario' : 'Nuevo Usuario' }}</h5>
+                            <button type="button" class="btn-close" (click)="cerrarModal()"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form (ngSubmit)="guardarUsuario()" #formUsuario="ngForm">
+                                <div class="mb-3">
+                                    <label for="dni" class="form-label">DNI</label>
+                                    <input type="text" id="dni" name="dni" class="form-control"
+                                           [(ngModel)]="nuevoUsuario.dni" required>
+                                </div>
+
+                                <div class="mb-3" *ngIf="!esEdicion">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" id="password" name="password" class="form-control"
+                                           [(ngModel)]="nuevoUsuario.password" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control"
+                                           [(ngModel)]="nuevoUsuario.nombre" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                           [(ngModel)]="nuevoUsuario.email">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="rol" class="form-label">Rol</label>
+                                    <input type="text" id="rol" name="rol" class="form-control"
+                                           [(ngModel)]="nuevoUsuario.rol">
+                                </div>
+
+                                <div class="modal-footer d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary" [disabled]="formUsuario.invalid">
+                                        {{ esEdicion ? 'Actualizar' : 'Guardar' }}
+                                    </button>
+                                    <button type="button" class="btn btn-secondary ms-2"
+                                            (click)="cerrarModal()">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+        </div>
+    </div>
+</div>

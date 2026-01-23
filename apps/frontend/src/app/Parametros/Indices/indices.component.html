@@ -1,0 +1,131 @@
+<app-header></app-header>
+
+<div class="contenedor-principal">
+    <div class="container-fluid mt-4 px-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="card shadow rounded-3">
+                    <div class="card-body">
+
+                        <!-- 🔹 Título -->
+                        <div class="text-center mb-4">
+                            <h2 class="titulo-seccion">Parámetros / Índices</h2>
+                        </div>
+
+                        <!-- 🔹 Botones -->
+                        <div class="d-flex justify-content-end mb-3">
+                            <button class="btn btn-outline-secondary me-2" (click)="volver()" title="Volver">
+                                <i class="fas fa-door-open"></i>
+                            </button>
+
+                            <button class="btn btn-success" (click)="abrirModal()" title="Nuevo Índice">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+
+                        <!-- 🔹 Tabla -->
+                        <div class="table-responsive">
+                            <table class="table table-striped align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Tipo</th>
+                                        <th>Valor</th>
+                                        <th>Fecha Vigencia</th>
+                                        <th class="text-center">Activo</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr *ngFor="let i of indices">
+                                        <td>{{ i.tipo }}</td>
+                                        <td>{{ i.valor }}</td>
+                                        <td>{{ i.fechaVigencia | date:'dd/MM/yyyy' }}</td>
+                                        <td class="text-center">
+                                            <span class="badge bg-success" *ngIf="i.activo">Sí</span>
+                                            <span class="badge bg-secondary" *ngIf="!i.activo">No</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr *ngIf="indices.length === 0">
+                                        <td colspan="4" class="text-center text-muted">
+                                            No hay índices cargados
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 Modal -->
+
+    <div *ngIf="mostrarModal" class="modal-overlay">
+        <div class="modal-custom animate__animated animate__fadeInDown">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Nuevo Índice</h5>
+                <button type="button" class="btn-close" (click)="cerrarModal()"></button>
+            </div>
+
+            <div class="modal-body">
+                <form (ngSubmit)="guardarIndice()" #formIndice="ngForm">
+
+                    <!-- Tipo -->
+                    <div class="mb-3">
+                        <label class="form-label">Tipo</label>
+                        <select class="form-select" name="tipo" [(ngModel)]="indiceForm.tipo" required>
+                            <option value="" disabled selected>Seleccione un tipo</option>
+                            <option value="DOLAR">Dólar</option>
+                        </select>
+                    </div>
+
+                    <!-- Nombre (OBLIGATORIO BACKEND) -->
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" [(ngModel)]="indiceForm.nombre"
+                               placeholder="Ej: Dólar Oficial" required />
+                    </div>
+
+                    <!-- Valor -->
+                    <div class="mb-3">
+                        <label class="form-label">Valor</label>
+                        <input type="number" class="form-control" name="valor" [(ngModel)]="indiceForm.valor"
+                               required />
+                    </div>
+
+                    <!-- Unidad (OBLIGATORIO BACKEND) -->
+                    <div class="mb-3">
+                        <label class="form-label">Unidad</label>
+                        <input type="text" class="form-control" name="unidad" [(ngModel)]="indiceForm.unidad"
+                               placeholder="ARS / %" required />
+                    </div>
+
+                    <!-- Fecha Vigencia -->
+                    <div class="mb-3">
+                        <label class="form-label">Fecha Vigencia</label>
+                        <input type="date" class="form-control" name="fechaVigencia"
+                               [(ngModel)]="indiceForm.fechaVigencia" required />
+                    </div>
+
+                    <div class="modal-footer d-flex justify-content-end">
+                        <button class="btn btn-primary" type="submit" [disabled]="formIndice.invalid">
+                            Guardar
+                        </button>
+
+                        <button class="btn btn-secondary ms-2" type="button" (click)="cerrarModal()">
+                            Cancelar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+[4m[34mapps/backend/src/main.ts:50:36[39m[24m - [31m[1merror[22m[39m [90mTS2304[39m: Cannot find name 'IndicesRouter'.
+
+[0m [90m 48 | [39mapp[33m.[39muse([32m'/api/parametros/Provincias'[39m[33m,[39m [33mProvinciasRouter[39m)[33m;[39m[0m
+[0m [90m 49 | [39mapp[33m.[39muse([32m'/api/parametros/Paises'[39m[33m,[39m [33mProvinciasRouter[39m)[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 50 | [39mapp[33m.[39muse([32m'/api/parametros/indices'[39m[33m,[39m [33mIndicesRouter[39m)[33m;[39m[0m
+[0m [90m    | [39m                                   [31m[1m^[22m[39m[0m
+[0m [90m 51 | [39m[0m
+[0m [90m 52 | [39m[0m
+[0m [90m 53 | [39m[90m// 🔹 Levantar servidor[39m[0m
+
+Found 1 error.

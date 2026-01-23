@@ -1,26 +1,31 @@
-<!-- login.component.html -->
-<!-- <app-home></app-home> solo el header, no todo Home -->
+<div class="login-wrapper d-flex align-items-center justify-content-center">
+    <div class="card login-container">
+        <div class="card-body">
+            <h3 class="text-center mb-4">Iniciar Sesión</h3>
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <h2 class="text-center mb-4">Iniciar Sesión</h2>
-
-            <form (ngSubmit)="onLogin()" #loginForm="ngForm">
-                <div class="mb-3">
+            <form (ngSubmit)="onLogin()" #loginForm="ngForm" autocomplete="off">
+                <!-- Campo DNI -->
+                <div class="form-group mb-4">
                     <label for="dni" class="form-label">DNI:</label>
-                    <input id="dni" name="dni" [(ngModel)]="dni" required class="form-control">
+                    <input id="dni" name="dni" [(ngModel)]="dni" required class="form-control"
+                           placeholder="Ingrese su DNI" autocomplete="off" (focus)="dni=''" />
                 </div>
 
-                <div class="mb-3">
+                <!-- Campo Contraseña -->
+                <div class="form-group mb-4">
                     <label for="password" class="form-label">Contraseña:</label>
                     <input type="password" id="password" name="password" [(ngModel)]="password" required
-                           class="form-control">
+                           class="form-control" placeholder="Ingrese su contraseña" autocomplete="new-password"
+                           (focus)="password=''" />
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                <!-- Botón -->
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
 
-                <div *ngIf="errorMessage" class="text-danger mt-2 text-center">
+                <!-- Mensaje de error -->
+                <div *ngIf="errorMessage" class="text-danger mt-3 text-center">
                     {{ errorMessage }}
                 </div>
             </form>

@@ -4,11 +4,12 @@
     --nav-font: "Poppins", sans-serif;
 
     --background-color: #f2f2f2;
-    /* 🎨 gris claro elegante */
+    /* Gris claro elegante */
     --default-color: #444444;
     --heading-color: #222222;
     --accent-color: #34b7a7;
     --surface-color: #ffffff;
+    /* Blanco para cards o login */
     --contrast-color: #ffffff;
 
     --nav-color: #ffffff;
@@ -24,13 +25,14 @@
 /*--------------------------------------------------------------
 # General Styling
 --------------------------------------------------------------*/
+html,
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: var(--default-font);
     color: var(--default-color);
     background-color: var(--background-color);
-    /* 🔹 Fondo gris */
 }
 
 a {
@@ -54,15 +56,36 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Layout principal
+--------------------------------------------------------------*/
+.main {
+    background-color: var(--background-color);
+    min-height: 100vh;
+    padding-top: 82px;
+    /* espacio para header sticky */
+}
+
+.content-wrapper {
+    background-color: var(--background-color);
+    min-height: calc(100vh - 82px);
+    padding: 20px;
+}
+
+.login-wrapper {
+    background-color: var(--surface-color);
+    /* blanco solo para login */
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .header {
     color: var(--default-color);
     padding: 15px 0;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1000;
     background: rgba(242, 242, 242, 0.9);
-    /* 🔹 gris translúcido sobre el hero */
     backdrop-filter: blur(6px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -85,7 +108,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Navmenu centrado y elegante
+# Navmenu centrado
 --------------------------------------------------------------*/
 .navmenu {
     display: flex;
@@ -155,7 +178,6 @@ h6 {
     backdrop-filter: blur(4px);
 }
 
-/* Flechas para dropdown */
 .navmenu .dropdown>a i {
     margin-left: 6px;
     font-size: 12px;
@@ -217,7 +239,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section Mejorada
+# Hero Section
 --------------------------------------------------------------*/
 .hero {
     width: 100%;
@@ -229,7 +251,6 @@ h6 {
     overflow: hidden;
 }
 
-/* Imagen de fondo */
 .hero img {
     position: absolute;
     inset: 0;
@@ -239,17 +260,14 @@ h6 {
     z-index: 1;
 }
 
-/* Overlay semitransparente */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.35);
-    /* oscurece un poco la imagen */
     z-index: 2;
 }
 
-/* Contenedor del contenido */
 .hero .container {
     position: relative;
     z-index: 3;
@@ -258,24 +276,19 @@ h6 {
     padding: 0 20px;
 }
 
-/* Título */
 .hero h2 {
     margin: 0;
     font-size: 42px;
-    /* un poco más pequeño que antes */
     font-weight: 700;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* Subtítulo / descripción */
 .hero p {
     font-size: 20px;
-    /* más compacto */
     margin-top: 10px;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Botón */
 .hero .btn-get-started {
     margin-top: 20px;
     font-size: 13px;
@@ -293,7 +306,6 @@ h6 {
     background-color: rgba(52, 183, 167, 0.8);
 }
 
-/* Ajuste responsive */
 @media (max-width: 768px) {
     .hero h2 {
         font-size: 32px;
@@ -309,14 +321,8 @@ h6 {
     }
 }
 
-/* Ajuste del margen superior del logo */
-#header .logo img {
-    margin-top: 0;
-    /* Elimina cualquier margen superior */
-}
-
 /*--------------------------------------------------------------
-# Buttons
+# Botones principales
 --------------------------------------------------------------*/
 .btn-get-started {
     color: var(--contrast-color);
@@ -335,4 +341,15 @@ h6 {
 
 .btn-get-started:hover {
     background-color: rgba(52, 183, 167, 0.85);
+}
+
+/*--------------------------------------------------------------
+# Cards y modales
+--------------------------------------------------------------*/
+.card,
+.modal-custom {
+    background-color: var(--surface-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
 }

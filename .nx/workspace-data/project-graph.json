@@ -240,7 +240,13 @@
                 }
               ],
               "styles": [
+                "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+                "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
                 "apps/frontend/src/styles.scss"
+              ],
+              "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
               ]
             },
             "configurations": {
@@ -4244,6 +4250,15 @@
         "version": "0.3.5",
         "packageName": "@eslint/plugin-kit",
         "hash": "sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w=="
+      }
+    },
+    "npm:@fortawesome/fontawesome-free": {
+      "type": "npm",
+      "name": "npm:@fortawesome/fontawesome-free",
+      "data": {
+        "version": "7.1.0",
+        "packageName": "@fortawesome/fontawesome-free",
+        "hash": "sha512-+WxNld5ZCJHvPQCr/GnzCTVREyStrAJjisUPtUxG5ngDA8TMlPnKp6dddlTpai4+1GNmltAeuk1hJEkBohwZYA=="
       }
     },
     "npm:@humanfs/core": {
@@ -10294,6 +10309,24 @@
         "hash": "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
       }
     },
+    "npm:bootstrap": {
+      "type": "npm",
+      "name": "npm:bootstrap",
+      "data": {
+        "version": "5.3.8",
+        "packageName": "bootstrap",
+        "hash": "sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg=="
+      }
+    },
+    "npm:bootstrap-icons": {
+      "type": "npm",
+      "name": "npm:bootstrap-icons",
+      "data": {
+        "version": "1.13.1",
+        "packageName": "bootstrap-icons",
+        "hash": "sha512-ijombt4v6bv5CLeXvRWKy7CuM3TRTuPEuGaGKvTV5cz65rQSY8RQ2JcHt6b90cBBAC7s8fsf2EkQDldzCoXUjw=="
+      }
+    },
     "npm:braces": {
       "type": "npm",
       "name": "npm:braces",
@@ -15793,6 +15826,15 @@
         "hash": "sha512-OoohrmuUlBs8B8o6MB2Aevn+pRIH9zDALSR+6hhqVfa6fRwG/Qw9VUMSMW9VNg2CFc/MTIfabtdOVl9ODIJjpw=="
       }
     },
+    "npm:sweetalert2": {
+      "type": "npm",
+      "name": "npm:sweetalert2",
+      "data": {
+        "version": "11.26.2",
+        "packageName": "sweetalert2",
+        "hash": "sha512-tR5oADjrN6gv+0Y/tpfMXM/rSlx/QHmRhygBHhWh29iw1AO/x7D8OhghyogaY+NLZrd4qfhssVafRBHi+DREzQ=="
+      }
+    },
     "npm:symbol-tree": {
       "type": "npm",
       "name": "npm:symbol-tree",
@@ -16609,17 +16651,22 @@
       },
       {
         "source": "frontend",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "frontend",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
         "source": "frontend",
         "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
+        "target": "npm:sweetalert2",
         "type": "static"
       },
       {
@@ -16666,22 +16713,17 @@
       },
       {
         "source": "backend",
-        "target": "npm:bcryptjs",
-        "type": "dynamic"
-      },
-      {
-        "source": "backend",
-        "target": "npm:bcryptjs",
-        "type": "static"
-      },
-      {
-        "source": "backend",
         "target": "npm:cors",
         "type": "static"
       },
       {
         "source": "backend",
         "target": "npm:body-parser",
+        "type": "static"
+      },
+      {
+        "source": "backend",
+        "target": "npm:bcryptjs",
         "type": "static"
       }
     ],
@@ -41062,5 +41104,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1760623930699
+  "computedAt": 1769205176604
 }

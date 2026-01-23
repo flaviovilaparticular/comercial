@@ -2,32 +2,15 @@ import { Schema, model } from 'mongoose';
 import * as bcrypt from 'bcryptjs';
 import { IUser } from './user.interface';
 
+// 🧱 Definición del esquema de Usuario (simplificado)
 const UserSchema = new Schema<IUser>({
     dni: { type: String, required: true, unique: true, trim: true },
     password: { type: String, required: true },
-
-    // 🔹 Opcionales
-    legajo: { type: String, unique: true, sparse: true, default: null },
     nombre: { type: String, required: true, trim: true },
-    apellido: { type: String, trim: true, default: null },
-    rol: { type: String, required: true, trim: true },
-
-    // 🔹 Email obligatorio
     email: { type: String, required: true, unique: true, lowercase: true, trim: true },
-
-    telefono: { type: String, default: null },
-    permisos: [{ type: String, default: [] }],
-
-    // 🔹 Referencias opcionales
-    idefector: { type: Schema.Types.ObjectId, ref: 'Efector', required: false, default: null },
-    idservicio: { type: Schema.Types.ObjectId, ref: 'Servicio', required: false, default: null },
-
-    active: { type: Boolean, default: true },
-    validationToken: { type: String, default: null },
-
-    disclaimers: [{
-        createdAt: { type: Date, default: Date.now }
-    }]
+    rol: { type: String, required: true, trim: true }
+}, {
+    timestamps: true // 🔹 opcional: agrega createdAt y updatedAt
 });
 
 // 🔒 Hashear la contraseña antes de guardar

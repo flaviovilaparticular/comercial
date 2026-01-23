@@ -1,0 +1,29 @@
+[4m[34mapps/backend/src/parametros/Localidades/Localidades.schema.ts:38:71[39m[24m - [31m[1merror[22m[39m [90mTS2304[39m: Cannot find name 'Locali'.
+
+[0m [90m 36 | [39m[0m
+[0m [90m 37 | [39m[90m// ✅ Export con nombre[39m[0m
+[0m[31m[1m>[22m[39m[90m 38 | [39m[36mexport[39m [36mconst[39m [33mLocalidadModel[39m [33m=[39m mongoose[33m.[39mmodel[33m<[39m[33mILocalidad[39m[33m>[39m([32m'Localidad'[39m[33m,[39m [33mLocali[39m    dadSchema[33m,[39m [32m'Localidades'[39m)[33m;[39m[0m
+[0m [90m    | [39m                                                                      [31m[1m^[22m[39m[0m
+
+[4m[34mapps/backend/src/parametros/Localidades/Localidades.schema.ts:38:81[39m[24m - [31m[1merror[22m[39m [90mTS1005[39m: ',' expected.
+
+[0m [90m 36 | [39m[0m
+[0m [90m 37 | [39m[90m// ✅ Export con nombre[39m[0m
+[0m[31m[1m>[22m[39m[90m 38 | [39m[36mexport[39m [36mconst[39m [33mLocalidadModel[39m [33m=[39m mongoose[33m.[39mmodel[33m<[39m[33mILocalidad[39m[33m>[39m([32m'Localidad'[39m[33m,[39m [33mLocali[39m    dadSchema[33m,[39m [32m'Localidades'[39m)[33m;[39m[0m
+[0m [90m    | [39m                                                                                [31m[1m^[22m[39m[0m
+
+[4m[34mapps/backend/src/parametros/Localidades/Localidades.schema.ts:38:81[39m[24m - [31m[1merror[22m[39m [90mTS2552[39m: Cannot find name 'dadSchema'. Did you mean 'Schema'?
+
+[0m [90m 36 | [39m[0m
+[0m [90m 37 | [39m[90m// ✅ Export con nombre[39m[0m
+[0m[31m[1m>[22m[39m[90m 38 | [39m[36mexport[39m [36mconst[39m [33mLocalidadModel[39m [33m=[39m mongoose[33m.[39mmodel[33m<[39m[33mILocalidad[39m[33m>[39m([32m'Localidad'[39m[33m,[39m [33mLocali[39m    dadSchema[33m,[39m [32m'Localidades'[39m)[33m;[39m[0m
+[0m [90m    | [39m                                                                                [31m[1m^[22m[39m[0m
+
+[4m[34mapps/backend/src/parametros/Localidades/Localidades.schema.ts:38:92[39m[24m - [31m[1merror[22m[39m [90mTS2559[39m: Type '"Localidades"' has no properties in common with type 'CompileModelOptions'.
+
+[0m [90m 36 | [39m[0m
+[0m [90m 37 | [39m[90m// ✅ Export con nombre[39m[0m
+[0m[31m[1m>[22m[39m[90m 38 | [39m[36mexport[39m [36mconst[39m [33mLocalidadModel[39m [33m=[39m mongoose[33m.[39mmodel[33m<[39m[33mILocalidad[39m[33m>[39m([32m'Localidad'[39m[33m,[39m [33mLocali[39m    dadSchema[33m,[39m [32m'Localidades'[39m)[33m;[39m[0m
+[0m [90m    | [39m                                                                                           [31m[1m^[22m[39m[0m
+
+Found 4 errors.

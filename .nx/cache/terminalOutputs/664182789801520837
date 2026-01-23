@@ -1,0 +1,21 @@
+[4m[34mapps/backend/src/parametros/CentroCostos/CentroCostos.router.ts:127:44[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'id' does not exist on type 'ISucursal[]'.
+
+[0m [90m 125 | [39m        [36mif[39m ([33m![39mcentro) [36mreturn[39m res[33m.[39mstatus([35m404[39m)[33m.[39mjson({ error[33m:[39m [32m'Centro de costos no encontrado'[39m })[33m;[39m[0m
+[0m [90m 126 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 127 | [39m        [36mconst[39m sucursal [33m=[39m centro[33m.[39msucursales[33m.[39mid(req[33m.[39mparams[33m.[39msucursalId)[33m;[39m[0m
+[0m [90m     | [39m                                           [31m[1m^[22m[39m[0m
+[0m [90m 128 | [39m        [36mif[39m ([33m![39msucursal) [36mreturn[39m res[33m.[39mstatus([35m404[39m)[33m.[39mjson({ error[33m:[39m [32m'Sucursal no encontrada'[39m })[33m;[39m[0m
+[0m [90m 129 | [39m[0m
+[0m [90m 130 | [39m        [33mObject[39m[33m.[39massign(sucursal[33m,[39m req[33m.[39mbody)[33m;[39m[0m
+
+[4m[34mapps/backend/src/parametros/CentroCostos/CentroCostos.router.ts:147:44[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'id' does not exist on type 'ISucursal[]'.
+
+[0m [90m 145 | [39m        [36mif[39m ([33m![39mcentro) [36mreturn[39m res[33m.[39mstatus([35m404[39m)[33m.[39mjson({ error[33m:[39m [32m'Centro de costos no encontrado'[39m })[33m;[39m[0m
+[0m [90m 146 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 147 | [39m        [36mconst[39m sucursal [33m=[39m centro[33m.[39msucursales[33m.[39mid(req[33m.[39mparams[33m.[39msucursalId)[33m;[39m[0m
+[0m [90m     | [39m                                           [31m[1m^[22m[39m[0m
+[0m [90m 148 | [39m        [36mif[39m ([33m![39msucursal) [36mreturn[39m res[33m.[39mstatus([35m404[39m)[33m.[39mjson({ error[33m:[39m [32m'Sucursal no encontrada'[39m })[33m;[39m[0m
+[0m [90m 149 | [39m[0m
+[0m [90m 150 | [39m        sucursal[33m.[39mremove()[33m;[39m[0m
+
+Found 2 errors.

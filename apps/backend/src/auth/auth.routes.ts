@@ -1,8 +1,9 @@
 import * as express from 'express';
 import { Request, Response } from 'express';
 import dotenv from 'dotenv';
-const jwt = require('jsonwebtoken');
 import { User } from '../users/user.schema';
+import jwt from 'jsonwebtoken';
+
 
 dotenv.config();
 
@@ -14,7 +15,7 @@ const router = express.Router();
 router.post('/login', async (req: Request, res: Response) => {
     const { dni, password } = req.body;
 
-    console.log('🔹 Solicitud de login recibida con body:', req.body);
+    console.log('🔹 Login recibido:', req.body);
 
     try {
         const user = await User.findOne({ dni });
@@ -26,18 +27,23 @@ router.post('/login', async (req: Request, res: Response) => {
         const payload = {
             id: user._id,
             dni: user.dni,
-            legajo: user.legajo,
             nombre: user.nombre,
-            rol: user.rol,
-            idefector: user.idefector,
-            idservicio: user.idservicio,
+            email: user.email,
+            rol: user.rol
         };
 
-        const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const JWT_SECRET = process.env.JWT_SECRET;
+        if (!JWT_SECRET) {
+            console.error('❌ Faltó definir JWT_SECRET en el archivo .env');
+            return res.status(500).json({ message: 'Error interno: JWT_SECRET no configurado' });
+        }
+
+        const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
+
 
         res.json({ message: 'Login exitoso', token, user: payload });
 
-    } catch (error) {
+    } catch (error: any) {
         console.error('❌ Error en /login:', error);
         res.status(500).json({ message: 'Error en el servidor', error: error.message });
     }
@@ -48,35 +54,28 @@ router.post('/login', async (req: Request, res: Response) => {
  */
 router.post('/register', async (req: Request, res: Response) => {
     try {
-        // 🔹 Limpia los campos vacíos ("") para evitar errores de tipo en Mongoose
+        // 🔹 Limpia los campos vacíos ("")
         Object.keys(req.body).forEach(key => {
             if (req.body[key] === '') req.body[key] = null;
         });
 
-        // 🔹 Extrae los datos ya limpios
-        const { dni, password, legajo, nombre, rol, idefector, idservicio, email } = req.body;
+        const { dni, password, nombre, email, rol } = req.body;
 
-        // 🔹 Verifica duplicados por DNI o email
-        const existingUser = await User.findOne({ $or: [{ dni }, { email }] });
-        if (existingUser) {
-            return res.status(400).json({ message: 'El usuario ya existe (DNI o email duplicado)' });
+        // 🔹 Validaciones básicas
+        if (!dni || !password || !nombre || !email || !rol) {
+            return res.status(400).json({ message: 'Todos los campos son obligatorios' });
         }
 
-        // 🔹 Crea y guarda el nuevo usuario
-        const newUser = new User({
-            dni,
-            password,
-            legajo,
-            nombre,
-            rol,
-            idefector,
-            idservicio,
-            email
-        });
+        // 🔹 Verifica duplicados
+        const existingUser = await User.findOne({ $or: [{ dni }, { email }] });
+        if (existingUser) {
+            return res.status(400).json({ message: 'El usuario ya existe (DNI o Email duplicado)' });
+        }
 
+        // 🔹 Crea el nuevo usuario
+        const newUser = new User({ dni, password, nombre, email, rol });
         await newUser.save();
 
-        // 🔹 Respuesta limpia
         res.status(201).json({
             message: '✅ Usuario creado correctamente',
             user: {
@@ -88,59 +87,21 @@ router.post('/register', async (req: Request, res: Response) => {
             }
         });
 
-    } catch (error) {
+    } catch (error: any) {
         console.error('❌ Error en /register:', error);
-        res.status(500).json({ message: 'Error en el servidor', error: (error as any).message });
+        res.status(500).json({ message: 'Error en el servidor', error: error.message });
     }
 });
 
-
 /**
- * 📋 LISTAR TODOS LOS USUARIOS (sin contraseña)
+ * 📋 LISTAR TODOS LOS USUARIOS
  */
-router.get('/users', async (req: Request, res: Response) => {
+router.get('/users', async (_req: Request, res: Response) => {
     try {
         const users = await User.find({}, '-password');
         res.json(users);
-    } catch (error) {
+    } catch (error: any) {
         console.error('❌ Error en /users:', error);
-        res.status(500).json({ message: 'Error en el servidor', error: error.message });
-    }
-});
-
-/**
- * 🆕 CREAR USUARIO (para admin)
- */
-router.post('/users', async (req: Request, res: Response) => {
-    const { dni, password, legajo, nombre, rol, idefector, idservicio, email } = req.body;
-
-    try {
-        const existingUser = await User.findOne({ $or: [{ dni }, { email }] });
-        if (existingUser) return res.status(400).json({ message: 'Usuario ya existe' });
-
-        const newUser = new User({ dni, password, legajo, nombre, rol, idefector, idservicio, email });
-        await newUser.save();
-
-        res.status(201).json({
-            message: 'Usuario creado correctamente',
-            user: { id: newUser._id, dni: newUser.dni, nombre: newUser.nombre, email: newUser.email, rol: newUser.rol }
-        });
-    } catch (error) {
-        console.error('❌ Error en POST /users:', error);
-        res.status(500).json({ message: 'Error en el servidor', error: error.message });
-    }
-});
-
-/**
- * 🔍 OBTENER USUARIO POR ID
- */
-router.get('/users/:id', async (req: Request, res: Response) => {
-    try {
-        const user = await User.findById(req.params.id, '-password');
-        if (!user) return res.status(404).json({ message: 'Usuario no encontrado' });
-        res.json(user);
-    } catch (error) {
-        console.error('❌ Error en GET /users/:id:', error);
         res.status(500).json({ message: 'Error en el servidor', error: error.message });
     }
 });
@@ -148,24 +109,14 @@ router.get('/users/:id', async (req: Request, res: Response) => {
 /**
  * ✏️ ACTUALIZAR USUARIO
  */
-/**
- * ✏️ ACTUALIZAR USUARIO (seguro y compatible con edición sin contraseña)
- */
 router.put('/users/:id', async (req: Request, res: Response) => {
     try {
         const { id } = req.params;
         const updateData = { ...req.body };
 
-        // Si no se envía password, eliminarlo del update
+        // Si no envía password, no la actualiza
         if (!updateData.password || updateData.password.trim() === '') {
             delete updateData.password;
-        }
-
-        // Si se envía password nueva, encriptarla
-        if (updateData.password) {
-            const bcrypt = require('bcryptjs');
-            const salt = await bcrypt.genSalt(10);
-            updateData.password = await bcrypt.hash(updateData.password, salt);
         }
 
         const updatedUser = await User.findByIdAndUpdate(id, updateData, {
@@ -178,22 +129,21 @@ router.put('/users/:id', async (req: Request, res: Response) => {
         }
 
         res.json({ message: 'Usuario actualizado correctamente', user: updatedUser });
-    } catch (error) {
+    } catch (error: any) {
         console.error('❌ Error en PUT /users/:id:', error);
         res.status(500).json({ message: 'Error en el servidor', error: error.message });
     }
 });
 
-
 /**
- * ELIMINAR USUARIO
+ * 🗑️ ELIMINAR USUARIO
  */
 router.delete('/users/:id', async (req: Request, res: Response) => {
     try {
         const deletedUser = await User.findByIdAndDelete(req.params.id);
         if (!deletedUser) return res.status(404).json({ message: 'Usuario no encontrado' });
         res.json({ message: 'Usuario eliminado', user: deletedUser });
-    } catch (error) {
+    } catch (error: any) {
         console.error('❌ Error en DELETE /users/:id:', error);
         res.status(500).json({ message: 'Error en el servidor', error: error.message });
     }

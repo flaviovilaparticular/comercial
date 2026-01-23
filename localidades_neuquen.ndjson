@@ -1,0 +1,1550 @@
+{
+  "categoria": "Componente de localidad compuesta",
+  "centroide": {
+    "lat": -38.937911284,
+    "lon": -69.229365812
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580049",
+    "nombre": "Cutral Co"
+  },
+  "id": "58035040",
+  "localidad_censal": {
+    "id": "58035040",
+    "nombre": "Cutral Co"
+  },
+  "nombre": "Cutral Có",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Componente de localidad compuesta",
+  "centroide": {
+    "lat": -38.951828821,
+    "lon": -68.059181307
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580056",
+    "nombre": "Neuquén"
+  },
+  "id": "58035070",
+  "localidad_censal": {
+    "id": "58035070",
+    "nombre": "Neuquén"
+  },
+  "nombre": "Neuquén",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Componente de localidad compuesta",
+  "centroide": {
+    "lat": -38.952354872,
+    "lon": -68.227147389
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580070",
+    "nombre": "Plottier"
+  },
+  "id": "58035100",
+  "localidad_censal": {
+    "id": "58035100",
+    "nombre": "Plottier"
+  },
+  "nombre": "Plottier",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Componente de localidad compuesta",
+  "centroide": {
+    "lat": -38.930123891,
+    "lon": -69.207777891
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580063",
+    "nombre": "Plaza Huincul"
+  },
+  "id": "58035090",
+  "localidad_censal": {
+    "id": "58035090",
+    "nombre": "Plaza Huincul"
+  },
+  "nombre": "Plaza Huincul",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.238469802,
+    "lon": -70.915952619
+  },
+  "departamento": {
+    "id": "58007",
+    "nombre": "Aluminé"
+  },
+  "gobierno_local": {
+    "id": "580007",
+    "nombre": "Aluminé"
+  },
+  "id": "58007010",
+  "localidad_censal": {
+    "id": "58007010",
+    "nombre": "Aluminé"
+  },
+  "nombre": "Aluminé",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.942119232,
+    "lon": -71.329011951
+  },
+  "departamento": {
+    "id": "58007",
+    "nombre": "Aluminé"
+  },
+  "gobierno_local": {
+    "id": "580252",
+    "nombre": "Villa Pehuenia"
+  },
+  "id": "58007015",
+  "localidad_censal": {
+    "id": "58007015",
+    "nombre": "Moquehue"
+  },
+  "nombre": "Moquehue",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.882063027,
+    "lon": -71.173153212
+  },
+  "departamento": {
+    "id": "58007",
+    "nombre": "Aluminé"
+  },
+  "gobierno_local": {
+    "id": "580252",
+    "nombre": "Villa Pehuenia"
+  },
+  "id": "58007020",
+  "localidad_censal": {
+    "id": "58007020",
+    "nombre": "Villa Pehuenia"
+  },
+  "nombre": "Villa Pehuenia",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.556406849,
+    "lon": -70.594152662
+  },
+  "departamento": {
+    "id": "58021",
+    "nombre": "Catán Lil"
+  },
+  "gobierno_local": {
+    "id": "580028",
+    "nombre": "Las Coloradas"
+  },
+  "id": "58021010",
+  "localidad_censal": {
+    "id": "58021010",
+    "nombre": "Las Coloradas"
+  },
+  "nombre": "Las Coloradas",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -40.048479475,
+    "lon": -70.075016026
+  },
+  "departamento": {
+    "id": "58028",
+    "nombre": "Collón Curá"
+  },
+  "gobierno_local": {
+    "id": "580035",
+    "nombre": "Piedra del Águila"
+  },
+  "id": "58028010",
+  "localidad_censal": {
+    "id": "58028010",
+    "nombre": "Piedra del Águila"
+  },
+  "nombre": "Piedra del Águila",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.820743846,
+    "lon": -70.100517315
+  },
+  "departamento": {
+    "id": "58028",
+    "nombre": "Collón Curá"
+  },
+  "gobierno_local": {
+    "id": "585035",
+    "nombre": "Santo Tomás"
+  },
+  "id": "58028020",
+  "localidad_censal": {
+    "id": "58028020",
+    "nombre": "Santo Tomás"
+  },
+  "nombre": "Santo Tomás",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.950884943,
+    "lon": -71.07086358
+  },
+  "departamento": {
+    "id": "58049",
+    "nombre": "Huiliches"
+  },
+  "gobierno_local": {
+    "id": "580112",
+    "nombre": "Junín de los Andes"
+  },
+  "id": "58049010",
+  "localidad_censal": {
+    "id": "58049010",
+    "nombre": "Junín de los Andes"
+  },
+  "nombre": "Junín de los Andes",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -40.156937939,
+    "lon": -71.352714326
+  },
+  "departamento": {
+    "id": "58056",
+    "nombre": "Lácar"
+  },
+  "gobierno_local": {
+    "id": "580119",
+    "nombre": "San Martín de los Andes"
+  },
+  "id": "58056010",
+  "localidad_censal": {
+    "id": "58056010",
+    "nombre": "San Martín de los Andes"
+  },
+  "nombre": "San Martín de los Andes",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -40.383250927,
+    "lon": -71.253397816
+  },
+  "departamento": {
+    "id": "58056",
+    "nombre": "Lácar"
+  },
+  "gobierno_local": {
+    "id": null,
+    "nombre": null
+  },
+  "id": "58056020",
+  "localidad_censal": {
+    "id": "58056020",
+    "nombre": "Villa Lago Meliquina"
+  },
+  "nombre": "Villa Lago Meliquina",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.936840956,
+    "lon": -70.100367124
+  },
+  "departamento": {
+    "id": "58063",
+    "nombre": "Loncopué"
+  },
+  "gobierno_local": {
+    "id": "585063",
+    "nombre": "Chorriaca"
+  },
+  "id": "58063010",
+  "localidad_censal": {
+    "id": "58063010",
+    "nombre": "Chorriaca"
+  },
+  "nombre": "Chorriaca",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.073089622,
+    "lon": -70.61444659
+  },
+  "departamento": {
+    "id": "58063",
+    "nombre": "Loncopué"
+  },
+  "gobierno_local": {
+    "id": "580126",
+    "nombre": "Loncopué"
+  },
+  "id": "58063020",
+  "localidad_censal": {
+    "id": "58063020",
+    "nombre": "Loncopué"
+  },
+  "nombre": "Loncopué",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -40.654358109,
+    "lon": -71.400039168
+  },
+  "departamento": {
+    "id": "58070",
+    "nombre": "Los Lagos"
+  },
+  "gobierno_local": {
+    "id": "585070",
+    "nombre": "Villa Traful"
+  },
+  "id": "58070020",
+  "localidad_censal": {
+    "id": "58070020",
+    "nombre": "Villa Traful"
+  },
+  "nombre": "Villa Traful",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.871079702,
+    "lon": -71.055058253
+  },
+  "departamento": {
+    "id": "58084",
+    "nombre": "Ñorquín"
+  },
+  "gobierno_local": {
+    "id": "580168",
+    "nombre": "Caviahue - Copahue"
+  },
+  "id": "58084010",
+  "localidad_censal": {
+    "id": "58084010",
+    "nombre": "Caviahue"
+  },
+  "nombre": "Caviahue",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.8188588,
+    "lon": -71.098778599
+  },
+  "departamento": {
+    "id": "58084",
+    "nombre": "Ñorquín"
+  },
+  "gobierno_local": {
+    "id": "580168",
+    "nombre": "Caviahue - Copahue"
+  },
+  "id": "58084020",
+  "localidad_censal": {
+    "id": "58084020",
+    "nombre": "Copahue"
+  },
+  "nombre": "Copahue",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.644907696,
+    "lon": -70.581024799
+  },
+  "departamento": {
+    "id": "58084",
+    "nombre": "Ñorquín"
+  },
+  "gobierno_local": {
+    "id": "580182",
+    "nombre": "El Huecú"
+  },
+  "id": "58084040",
+  "localidad_censal": {
+    "id": "58084040",
+    "nombre": "El Huecú"
+  },
+  "nombre": "El Huecú",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.338783703,
+    "lon": -69.843596696
+  },
+  "departamento": {
+    "id": "58098",
+    "nombre": "Picún Leufú"
+  },
+  "gobierno_local": {
+    "id": "585119",
+    "nombre": "Paso Aguerre"
+  },
+  "id": "58098010",
+  "localidad_censal": {
+    "id": "58098010",
+    "nombre": "Paso Aguerre"
+  },
+  "nombre": "Paso Aguerre",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.40743814,
+    "lon": -70.033105591
+  },
+  "departamento": {
+    "id": "58105",
+    "nombre": "Picunches"
+  },
+  "gobierno_local": {
+    "id": "580224",
+    "nombre": "Bajada del Agrio"
+  },
+  "id": "58105010",
+  "localidad_censal": {
+    "id": "58105010",
+    "nombre": "Bajada del Agrio"
+  },
+  "nombre": "Bajada del Agrio",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.552230388,
+    "lon": -70.369430961
+  },
+  "departamento": {
+    "id": "58105",
+    "nombre": "Picunches"
+  },
+  "gobierno_local": {
+    "id": "580231",
+    "nombre": "Las Lajas"
+  },
+  "id": "58105020",
+  "localidad_censal": {
+    "id": "58105020",
+    "nombre": "La Buitrera"
+  },
+  "nombre": "La Buitrera",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.523414946,
+    "lon": -70.361640644
+  },
+  "departamento": {
+    "id": "58105",
+    "nombre": "Picunches"
+  },
+  "gobierno_local": {
+    "id": "580231",
+    "nombre": "Las Lajas"
+  },
+  "id": "58105030",
+  "localidad_censal": {
+    "id": "58105030",
+    "nombre": "Las Lajas"
+  },
+  "nombre": "Las Lajas",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.326149936,
+    "lon": -69.813541099
+  },
+  "departamento": {
+    "id": "58105",
+    "nombre": "Picunches"
+  },
+  "gobierno_local": {
+    "id": "585126",
+    "nombre": "Quili Malal"
+  },
+  "id": "58105040",
+  "localidad_censal": {
+    "id": "58105040",
+    "nombre": "Quili Malal"
+  },
+  "nombre": "Quili Malal",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.83735609,
+    "lon": -70.198417632
+  },
+  "departamento": {
+    "id": "58112",
+    "nombre": "Zapala"
+  },
+  "gobierno_local": {
+    "id": "585140",
+    "nombre": "Los Catutos"
+  },
+  "id": "58112010",
+  "localidad_censal": {
+    "id": "58112010",
+    "nombre": "Los Catutos"
+  },
+  "nombre": "Los Catutos",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.761336255,
+    "lon": -70.036359662
+  },
+  "departamento": {
+    "id": "58112",
+    "nombre": "Zapala"
+  },
+  "gobierno_local": {
+    "id": "580238",
+    "nombre": "Mariano Moreno"
+  },
+  "id": "58112020",
+  "localidad_censal": {
+    "id": "58112020",
+    "nombre": "Mariano Moreno"
+  },
+  "nombre": "Mariano Moreno",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.902934355,
+    "lon": -70.064211217
+  },
+  "departamento": {
+    "id": "58112",
+    "nombre": "Zapala"
+  },
+  "gobierno_local": {
+    "id": "580245",
+    "nombre": "Zapala"
+  },
+  "id": "58112040",
+  "localidad_censal": {
+    "id": "58112040",
+    "nombre": "Zapala"
+  },
+  "nombre": "Zapala",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.374827881,
+    "lon": -70.276331075
+  },
+  "departamento": {
+    "id": "58042",
+    "nombre": "Chos Malal"
+  },
+  "gobierno_local": {
+    "id": "580098",
+    "nombre": "Chos Malal"
+  },
+  "id": "58042010",
+  "localidad_censal": {
+    "id": "58042010",
+    "nombre": "Chos Malal"
+  },
+  "nombre": "Chos Malal",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.131143383,
+    "lon": -70.397733822
+  },
+  "departamento": {
+    "id": "58042",
+    "nombre": "Chos Malal"
+  },
+  "gobierno_local": {
+    "id": "585056",
+    "nombre": "Villa Curi Leuvú"
+  },
+  "id": "58042030",
+  "localidad_censal": {
+    "id": "58042030",
+    "nombre": "Los Menucos"
+  },
+  "nombre": "Villa del Curi Leuvú",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.179745045,
+    "lon": -70.669959796
+  },
+  "departamento": {
+    "id": "58077",
+    "nombre": "Minas"
+  },
+  "gobierno_local": {
+    "id": "580140",
+    "nombre": "Andacollo"
+  },
+  "id": "58077010",
+  "localidad_censal": {
+    "id": "58077010",
+    "nombre": "Andacollo"
+  },
+  "nombre": "Andacollo",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -36.988972916,
+    "lon": -70.749520791
+  },
+  "departamento": {
+    "id": "58077",
+    "nombre": "Minas"
+  },
+  "gobierno_local": {
+    "id": "580154",
+    "nombre": "Las Ovejas"
+  },
+  "id": "58077030",
+  "localidad_censal": {
+    "id": "58077030",
+    "nombre": "Las Ovejas"
+  },
+  "nombre": "Las Ovejas",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.205444005,
+    "lon": -70.819223195
+  },
+  "departamento": {
+    "id": "58077",
+    "nombre": "Minas"
+  },
+  "gobierno_local": {
+    "id": "580161",
+    "nombre": "Los Miches"
+  },
+  "id": "58077040",
+  "localidad_censal": {
+    "id": "58077040",
+    "nombre": "Los Miches"
+  },
+  "nombre": "Los Miches",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -36.753091528,
+    "lon": -70.763213858
+  },
+  "departamento": {
+    "id": "58077",
+    "nombre": "Minas"
+  },
+  "gobierno_local": {
+    "id": "585084",
+    "nombre": "Manzano Amargo"
+  },
+  "id": "58077050",
+  "localidad_censal": {
+    "id": "58077050",
+    "nombre": "Manzano Amargo"
+  },
+  "nombre": "Manzano Amargo",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.120280497,
+    "lon": -70.770019635
+  },
+  "departamento": {
+    "id": "58077",
+    "nombre": "Minas"
+  },
+  "gobierno_local": {
+    "id": "585098",
+    "nombre": "Villa del Nahueve"
+  },
+  "id": "58077070",
+  "localidad_censal": {
+    "id": "58077070",
+    "nombre": "Los Carrizos"
+  },
+  "nombre": "Villa del Nahueve",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.16073741,
+    "lon": -70.624091503
+  },
+  "departamento": {
+    "id": "58077",
+    "nombre": "Minas"
+  },
+  "gobierno_local": {
+    "id": "580147",
+    "nombre": "Huinganco"
+  },
+  "id": "58077020",
+  "localidad_censal": {
+    "id": "58077020",
+    "nombre": "Huinganco"
+  },
+  "nombre": "Huinganco",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -36.854788152,
+    "lon": -70.678151974
+  },
+  "departamento": {
+    "id": "58077",
+    "nombre": "Minas"
+  },
+  "gobierno_local": {
+    "id": "585091",
+    "nombre": "Varvarco - Invernada Vieja"
+  },
+  "id": "58077060",
+  "localidad_censal": {
+    "id": "58077060",
+    "nombre": "Varvarco"
+  },
+  "nombre": "Varvarco",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.441481036,
+    "lon": -70.64544559
+  },
+  "departamento": {
+    "id": "58084",
+    "nombre": "Ñorquín"
+  },
+  "gobierno_local": {
+    "id": "580175",
+    "nombre": "El Cholar"
+  },
+  "id": "58084030",
+  "localidad_censal": {
+    "id": "58084030",
+    "nombre": "El Cholar"
+  },
+  "nombre": "El Cholar",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.517446618,
+    "lon": -70.248757275
+  },
+  "departamento": {
+    "id": "58084",
+    "nombre": "Ñorquín"
+  },
+  "gobierno_local": {
+    "id": "580189",
+    "nombre": "Taquimilán"
+  },
+  "id": "58084050",
+  "localidad_censal": {
+    "id": "58084050",
+    "nombre": "Taquimilán"
+  },
+  "nombre": "Taquimilán",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -36.821283998,
+    "lon": -69.915284287
+  },
+  "departamento": {
+    "id": "58091",
+    "nombre": "Pehuenches"
+  },
+  "gobierno_local": {
+    "id": "580196",
+    "nombre": "Barrancas"
+  },
+  "id": "58091010",
+  "localidad_censal": {
+    "id": "58091010",
+    "nombre": "Barrancas"
+  },
+  "nombre": "Barrancas",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.0516079,
+    "lon": -69.877794918
+  },
+  "departamento": {
+    "id": "58091",
+    "nombre": "Pehuenches"
+  },
+  "gobierno_local": {
+    "id": "580203",
+    "nombre": "Buta Ranquil"
+  },
+  "id": "58091020",
+  "localidad_censal": {
+    "id": "58091020",
+    "nombre": "Buta Ranquil"
+  },
+  "nombre": "Buta Ranquil",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.998674784,
+    "lon": -68.922908597
+  },
+  "departamento": {
+    "id": "58014",
+    "nombre": "Añelo"
+  },
+  "gobierno_local": {
+    "id": "585014",
+    "nombre": "Aguada San Roque"
+  },
+  "id": "58014005",
+  "localidad_censal": {
+    "id": "58014005",
+    "nombre": "Aguada San Roque"
+  },
+  "nombre": "Aguada San Roque",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.625875533,
+    "lon": -68.299895001
+  },
+  "departamento": {
+    "id": "58014",
+    "nombre": "Añelo"
+  },
+  "gobierno_local": {
+    "id": "580021",
+    "nombre": "San Patricio del Chañar"
+  },
+  "id": "58014020",
+  "localidad_censal": {
+    "id": "58014020",
+    "nombre": "San Patricio del Chañar"
+  },
+  "nombre": "San Patricio del Chañar",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.074437741,
+    "lon": -68.57260718
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580077",
+    "nombre": "Senillosa"
+  },
+  "id": "58035010",
+  "localidad_censal": {
+    "id": "58035010",
+    "nombre": "Arroyito"
+  },
+  "nombre": "Arroyito",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.759161245,
+    "lon": -68.160702215
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580091",
+    "nombre": "Vista Alegre"
+  },
+  "id": "58035020",
+  "localidad_censal": {
+    "id": null,
+    "nombre": null
+  },
+  "nombre": "Barrio Ruca Luhé",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.830156536,
+    "lon": -68.121477474
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580042",
+    "nombre": "Centenario"
+  },
+  "id": "58035030",
+  "localidad_censal": {
+    "id": "58035030",
+    "nombre": "Centenario"
+  },
+  "nombre": "Centenario",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.877465845,
+    "lon": -68.100262113
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580042",
+    "nombre": "Centenario"
+  },
+  "id": "58035080",
+  "localidad_censal": {
+    "id": null,
+    "nombre": null
+  },
+  "nombre": "11 de Octubre",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.010092919,
+    "lon": -68.425975934
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580077",
+    "nombre": "Senillosa"
+  },
+  "id": "58035110",
+  "localidad_censal": {
+    "id": "58035110",
+    "nombre": "Senillosa"
+  },
+  "nombre": "Senillosa",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.26154727,
+    "lon": -68.778927738
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580084",
+    "nombre": "Villa El Chocón"
+  },
+  "id": "58035120",
+  "localidad_censal": {
+    "id": "58035120",
+    "nombre": "Villa El Chocón"
+  },
+  "nombre": "Villa El Chocón",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.773029803,
+    "lon": -68.135492124
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580091",
+    "nombre": "Vista Alegre"
+  },
+  "id": "58035140",
+  "localidad_censal": {
+    "id": "58035140",
+    "nombre": "Vista Alegre Sur"
+  },
+  "nombre": "Vista Alegre Sur",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.259353628,
+    "lon": -68.829633063
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580084",
+    "nombre": "Villa El Chocón"
+  },
+  "id": "58035050",
+  "localidad_censal": {
+    "id": null,
+    "nombre": null
+  },
+  "nombre": "El Chocón",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.479814747,
+    "lon": -69.531148648
+  },
+  "departamento": {
+    "id": "58098",
+    "nombre": "Picún Leufú"
+  },
+  "gobierno_local": {
+    "id": "585112",
+    "nombre": "El Sauce"
+  },
+  "id": "58098005",
+  "localidad_censal": {
+    "id": "58098005",
+    "nombre": "El Sauce"
+  },
+  "nombre": "El Sauce",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -39.518627865,
+    "lon": -69.291061135
+  },
+  "departamento": {
+    "id": "58098",
+    "nombre": "Picún Leufú"
+  },
+  "gobierno_local": {
+    "id": "580217",
+    "nombre": "Picún Leufú"
+  },
+  "id": "58098020",
+  "localidad_censal": {
+    "id": "58098020",
+    "nombre": "Picún Leufú"
+  },
+  "nombre": "Picún Leufú",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.864329711,
+    "lon": -69.744696092
+  },
+  "departamento": {
+    "id": "58112",
+    "nombre": "Zapala"
+  },
+  "gobierno_local": {
+    "id": "585147",
+    "nombre": "Ramón M. Castro"
+  },
+  "id": "58112030",
+  "localidad_censal": {
+    "id": "58112030",
+    "nombre": "Ramón M. Castro"
+  },
+  "nombre": "Ramón M. Castro",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.54135831,
+    "lon": -68.545169718
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": null,
+    "nombre": null
+  },
+  "id": "58035060",
+  "localidad_censal": {
+    "id": "58035060",
+    "nombre": "Mari Menuco"
+  },
+  "nombre": "Mari Menuco",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.734183066,
+    "lon": -68.17282303
+  },
+  "departamento": {
+    "id": "58035",
+    "nombre": "Confluencia"
+  },
+  "gobierno_local": {
+    "id": "580091",
+    "nombre": "Vista Alegre"
+  },
+  "id": "58035130",
+  "localidad_censal": {
+    "id": "58035130",
+    "nombre": "Vista Alegre Norte"
+  },
+  "nombre": "Vista Alegre Norte",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.390179487,
+    "lon": -68.92518756
+  },
+  "departamento": {
+    "id": "58091",
+    "nombre": "Pehuenches"
+  },
+  "gobierno_local": {
+    "id": "580210",
+    "nombre": "Rincón de los Sauces"
+  },
+  "id": "58091040",
+  "localidad_censal": {
+    "id": "58091040",
+    "nombre": "Rincón de los Sauces"
+  },
+  "nombre": "Rincón de los Sauces",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.5896262,
+    "lon": -68.258276273
+  },
+  "departamento": {
+    "id": "58091",
+    "nombre": "Pehuenches"
+  },
+  "gobierno_local": {
+    "id": "585105",
+    "nombre": "Octavio Pico"
+  },
+  "id": "58091030",
+  "localidad_censal": {
+    "id": "58091030",
+    "nombre": "Octavio Pico"
+  },
+  "nombre": "Octavio Pico",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -40.762995839,
+    "lon": -71.641001922
+  },
+  "departamento": {
+    "id": "58070",
+    "nombre": "Los Lagos"
+  },
+  "gobierno_local": {
+    "id": "580133",
+    "nombre": "Villa La Angostura"
+  },
+  "id": "58070010",
+  "localidad_censal": {
+    "id": "58070010",
+    "nombre": "Villa La Angostura"
+  },
+  "nombre": "Villa La Angostura",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -37.044736731,
+    "lon": -70.32482026
+  },
+  "departamento": {
+    "id": "58042",
+    "nombre": "Chos Malal"
+  },
+  "gobierno_local": {
+    "id": "580105",
+    "nombre": "Tricao Malal"
+  },
+  "id": "58042020",
+  "localidad_censal": {
+    "id": "58042020",
+    "nombre": "Tricao Malal"
+  },
+  "nombre": "Tricao Malal",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Localidad simple",
+  "centroide": {
+    "lat": -38.354255899,
+    "lon": -68.787543077
+  },
+  "departamento": {
+    "id": "58014",
+    "nombre": "Añelo"
+  },
+  "gobierno_local": {
+    "id": "580014",
+    "nombre": "Añelo"
+  },
+  "id": "58014010",
+  "localidad_censal": {
+    "id": "58014010",
+    "nombre": "Añelo"
+  },
+  "nombre": "Añelo",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Entidad",
+  "centroide": {
+    "lat": -38.75112557,
+    "lon": -70.026048478
+  },
+  "departamento": {
+    "id": "58112",
+    "nombre": "Zapala"
+  },
+  "gobierno_local": {
+    "id": "580238",
+    "nombre": "Mariano Moreno"
+  },
+  "id": "5811202001",
+  "localidad_censal": {
+    "id": "58112020",
+    "nombre": "Mariano Moreno"
+  },
+  "nombre": "Covunco Centro",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}
+{
+  "categoria": "Entidad",
+  "centroide": {
+    "lat": -38.76361152,
+    "lon": -70.037450617
+  },
+  "departamento": {
+    "id": "58112",
+    "nombre": "Zapala"
+  },
+  "gobierno_local": {
+    "id": "580238",
+    "nombre": "Mariano Moreno"
+  },
+  "id": "5811202002",
+  "localidad_censal": {
+    "id": "58112020",
+    "nombre": "Mariano Moreno"
+  },
+  "nombre": "Mariano Moreno",
+  "provincia": {
+    "id": "58",
+    "nombre": "Neuquén"
+  }
+}

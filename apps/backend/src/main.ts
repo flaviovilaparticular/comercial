@@ -10,6 +10,17 @@ import testMongoRoute from './router/testMongo.route';
 import AuthRouter from './auth/auth.routes';
 import { UsersRouter } from './users/user.controller';
 
+// PARAMETROS
+import CentroCostosRouter from './parametros/CentroCostos/CentroCostos.router';
+import ProvinciasRouter from './parametros/Provincias/Provinicias.router';
+import IndicesRouter from './parametros/Indices/indices.router';
+import BancosRouter from './parametros/Bancos/Bancos.router';
+import { LocalidadesRouter } from './parametros/Localidades/Localidades.router';
+//import{FormadePagoRouter} from './parametros/FormadePago/FormadePago.router';
+import FormadePagoRouter from './parametros/FormadePago/FormadePago.router';
+
+
+
 // --------------------------------------------------
 
 const host = process.env.HOST ?? 'localhost';
@@ -35,6 +46,18 @@ app.use('/api/auth', AuthRouter);
 app.get('/', (req, res) => {
   res.send({ message: 'API funcionando ✅' });
 });
+
+// Parametros
+app.use('/api/parametros/centro-costos', CentroCostosRouter);
+app.use('/api/parametros/Provincias', ProvinciasRouter);
+app.use('/api/parametros/Paises', ProvinciasRouter);
+app.use('/api/parametros/indices', IndicesRouter);
+app.use('/api/parametros/bancos', BancosRouter);
+app.use('/api/parametros/localidades', LocalidadesRouter);
+app.use('/api/comunes/formas-de-pago', FormadePagoRouter);
+
+
+
 
 // 🔹 Levantar servidor
 app.listen(port, host, () => {

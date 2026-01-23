@@ -1,0 +1,90 @@
+<app-header></app-header>
+
+<div class="contenedor-principal">
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <!-- Título -->
+                        <div class="text-center mb-4">
+                            <h2 class="m-0">Parámetros / Bancos</h2>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="d-flex justify-content-end mb-3">
+                            <button class="btn btn-secondary me-2" (click)="volver()">
+                                <i class="fas fa-arrow-left me-2"></i> VOLVER
+                            </button>
+
+                            <button class="btn btn-success" (click)="abrirModal()">
+                                <i class="fas fa-plus me-2"></i> NUEVO
+                            </button>
+                        </div>
+
+                        <!-- Tabla -->
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let b of bancos">
+                                    <td>{{ b.nombre }}</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm me-2" (click)="abrirModal(b)">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-sm" (click)="eliminarBanco(b._id!)">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div *ngIf="mostrarModal" class="modal-overlay">
+                    <div class="modal-custom">
+                        <div class="modal-header d-flex justify-content-between align-items-center">
+                            <h5 class="modal-title">
+                                {{ esEdicion ? 'Editar Banco' : 'Nuevo Banco' }}
+                            </h5>
+                            <button type="button" class="btn-close" (click)="cerrarModal()"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form (ngSubmit)="guardarBanco()" #formBanco="ngForm">
+
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control"
+                                           [(ngModel)]="nuevoBanco.nombre" required>
+                                </div>
+
+                                <div class="modal-footer d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary" [disabled]="formBanco.invalid">
+                                        {{ esEdicion ? 'Actualizar' : 'Guardar' }}
+                                    </button>
+                                    <button type="button" class="btn btn-secondary ms-2" (click)="cerrarModal()">
+                                        Cancelar
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+
+            </div>
+        </div>
+    </div>
+</div>

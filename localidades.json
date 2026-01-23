@@ -1,0 +1,10 @@
+{
+  "errores": [
+    {
+      "codigo_interno": 1001, 
+      "mensaje": "El número debe ser menor o igual que 5000.", 
+      "nombre_parametro": "max", 
+      "ubicacion": "querystring"
+    }
+  ]
+}

@@ -664,6 +664,10 @@
       "apps/frontend/project.json",
       "nx/core/project-json"
     ],
+    "targets.build.options.scripts": [
+      "apps/frontend/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build.configurations.production": [
       "apps/frontend/project.json",
       "nx/core/project-json"

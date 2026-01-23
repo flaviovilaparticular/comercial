@@ -1,7 +1,11 @@
 [ [32mwatch[39m ] build succeeded, watching for changes...
-[1m[31mDebugger listening on ws://localhost:9229/4682fad4-1be2-4be2-9a77-97d61125c361[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/aee5707b-adcc-42c8-a034-f87eb428f26b[39m[22m
 [1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
 [1m[31m[39m[22m
 [ ready ] http://localhost:3000
 ✅ Conectado a MongoDB
+🔹 Solicitud de login recibida con body: { dni: [32m'12345678'[39m, password: [32m'andes'[39m }
+🔹 Solicitud de login recibida con body: { dni: [32m'12345678'[39m, password: [32m'admin'[39m }
+🔹 Solicitud de login recibida con body: { dni: [32m'12345678'[39m, password: [32m'andes'[39m }
+🔹 Solicitud de login recibida con body: { dni: [32m'12345678'[39m, password: [32m'admin'[39m }
 [1m[31mWatch error: Daemon closed the connection[39m[22m

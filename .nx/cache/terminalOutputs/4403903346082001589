@@ -1,0 +1,9 @@
+[4m[34mapps/backend/src/parametros/CentroCostos/CentroCostos.router.ts:159:15[39m[24m - [31m[1merror[22m[39m [90mTS1109[39m: Expression expected.
+
+[0m [90m 157 | [39m})[33m;[39m[0m
+[0m [90m 158 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 159 | [39m[36mexport[39m [36mdefault[39m[0m
+[0m [90m     | [39m              [31m[1m^[22m[39m[0m
+[0m [90m 160 | [39m[0m
+
+Found 1 error.

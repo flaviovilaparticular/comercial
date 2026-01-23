@@ -1,0 +1,21 @@
+[4m[34mapps/backend/src/main.ts:16:8[39m[24m - [31m[1merror[22m[39m [90mTS1192[39m: Module '"/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/backend/src/parametros/Indices/indices.router"' has no default export.
+
+[0m [90m 14 | [39m[36mimport[39m [33mCentroCostosRouter[39m from [32m'./parametros/CentroCostos/CentroCostos.router'[39m[33m;[39m[0m
+[0m [90m 15 | [39m[36mimport[39m [33mProvinciasRouter[39m from [32m'./parametros/Provincias/Provinicias.router'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 16 | [39m[36mimport[39m [33mIndicesRouter[39m from [32m'./parametros/Indices/indices.router'[39m[33m;[39m[0m
+[0m [90m    | [39m       [31m[1m^[22m[39m[0m
+[0m [90m 17 | [39m[0m
+[0m [90m 18 | [39m[0m
+[0m [90m 19 | [39m[0m
+
+[4m[34mapps/backend/src/parametros/Indices/indices.router.ts:4:24[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module '../models/indice.model' or its corresponding type declarations.
+
+[0m [90m 2 | [39m[36mimport[39m { [33mHttpClient[39m } from [32m'@angular/common/http'[39m[33m;[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { [33mObservable[39m } from [32m'rxjs'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 | [39m[36mimport[39m { [33mIndice[39m } from [32m'../models/indice.model'[39m[33m;[39m [90m// opcional si lo separás[39m[0m
+[0m [90m   | [39m                       [31m[1m^[22m[39m[0m
+[0m [90m 5 | [39m[0m
+[0m [90m 6 | [39m[33m@[39m[33mInjectable[39m({[0m
+[0m [90m 7 | [39m    providedIn[33m:[39m [32m'root'[39m[0m
+
+Found 2 errors.

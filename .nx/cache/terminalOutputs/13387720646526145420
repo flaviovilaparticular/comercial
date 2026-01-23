@@ -1,0 +1,11 @@
+[4m[34mapps/backend/src/main.ts:16:8[39m[24m - [31m[1merror[22m[39m [90mTS1192[39m: Module '"/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/backend/src/parametros/Indices/indices.router"' has no default export.
+
+[0m [90m 14 | [39m[36mimport[39m [33mCentroCostosRouter[39m from [32m'./parametros/CentroCostos/CentroCostos.router'[39m[33m;[39m[0m
+[0m [90m 15 | [39m[36mimport[39m [33mProvinciasRouter[39m from [32m'./parametros/Provincias/Provinicias.router'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 16 | [39m[36mimport[39m [33mIndicesRouter[39m from [32m'./parametros/Indices/indices.router'[39m[33m;[39m[0m
+[0m [90m    | [39m       [31m[1m^[22m[39m[0m
+[0m [90m 17 | [39m[0m
+[0m [90m 18 | [39m[0m
+[0m [90m 19 | [39m[0m
+
+Found 1 error.
