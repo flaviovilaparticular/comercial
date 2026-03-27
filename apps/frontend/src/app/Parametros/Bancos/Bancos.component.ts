@@ -4,13 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { BancosService, Banco } from '../../services/Bancos.service';
 import { HeaderComponent } from '../../header/header.component';
 import { Router } from '@angular/router';
+import { HeaderSistemaComponent } from '../../header/header-sistema.component';
 
 const Swal = require('sweetalert2');
 
 @Component({
     selector: 'app-bancos-abm',
     standalone: true,
-    imports: [CommonModule, FormsModule, HeaderComponent],
+    imports: [CommonModule, FormsModule, HeaderComponent, HeaderSistemaComponent],
     templateUrl: './Bancos.component.html',
     styleUrls: ['./Bancos.component.css']
 })

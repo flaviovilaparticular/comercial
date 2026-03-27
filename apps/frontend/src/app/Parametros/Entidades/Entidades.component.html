@@ -1,0 +1,269 @@
+<app-header></app-header>
+<app-header-sistema></app-header-sistema>
+<div class="contenedor-principal">
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="card">
+                    <div class="card-body">
+
+                        <!-- Título -->
+                        <div class="text-center mb-4">
+                            <h2 class="m-0">Parámetros / Entidades</h2>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="d-flex justify-content-end mb-3">
+                            <button class="btn btn-secondary me-2" (click)="volver()">
+                                <i class="fas fa-arrow-left me-2"></i> VOLVER
+                            </button>
+
+                            <button class="btn btn-success" (click)="abrirModal()">
+                                <i class="fas fa-plus me-2"></i> NUEVO
+                            </button>
+                        </div>
+
+                        <!-- Tabla -->
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Razón Social</th>
+                                    <th>Documento</th>
+                                    <th>Tipo</th>
+                                    <th>IVA</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr *ngFor="let e of entidades">
+                                    <td>{{ e.nombreRazonSocial }}</td>
+                                    <td>{{ e.tipoDocumento }} - {{ e.documentoNumero }}</td>
+                                    <td>{{ e.tipoPersona }}</td>
+                                    <td>{{ e.condicionIVA }}</td>
+
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm me-2" (click)="abrirModal(e)">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+
+                                        <button class="btn btn-danger btn-sm" (click)="eliminarEntidad(e._id!)">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <!-- MODAL -->
+                <div *ngIf="mostrarModal" class="modal-overlay">
+                    <div class="modal-custom">
+
+                        <!-- HEADER -->
+                        <div class="modal-header d-flex justify-content-between">
+                            <h5>{{ esEdicion ? 'Editar Entidad' : 'Nueva Entidad' }}</h5>
+                            <button type="button" class="btn-close" (click)="cerrarModal()"></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <!-- FORM -->
+                            <form #formEntidad="ngForm" (ngSubmit)="guardarEntidad(formEntidad)" novalidate>
+
+                                <!-- 🔹 DATOS GENERALES -->
+                                <h6 class="mb-3">Datos Generales</h6>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="mb-3">
+                                            <label>Tipo Persona</label>
+                                            <select class="form-control" name="tipoPersona"
+                                                    [(ngModel)]="nuevaEntidad.tipoPersona" required>
+                                                <option value="FISICA">Física</option>
+                                                <option value="JURIDICA">Jurídica</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label>Nombre / Razón Social</label>
+                                            <input type="text" class="form-control" name="nombreRazonSocial"
+                                                   [(ngModel)]="nuevaEntidad.nombreRazonSocial" #nombre="ngModel"
+                                                   required>
+
+                                            <small class="text-danger" *ngIf="nombre.invalid && nombre.touched">
+                                                Campo obligatorio
+                                            </small>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label>Nombre Fantasía</label>
+                                            <input type="text" class="form-control" name="nombreFantasia"
+                                                   [(ngModel)]="nuevaEntidad.nombreFantasia">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="mb-3">
+                                            <label>Condición IVA</label>
+                                            <select class="form-control" name="condicionIVA"
+                                                    [(ngModel)]="nuevaEntidad.condicionIVA" required>
+                                                <option value="RI">Responsable Inscripto</option>
+                                                <option value="MONOTRIBUTO">Monotributo</option>
+                                                <option value="EXENTO">Exento</option>
+                                                <option value="FINAL">Consumidor Final</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <label>Tipo Doc</label>
+                                                <select class="form-control" name="tipoDocumento"
+                                                        [(ngModel)]="nuevaEntidad.tipoDocumento" required>
+                                                    <option value="DNI">DNI</option>
+                                                    <option value="CUIT">CUIT</option>
+                                                    <option value="CUIL">CUIL</option>
+                                                    <option value="PASAPORTE">Pasaporte</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" name="documentoNumero"
+                                                       [(ngModel)]="nuevaEntidad.documentoNumero" pattern="^[0-9]*$"
+                                                       #doc="ngModel" required>
+
+                                                <small class="text-danger" *ngIf="doc.invalid && doc.touched">
+                                                    Solo números obligatorios
+                                                </small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <!-- 🔹 DOMICILIO -->
+                                <h6 class="mb-3">Domicilio</h6>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="mb-2">
+                                            <label>Calle</label>
+                                            <input class="form-control" name="calle"
+                                                   [(ngModel)]="nuevaEntidad.domicilio.calle">
+                                        </div>
+
+                                        <div class="mb-2">
+                                            <label>Piso / Depto</label>
+                                            <input class="form-control" name="pisoDepto"
+                                                   [(ngModel)]="nuevaEntidad.domicilio.pisoDepto">
+                                        </div>
+
+                                        <div class="mb-2">
+                                            <label>Código Postal</label>
+                                            <input class="form-control" name="codigoPostal"
+                                                   [(ngModel)]="nuevaEntidad.domicilio.codigoPostal">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="mb-2">
+                                            <label>Localidad</label>
+                                            <input class="form-control" name="localidad"
+                                                   [(ngModel)]="nuevaEntidad.domicilio.localidad">
+                                        </div>
+
+                                        <div class="mb-2">
+                                            <label>Provincia</label>
+                                            <input class="form-control" name="provincia"
+                                                   [(ngModel)]="nuevaEntidad.domicilio.provincia">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <!-- 🔹 CONTACTO -->
+                                <h6 class="mb-3">Contacto</h6>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="mb-2">
+                                            <label>Teléfono Principal</label>
+                                            <input class="form-control" name="telefonoPrincipal"
+                                                   [(ngModel)]="nuevaEntidad.contacto.telefonoPrincipal">
+                                        </div>
+
+                                        <div class="mb-2">
+                                            <label>Teléfono Secundario</label>
+                                            <input class="form-control" name="telefonoSecundario"
+                                                   [(ngModel)]="nuevaEntidad.contacto.telefonoSecundario">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="mb-2">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" name="email"
+                                                   [(ngModel)]="nuevaEntidad.contacto.email">
+                                        </div>
+
+                                        <div class="mb-2">
+                                            <label>Web</label>
+                                            <input class="form-control" name="web"
+                                                   [(ngModel)]="nuevaEntidad.contacto.web">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <!-- 🔹 OTROS -->
+                                <div class="mb-3">
+                                    <label>Observaciones</label>
+                                    <textarea class="form-control" name="observaciones"
+                                              [(ngModel)]="nuevaEntidad.observacionesGenerales"></textarea>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input" name="activo"
+                                           [(ngModel)]="nuevaEntidad.activo">
+                                    <label class="form-check-label">Activo</label>
+                                </div>
+
+                                <!--  BOTONES -->
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary px-4 py-2"
+                                            style="font-size: 14px; min-width: 120px;">
+                                        {{ esEdicion ? 'Actualizar' : 'Guardar' }}
+                                    </button>
+
+                                    <button type="button" class="btn btn-secondary ms-2" (click)="cerrarModal()">
+                                        Cancelar
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--  fin del modal -->
+            </div>
+        </div>
+    </div>
+</div>

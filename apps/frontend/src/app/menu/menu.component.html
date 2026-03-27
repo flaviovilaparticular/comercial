@@ -52,6 +52,18 @@
                             Bancos
                         </a>
                     </li>
+                    <li>
+                        <a [routerLink]="['/rubros']" routerLinkActive="active"
+                           class="text-decoration-none d-block py-1">
+                            Rubros
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/marcas']" routerLinkActive="active"
+                           class="text-decoration-none d-block py-1">
+                            Marcas
+                        </a>
+                    </li>
 
                 </ul>
             </div>
@@ -62,13 +74,22 @@
             <div class="card menu-item h-100 p-3">
                 <div class="d-flex align-items-center mb-3">
                     <i class="bi bi-truck fs-3 me-2 text-primary"></i>
-                    <h4 class="mb-0">Proveedores</h4>
+                    <h4 class="mb-0">Administración</h4>
                 </div>
                 <ul class="list-unstyled ps-3">
-                    <li><a href="#" class="text-decoration-none d-block py-1">Proveedores</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1">Compras</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1">Cuenas Corrients</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1">Reportes</a></li>
+
+                    <li>
+                        <a [routerLink]="['/entidades']" routerLinkActive="active"
+                           class="text-decoration-none d-block py-1">
+                            Entidades
+                        </a>
+                    </li>
+
+
+                    <li><a [routerLink]="['/productos']" routerLinkActive="active"
+                           class="text-decoration-none d-block py-1">
+                            Productos
+                        </a></li>
 
                 </ul>
             </div>
@@ -76,29 +97,108 @@
 
         <!-- Opción 4: Gestión -->
         <div class="col-lg-4 col-md-6">
-            <div class="card menu-item h-100 p-3">
+            <div class="card menu-item h-100 p-3 shadow-sm">
                 <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-person-lines-fill fs-3 me-2 text-primary"></i>
-                    <h4 class="mb-0">Gestión</h4>
+                    <i class="bi bi-gear-fill fs-3 me-2 text-primary"></i>
+                    <h4 class="mb-0">Proveedores</h4>
                 </div>
-                <ul class="list-unstyled ps-3">
-                    <li><a href="#" class="text-decoration-none d-block py-1">Clientes</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1">Proveedores</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1">Productos</a></li>
+
+                <ul class="list-unstyled ps-2">
+                    <li class="mb-2">
+                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
+                           data-bs-toggle="collapse" href="#menuOpsProveedores" role="button" aria-expanded="false">
+                            <span><i class="bi bi-truck me-2"></i>Gestión de Proveedores</span>
+                            <i class="bi bi-chevron-down small text-muted"></i>
+                        </a>
+                        <div class="collapse" id="menuOpsProveedores">
+                            <ul class="list-unstyled ps-4 border-start">
+                                <li class="small text-uppercase text-muted fw-lighter mt-2 mb-1"
+                                    style="font-size: 0.7rem; letter-spacing: 0.5px;">Finanzas</li>
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Cuentas
+                                        Corrientes</a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Saldos
+                                        Pendientes</a>
+                                </li>
+
+                                <li class="small text-uppercase text-muted fw-lighter mt-2 mb-1"
+                                    style="font-size: 0.7rem; letter-spacing: 0.5px;">Operaciones</li>
+                                <li><a href="#"
+                                       class="text-decoration-none d-block py-1 text-secondary font-monospace"><i
+                                           class="bi bi-plus-circle me-1"></i>Nota de Pedido</a></li>
+                                <li><a href="#"
+                                       class="text-decoration-none d-block py-1 text-secondary font-monospace"><i
+                                           class="bi bi-cart-plus me-1"></i>Registrar Compra</a></li>
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Historial de
+                                        Compras</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="mb-2">
+                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
+                           data-bs-toggle="collapse" href="#menuInventario" role="button" aria-expanded="false">
+                            <span><i class="bi bi-box-seam me-2"></i>Inventario</span>
+                            <i class="bi bi-chevron-down small text-muted"></i>
+                        </a>
+                        <div class="collapse" id="menuInventario">
+                            <ul class="list-unstyled ps-4 border-start">
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Productos</a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Categorías</a>
+                                </li>
+                                <li><a href="#"
+                                       class="text-decoration-none d-block py-1 text-secondary text-danger">Stock
+                                        Crítico</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
         <!-- Opción 5 Gestión -->
         <div class="col-lg-4 col-md-6">
-            <div class="card menu-item h-100 p-3">
+            <div class="card menu-item h-100 p-3 shadow-sm">
                 <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-person-lines-fill fs-3 me-2 text-primary"></i>
-                    <h4 class="mb-0">Gestión</h4>
+                    <i class="bi bi-gear-fill fs-3 me-2 text-primary"></i>
+                    <h4 class="mb-0">Administración</h4>
                 </div>
-                <ul class="list-unstyled ps-3">
-                    <li><a href="#" class="text-decoration-none d-block py-1">Clientes</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1">Proveedores</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1">Productos</a></li>
+
+                <ul class="list-unstyled ps-2">
+                    <li class="mb-2">
+                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
+                           data-bs-toggle="collapse" href="#menuEntidades" role="button" aria-expanded="false">
+                            <span><i class="bi bi-people me-2"></i>Entidades</span>
+                            <i class="bi bi-chevron-down small text-muted"></i>
+                        </a>
+                        <div class="collapse" id="menuEntidades">
+                            <ul class="list-unstyled ps-4 border-start">
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Clientes</a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Proveedores</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="mb-2">
+                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
+                           data-bs-toggle="collapse" href="#menuInventario" role="button" aria-expanded="false">
+                            <span><i class="bi bi-box-seam me-2"></i>Inventario</span>
+                            <i class="bi bi-chevron-down small text-muted"></i>
+                        </a>
+                        <div class="collapse" id="menuInventario">
+                            <ul class="list-unstyled ps-4 border-start">
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Productos</a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Categorías</a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Stock
+                                        Crítico</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -16693,22 +16693,22 @@
     "backend": [
       {
         "source": "backend",
-        "target": "npm:mongoose",
-        "type": "static"
-      },
-      {
-        "source": "backend",
         "target": "npm:express",
         "type": "static"
       },
       {
         "source": "backend",
-        "target": "npm:dotenv",
+        "target": "npm:mongoose",
         "type": "static"
       },
       {
         "source": "backend",
         "target": "npm:jsonwebtoken",
+        "type": "static"
+      },
+      {
+        "source": "backend",
+        "target": "npm:dotenv",
         "type": "static"
       },
       {
@@ -41104,5 +41104,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1769205176604
+  "computedAt": 1774648511832
 }

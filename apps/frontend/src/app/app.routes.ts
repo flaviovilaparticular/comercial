@@ -9,6 +9,15 @@ import { CentroCostosComponent } from './Parametros/CentroCostos/CentroCostos.co
 import { SucursalesComponent } from './Parametros/Sucursales/Sucursales.component';
 import { IndicesComponent } from './Parametros/Indices/indices.component';
 import { BancosAbmComponent } from './Parametros/Bancos/Bancos.component';
+import { RubrosAbmComponent } from './Parametros/Rubros/rubros.component';
+import { MarcasAbmComponent } from './Parametros/Marcas/marcas.component';
+
+// entidades
+import { EntidadesComponent } from './Parametros/Entidades/Entidades.component';
+
+// gestion
+import { ProductosComponent } from './gestion/Productos/productos.component';
+
 
 export const appRoutes: Route[] = [
     {
@@ -31,8 +40,16 @@ export const appRoutes: Route[] = [
             }
             ,
             { path: 'indices', component: IndicesComponent },
-            { path: 'bancos', component: BancosAbmComponent }
+            { path: 'bancos', component: BancosAbmComponent },
+            { path: 'entidades', component: EntidadesComponent },
+            { path: 'rubros', component: RubrosAbmComponent },
+            { path: 'marcas', component: MarcasAbmComponent },
+
+            // gestion
+            { path: 'productos', component: ProductosComponent },
+
         ]
+
     },
     { path: '**', redirectTo: 'home' }
 ];

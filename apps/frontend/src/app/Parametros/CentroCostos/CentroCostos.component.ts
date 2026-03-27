@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { HeaderComponent } from '../../header/header.component';
 import { CentroCostosService } from '../../services/CentrosCostos.service';
+import { HeaderSistemaComponent } from '../../header/header-sistema.component';
 
 export interface CentroCostos {
     _id?: string;
@@ -21,7 +22,7 @@ export interface CentroCostos {
     standalone: true,
     templateUrl: './CentroCostos.component.html',
     styleUrls: ['./CentroCostos.component.css'],
-    imports: [CommonModule, FormsModule, HeaderComponent]
+    imports: [CommonModule, FormsModule, HeaderComponent, HeaderSistemaComponent,]
 })
 export class CentroCostosComponent implements OnInit {
 

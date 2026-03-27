@@ -1,0 +1,266 @@
+<app-header></app-header>
+<app-header-sistema></app-header-sistema>
+
+<div class="contenedor-principal">
+
+    <div class="container-fluid mt-4 px-5">
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-lg-8">
+
+                <div class="card shadow rounded-3">
+                    <div class="card-body">
+
+                        <div class="text-center mb-4">
+                            <h2 class="titulo-seccion">Parámetros / Productos</h2>
+                        </div>
+
+                        <div class="d-flex justify-content-end mb-3">
+
+                            <button class="btn btn-outline-secondary me-2" (click)="volver()">
+                                <i class="fas fa-door-open"></i>
+                            </button>
+
+                            <button class="btn btn-success" (click)="abrirModal()">
+                                <i class="fas fa-plus"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="table-responsive">
+
+                            <table class="table table-striped align-middle">
+
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Rubro</th>
+                                        <th>Marca</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr *ngFor="let p of productos">
+
+                                        <td>{{ p.nombre }}</td>
+                                        <td>{{ p.rubro?.nombre }}</td>
+                                        <td>{{ p.marca?.nombre }}</td>
+                                        <td>{{ p.precios?.precioVentaFinal | currency }}</td>
+
+                                        <td class="text-center">
+
+                                            <button class="btn btn-primary btn-sm me-2" (click)="abrirModal(p)">
+                                                <i class="fas fa-pen"></i>
+                                            </button>
+
+                                            <button class="btn btn-danger btn-sm" (click)="eliminarProducto(p._id!)">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div *ngIf="mostrarModal" class="modal-overlay">
+
+        <div class="modal-custom animate__animated animate__fadeInDown">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    {{ esEdicion ? 'Editar Producto' : 'Nuevo Producto' }}
+                </h5>
+
+                <button type="button" class="btn-close" (click)="cerrarModal()"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <form (ngSubmit)="guardarProducto()" #formProducto="ngForm">
+
+                    <!-- DATOS BASICOS -->
+                    <h6 class="mb-3">Datos Generales</h6>
+
+                    <div class="row">
+
+                        <div class="col-md-4 mb-3">
+                            <label>Código</label>
+                            <input type="text" class="form-control" [(ngModel)]="nuevoProducto.codigo" name="codigo"
+                                   required>
+                        </div>
+
+                        <div class="col-md-8 mb-3">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" [(ngModel)]="nuevoProducto.nombre" name="nombre"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Rubro</label>
+                            <select class="form-control w-100" [(ngModel)]="nuevoProducto.rubro._id" name="rubro">
+                                <option value="">Seleccione</option>
+                                <option *ngFor="let r of rubros" [value]="r._id">
+                                    {{ r.nombre }}
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Marca</label>
+                            <select class="form-control w-100" [(ngModel)]="nuevoProducto.marca._id" name="marca">
+                                <option value="">Seleccione</option>
+                                <option *ngFor="let m of marcas" [value]="m._id">
+                                    {{ m.nombre }}
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Unidad</label>
+                            <select class="form-control" [(ngModel)]="nuevoProducto.unidadMedida" name="unidadMedida">
+                                <option value="UNIDAD">Unidad</option>
+                                <option value="KG">Kg</option>
+                                <option value="G">Gramo</option>
+                                <option value="LT">Litro</option>
+                                <option value="ML">Ml</option>
+                                <option value="MT">Metro</option>
+                                <option value="CM">Cm</option>
+                                <option value="M2">M2</option>
+                                <option value="CAJA">Caja</option>
+                                <option value="PACK">Pack</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Stock Min</label>
+                            <input type="number" class="form-control" [(ngModel)]="nuevoProducto.stockMinimo"
+                                   name="stockMinimo">
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Stock Max</label>
+                            <input type="number" class="form-control" [(ngModel)]="nuevoProducto.stockMaximo"
+                                   name="stockMaximo">
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- PRECIOS -->
+                    <h6 class="mb-3">Precios</h6>
+
+                    <div class="row">
+
+                        <div class="col-md-3 mb-3">
+                            <label>Costo</label>
+                            <input type="number" class="form-control" [(ngModel)]="nuevoProducto.precios.costoNeto"
+                                   name="costoNeto" (input)="calcularPrecios()">
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label>Margen %</label>
+                            <input type="number" class="form-control" [(ngModel)]="nuevoProducto.precios.margenGanancia"
+                                   name="margenGanancia" (input)="calcularPrecios()">
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label>Neto</label>
+                            <input type="number" class="form-control"
+                                   [(ngModel)]="nuevoProducto.precios.precioVentaNeto" name="precioVentaNeto" readonly>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label>Final</label>
+                            <input type="number" class="form-control"
+                                   [(ngModel)]="nuevoProducto.precios.precioVentaFinal" name="precioVentaFinal"
+                                   readonly>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- IMPUESTOS -->
+                    <h6 class="mb-3">Impuestos</h6>
+
+                    <div class="row">
+
+                        <div class="col-md-4 mb-3">
+                            <label>IVA</label>
+                            <select class="form-control" [(ngModel)]="nuevoProducto.impuestos.alicuotaIVA" name="iva"
+                                    (change)="calcularPrecios()">
+                                <option value="0">0%</option>
+                                <option value="10.5">10.5%</option>
+                                <option value="21">21%</option>
+                                <option value="27">27%</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Percepciones</label>
+                            <input type="number" class="form-control"
+                                   [(ngModel)]="nuevoProducto.impuestos.percepcionesAdicionales" name="percepciones">
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Estado</label>
+                            <select class="form-control" [(ngModel)]="nuevoProducto.estado" name="estado">
+                                <option value="ACTIVO">Activo</option>
+                                <option value="INACTIVO">Inactivo</option>
+                                <option value="DISCONTINUADO">Discontinuado</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- EXTRA -->
+                    <h6 class="mb-3">Otros</h6>
+
+                    <div class="mb-3">
+                        <label>Descripción</label>
+                        <textarea class="form-control" [(ngModel)]="nuevoProducto.descripcion"
+                                  name="descripcion"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Observaciones</label>
+                        <textarea class="form-control" [(ngModel)]="nuevoProducto.observaciones"
+                                  name="observaciones"></textarea>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <div class="modal-footer d-flex justify-content-end">
+                        <button class="btn btn-primary" type="submit">
+                            {{ esEdicion ? 'Actualizar' : 'Guardar' }}
+                        </button>
+
+                        <button class="btn btn-secondary ms-2" type="button" (click)="cerrarModal()">
+                            Cancelar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>

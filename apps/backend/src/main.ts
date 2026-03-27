@@ -16,8 +16,20 @@ import ProvinciasRouter from './parametros/Provincias/Provinicias.router';
 import IndicesRouter from './parametros/Indices/indices.router';
 import BancosRouter from './parametros/Bancos/Bancos.router';
 import { LocalidadesRouter } from './parametros/Localidades/Localidades.router';
+import { MarcasRouter } from './parametros/Marcas/marcas.router';
+import { RubrosRouter } from './parametros/Rubros/rubros.router';
+
 //import{FormadePagoRouter} from './parametros/FormadePago/FormadePago.router';
 import FormadePagoRouter from './parametros/FormadePago/FormadePago.router';
+import tipoPersonaRouter from './parametros/tipoPersona/tipoPersona.router';
+import tipoDocumentoRouter from './parametros/tipoDocumento/tipoDocumento.router';
+import EntidadRouter from './parametros/Entidades/Entidades.router';
+
+// productos
+import { ProductosRouter } from './Productos/productos.router';
+
+
+
 
 
 
@@ -55,7 +67,14 @@ app.use('/api/parametros/indices', IndicesRouter);
 app.use('/api/parametros/bancos', BancosRouter);
 app.use('/api/parametros/localidades', LocalidadesRouter);
 app.use('/api/comunes/formas-de-pago', FormadePagoRouter);
+app.use('/api/parametros/tipo-persona', tipoPersonaRouter);
+app.use('/api/parametros/tipo-documento', tipoDocumentoRouter);
+app.use('/api/parametros/entidades', EntidadRouter);
+app.use('/api/parametros/marcas', MarcasRouter);
+app.use('/api/parametros/rubros', RubrosRouter);
 
+// productos
+app.use('/api/productos', ProductosRouter);
 
 
 

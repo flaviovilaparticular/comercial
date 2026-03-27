@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { IndicesService, Indice } from '../../services/indices.services';
 import { HeaderComponent } from '../../header/header.component';
 import Swal from 'sweetalert2';
+import { HeaderSistemaComponent } from '../../header/header-sistema.component';
 
 @Component({
     selector: 'app-indices',
@@ -14,7 +15,8 @@ import Swal from 'sweetalert2';
     imports: [
         CommonModule,
         FormsModule,
-        HeaderComponent
+        HeaderComponent,
+        HeaderSistemaComponent
     ]
 })
 export class IndicesComponent implements OnInit {

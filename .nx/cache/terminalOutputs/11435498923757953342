@@ -1,0 +1,21 @@
+[4m[34mapps/backend/src/parametros/Entidades/Entidades.router.ts:4:29[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module '../../../auth/auth.middleware' or its corresponding type declarations.
+
+[0m [90m 2 | [39m[36mimport[39m { [33mEntidadModel[39m } from [32m'./Entiidades.schema'[39m[33m;[39m [90m// ajustá la ruta si cambia[39m[0m
+[0m [90m 3 | [39m[36mimport[39m [33m*[39m as mongoose from [32m'mongoose'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 | [39m[36mimport[39m { verifyToken } from [32m'../../../auth/auth.middleware'[39m[33m;[39m[0m
+[0m [90m   | [39m                            [31m[1m^[22m[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { successResponse[33m,[39m errorResponse } from [32m'../../../Utilidades/apiResponse'[39m[33m;[39m[0m
+[0m [90m 6 | [39m[0m
+[0m [90m 7 | [39m[36mconst[39m router [33m=[39m [33mRouter[39m()[33m;[39m[0m
+
+[4m[34mapps/backend/src/parametros/Entidades/Entidades.router.ts:5:48[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module '../../../Utilidades/apiResponse' or its corresponding type declarations.
+
+[0m [90m 3 | [39m[36mimport[39m [33m*[39m as mongoose from [32m'mongoose'[39m[33m;[39m[0m
+[0m [90m 4 | [39m[36mimport[39m { verifyToken } from [32m'../../../auth/auth.middleware'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 | [39m[36mimport[39m { successResponse[33m,[39m errorResponse } from [32m'../../../Utilidades/apiResponse'[39m[33m;[39m[0m
+[0m [90m   | [39m                                               [31m[1m^[22m[39m[0m
+[0m [90m 6 | [39m[0m
+[0m [90m 7 | [39m[36mconst[39m router [33m=[39m [33mRouter[39m()[33m;[39m[0m
+[0m [90m 8 | [39m[0m
+
+Found 2 errors.

@@ -1,0 +1,20 @@
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/252da3a9-e7b4-4904-bfe7-13685dbafc92[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[ ready ] http://localhost:3000
+✅ Conectado a MongoDB
+🔹 Login recibido: { dni: [32m'12345678'[39m, password: [32m'admin'[39m }
+🔹 Login recibido: { dni: [32m'12345678'[39m, password: [32m'admin'[39m }
+/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/js/src/executors/node/lib/coalescing-debounce.js:47
+                reject(new Error('Cancelled'));
+                       ^
+
+Error: Cancelled
+    at Object.cancel [90m(/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/[39mnode_modules/[4m@nx[24m/js/src/executors/node/lib/coalescing-debounce.js:47:24[90m)[39m
+    at stopAllTasks [90m(/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/[39mnode_modules/[4m@nx[24m/js/src/executors/node/node.impl.js:178:35[90m)[39m
+    at process.<anonymous> [90m(/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/[39mnode_modules/[4m@nx[24m/js/src/executors/node/node.impl.js:191:19[90m)[39m
+[90m    at process.emit (node:events:536:35)[39m
+    at process.emit [90m(/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/[39mnode_modules/[4mnx[24m/src/native/index.js:20:23[90m)[39m
+
+Node.js v20.19.5
