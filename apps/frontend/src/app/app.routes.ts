@@ -11,12 +11,15 @@ import { IndicesComponent } from './Parametros/Indices/indices.component';
 import { BancosAbmComponent } from './Parametros/Bancos/Bancos.component';
 import { RubrosAbmComponent } from './Parametros/Rubros/rubros.component';
 import { MarcasAbmComponent } from './Parametros/Marcas/marcas.component';
+import { ListadoMovimientosComponent } from './movimientos/listadoMovimientos.component';
 
 // entidades
 import { EntidadesComponent } from './Parametros/Entidades/Entidades.component';
 
 // gestion
 import { ProductosComponent } from './gestion/Productos/productos.component';
+import { MovimientosComponent } from './movimientos/movimientos.component';
+
 
 
 export const appRoutes: Route[] = [
@@ -30,24 +33,30 @@ export const appRoutes: Route[] = [
             { path: 'menu', component: MenuComponent },
             { path: 'userabm', component: UserAbmComponent },
 
-            // parametros
             {
                 path: 'centrocostos',
                 children: [
                     { path: '', component: CentroCostosComponent },
                     { path: ':idCentro', component: SucursalesComponent }
                 ]
-            }
-            ,
+            },
+
+            {
+                path: 'movimientos-proveedores',
+                component: ListadoMovimientosComponent,
+                data: { tipoEntidad: 'Proveedor', titulo: 'Movimientos de Proveedores' }
+            },
+
             { path: 'indices', component: IndicesComponent },
             { path: 'bancos', component: BancosAbmComponent },
-            { path: 'entidades', component: EntidadesComponent },
             { path: 'rubros', component: RubrosAbmComponent },
             { path: 'marcas', component: MarcasAbmComponent },
 
             // gestion
             { path: 'productos', component: ProductosComponent },
-
+            { path: 'entidades', component: EntidadesComponent },
+            { path: 'movimientos', component: MovimientosComponent },
+            { path: 'movimientos/:tipo', component: MovimientosComponent },
         ]
 
     },

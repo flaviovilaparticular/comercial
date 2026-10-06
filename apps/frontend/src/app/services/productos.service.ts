@@ -3,47 +3,31 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface Producto {
-
     _id?: string;
-
     codigo: string;
-
     nombre: string;
-
     descripcion?: string;
-
     rubro: { _id: string; nombre: string };
-
     marca: { _id: string; nombre: string };
-
     unidadMedida: string;
 
+    // NUEVO CAMPO AGREGADO ACÁ
+    stock: number;
+
     stockMinimo?: number;
-
     stockMaximo?: number;
-
     precios: {
-
         costoNeto?: number;
-
         margenGanancia?: number;
-
         precioVentaNeto: number;
-
         precioVentaFinal: number;
-
     };
 
     impuestos: {
-
         alicuotaIVA: string;
-
         percepcionesAdicionales?: number;
-
     };
-
     estado: string;
-
     observaciones?: string;
 }
 

@@ -116,6 +116,17 @@ router.post('/', verifyToken, async (req: Request, res: Response) => {
 
     console.log("BODY RECIBIDO:", req.body);
 
+    // 1. Extraemos el precio buscando dentro del objeto 'precios' o en la raíz por compatibilidad
+    const precioFinal = req.body.precios?.precioVentaFinal ?? req.body.precio;
+
+    // 2. Validamos que exista y que sea un número estrictamente mayor a 0
+    if (precioFinal === undefined || precioFinal === null || Number(precioFinal) <= 0) {
+        return res.status(400).json({
+            ok: false,
+            mensaje: "El valor del producto debe ser mayor a 0."
+        });
+    }
+
     try {
         const nuevoProducto = new ProductoModel(req.body);
         const productoGuardado = await nuevoProducto.save();
@@ -129,7 +140,6 @@ router.post('/', verifyToken, async (req: Request, res: Response) => {
             error
         });
     }
-
 });
 
 /**
@@ -144,6 +154,17 @@ router.put('/:id', verifyToken, async (req: Request, res: Response) => {
             return res.status(400).json({
                 ok: false,
                 message: 'ID inválido'
+            });
+        }
+
+        // 1. Extraemos el precio del body para validarlo
+        const { precio } = req.body;
+
+        // 2. Validamos que el valor sea mayor a 0 si es que viene en el body
+        if (precio !== undefined && (precio === null || precio <= 0)) {
+            return res.status(400).json({
+                ok: false,
+                message: 'El valor del producto debe ser mayor a 0.'
             });
         }
 
@@ -173,7 +194,6 @@ router.put('/:id', verifyToken, async (req: Request, res: Response) => {
         });
     }
 });
-
 /**
  * 🔹 DELETE /productos/:id
  * Eliminar producto

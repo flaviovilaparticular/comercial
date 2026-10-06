@@ -1,0 +1,150 @@
+<div class="container-fluid mt-4">
+
+    <!-- Encabezado Dinámico -->
+    <!-- Encabezado Centrado -->
+    <div class="d-flex flex-column align-items-center text-center mb-4">
+        <h2 class="mb-3">{{ tituloVista }}</h2>
+
+        <!-- Métricas Resumen -->
+        <div class="d-flex gap-3">
+            <!-- Bloque Registros -->
+            <div class="card px-3 py-2 text-center shadow-sm border-0 bg-light">
+                <span class="text-uppercase text-muted fw-bold small" style="font-size: 0.75rem;">Registros</span>
+                <span class="fs-5 fw-bold text-dark">{{ totalRegistros }}</span>
+            </div>
+
+            <!-- Bloque Importes -->
+            <div class="card px-3 py-2 text-center shadow-sm border-0 bg-light">
+                <span class="text-uppercase text-muted fw-bold small" style="font-size: 0.75rem;">Importes</span>
+                <span class="fs-5 fw-bold text-primary">{{ totalMontoFinal | currency:'ARS':'symbol':'1.2-2' }}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta de Filtros -->
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h6 class="mb-0">Filtros de Búsqueda</h6>
+        </div>
+        <div class="card-body">
+            <form (ngSubmit)="aplicarFiltros()" class="row g-3">
+
+                <!-- Fecha Desde -->
+                <div class="col-md-3">
+                    <label class="form-label">Fecha Desde</label>
+                    <input type="date" class="form-control" [(ngModel)]="filtros.fechaDesde" name="fechaDesde">
+                </div>
+
+                <!-- Fecha Hasta -->
+                <div class="col-md-3">
+                    <label class="form-label">Fecha Hasta</label>
+                    <input type="date" class="form-control" [(ngModel)]="filtros.fechaHasta" name="fechaHasta">
+                </div>
+
+                <!-- Forma de Pago -->
+                <div class="col-md-3">
+                    <label class="form-label">Forma de Pago</label>
+                    <select class="form-control" [(ngModel)]="filtros.formaDePago" name="formaDePago">
+                        <option value="">-- Todas --</option>
+                        <option value="CONTADO">Contado</option>
+                        <option value="CTACORRIENTE">Cuenta Corriente</option>
+                        <option value="CHEQUE">Cheque</option>
+                        <option value="TRANSFERENCIA">Transferencia</option>
+                    </select>
+                </div>
+
+                <!-- Botones de Acción -->
+                <div class="col-md-3 d-flex align-items-end justify-content-end gap-2">
+                    <!-- Botón Filtrar -->
+                    <button type="submit" class="btn btn-primary d-flex align-items-center justify-content-center p-2"
+                            title="Filtrar">
+                        <i class="bi bi-funnel fs-5"></i>
+                    </button>
+
+                    <!-- Botón Limpiar -->
+                    <button type="button"
+                            class="btn btn-outline-secondary d-flex align-items-center justify-content-center p-2"
+                            (click)="limpiarFiltros()" title="Limpiar filtros">
+                        <i class="bi bi-eraser fs-5"></i>
+                    </button>
+
+                    <!-- Botón Volver -->
+                    <button type="button"
+                            class="btn btn-outline-dark d-flex align-items-center justify-content-center p-2"
+                            routerLink="/menu" title="Volver al menú">
+                        <i class="bi bi-arrow-left-circle fs-5"></i>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Indicador de Carga -->
+    <div *ngIf="cargando" class="text-center my-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <p class="mt-2 text-muted">Buscando movimientos de {{ tipoEntidad.toLowerCase() }}s...</p>
+    </div>
+
+    <!-- Tabla de Movimientos -->
+    <div *ngIf="!cargando" class="table-responsive shadow-sm rounded">
+        <table class="table table-striped table-hover align-middle mb-0">
+            <thead class="table-dark">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Operación</th>
+                    <th>Comprobante</th>
+                    <th>{{ tipoEntidad }} (Razón Social)</th>
+                    <th>Documento</th>
+                    <th>Forma Pago</th>
+                    <th class="text-end">Total Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mov of movimientos">
+                    <td>{{ mov.fechaAlta | date:'dd/MM/yyyy HH:mm' }}</td>
+                    <td>
+                        <span [class]="mov.tipoOperacion === 'COMPRA' ? 'badge bg-danger' : 'badge bg-success'">
+                            {{ mov.tipoOperacion }}
+                        </span>
+                    </td>
+                    <td>{{ mov.tipoComprobante }} {{ mov.nroComprobante }}</td>
+                    <td>
+                        <strong>{{ mov.datosEntidad?.nombreRazonSocial || 'N/A' }}</strong>
+                    </td>
+                    <td>
+                        <small>{{ mov.datosEntidad?.tipoDocumento }}: {{ mov.datosEntidad?.documentoNumero }}</small>
+                    </td>
+                    <td>
+                        <span class="badge bg-outline-info text-dark border">
+                            {{ mov.formaDePago }}
+                        </span>
+                    </td>
+                    <td class="text-end fw-bold">
+                        {{ mov.totalFinal | currency:'ARS':'symbol':'1.2-2' }}
+                    </td>
+                </tr>
+
+                <!-- Estado vacío -->
+                <tr *ngIf="movimientos.length === 0">
+                    <td colspan="7" class="text-center py-4 text-muted">
+                        No se encontraron movimientos registrados para los filtros seleccionados.
+                    </td>
+                </tr>
+            </tbody>
+
+            <!-- Pie de tabla con Resumen -->
+            <tfoot *ngIf="movimientos.length > 0" class="table-light">
+                <tr>
+                    <td colspan="6" class="text-end fw-bold">Total Acumulado:</td>
+                    <td class="text-end fw-bold text-primary fs-6">
+                        {{ totalMontoFinal | currency:'ARS':'symbol':'1.2-2' }}
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>

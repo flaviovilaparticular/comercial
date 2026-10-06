@@ -1,0 +1,9 @@
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/79c8cad8-c91d-40c5-a6e3-87fd5ad05988[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[ ready ] http://localhost:3000
+✅ Conectado a MongoDB
+🔹 Login recibido: { dni: [32m'1'[39m, password: [32m'1'[39m }
+🔹 Login recibido: { dni: [32m'2'[39m, password: [32m'2'[39m }
+[1m[31mWatch error: Daemon closed the connection[39m[22m

@@ -1,0 +1,45 @@
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+Unable to read angular.json
+[     - Error: ValueExpected in /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/.nx/workspace-data/eslint-2654242865465226088.hash at 1:1
+  [0m[31m[1m>[22m[39m[90m 1 | [39m[0m
+  [0m [90m   | [39m[31m[1m^[22m[39m[0m
+  
+      at parseJson (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/utils/json.js:29:15)
+      at readJsonFile (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/utils/fileutils.js:32:37)
+      at readTargetsCache (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/eslint/src/plugins/plugin.js:36:37)
+      at exports.createNodesV2 (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/eslint/src/plugins/plugin.js:167:30)
+      at LoadedNxPlugin.createNodes (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/loaded-nx-plugin.js:22:65)
+      at LoadedNxPlugin.createNodes.<computed> (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/loaded-nx-plugin.js:32:34)
+      at createNodes (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:76:63)
+      at consumeMessage (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/isolation/messaging.js:42:32)
+      at /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:34:47
+      at Socket.<anonymous> (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/utils/consume-messages-from-socket.js:13:17)] {
+  errors: [
+    {
+      stack: [32m' - Error: ValueExpected in /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/.nx/workspace-data/eslint-2654242865465226088.hash at 1:1\n'[39m +
+        [32m'\x1B[0m\x1B[31m\x1B[1m>\x1B[22m\x1B[39m\x1B[90m 1 | \x1B[39m\x1B[0m\n'[39m +
+        [32m'\x1B[0m \x1B[90m   | \x1B[39m\x1B[31m\x1B[1m^\x1B[22m\x1B[39m\x1B[0m\n'[39m +
+        [32m'\n'[39m +
+        [32m'    at parseJson (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/utils/json.js:29:15)\n'[39m +
+        [32m'    at readJsonFile (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/utils/fileutils.js:32:37)\n'[39m +
+        [32m'    at readTargetsCache (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/eslint/src/plugins/plugin.js:36:37)\n'[39m +
+        [32m'    at exports.createNodesV2 (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/eslint/src/plugins/plugin.js:167:30)\n'[39m +
+        [32m'    at LoadedNxPlugin.createNodes (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/loaded-nx-plugin.js:22:65)\n'[39m +
+        [32m'    at LoadedNxPlugin.createNodes.<computed> (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/loaded-nx-plugin.js:32:34)\n'[39m +
+        [32m'    at createNodes (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:76:63)\n'[39m +
+        [32m'    at consumeMessage (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/isolation/messaging.js:42:32)\n'[39m +
+        [32m'    at /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:34:47\n'[39m +
+        [32m'    at Socket.<anonymous> (/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/nx/src/utils/consume-messages-from-socket.js:13:17)'[39m,
+      message: [32m'An error occurred while processing files for the @nx/eslint/plugin plugin (Defined at nx.json#plugins[1])\n'[39m +
+        [32m'.\n'[39m +
+        [32m'  - ValueExpected in /home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/.nx/workspace-data/eslint-2654242865465226088.hash at 1:1\n'[39m +
+        [32m'\x1B[0m\x1B[31m\x1B[1m>\x1B[22m\x1B[39m\x1B[90m 1 | \x1B[39m\x1B[0m\n'[39m +
+        [32m'\x1B[0m \x1B[90m   | \x1B[39m\x1B[31m\x1B[1m^\x1B[22m\x1B[39m\x1B[0m\n'[39m,
+      errors: [36m[Array][39m,
+      partialResults: [],
+      name: [32m'AggregateCreateNodesError'[39m,
+      pluginIndex: [33m1[39m
+    }
+  ],
+  name: [32m'ProjectGraphError'[39m
+}

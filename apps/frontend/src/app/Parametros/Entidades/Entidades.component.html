@@ -31,7 +31,7 @@
                                     <th>Documento</th>
                                     <th>Tipo</th>
                                     <th>IVA</th>
-                                    <th class="text-center">Acciones</th>
+                                    <th class="text-center"></th>
                                 </tr>
                             </thead>
 
@@ -43,11 +43,21 @@
                                     <td>{{ e.condicionIVA }}</td>
 
                                     <td class="text-center">
-                                        <button class="btn btn-primary btn-sm me-2" (click)="abrirModal(e)">
+                                        <!-- Botón Editar -->
+                                        <button class="btn btn-primary btn-sm me-2" (click)="abrirModal(e)"
+                                                title="Editar entidad">
                                             <i class="fas fa-edit"></i>
                                         </button>
 
-                                        <button class="btn btn-danger btn-sm" (click)="eliminarEntidad(e._id!)">
+                                        <!-- 🔹 Nuevo Botón: Ver Cuenta Corriente -->
+                                        <button class="btn btn-info btn-sm text-white me-2"
+                                                (click)="verCuentaCorriente(e)" title="Ver Cuenta Corriente">
+                                            <i class="fas fa-book"></i>
+                                        </button>
+
+                                        <!-- Botón Eliminar -->
+                                        <button class="btn btn-danger btn-sm" (click)="eliminarEntidad(e._id!)"
+                                                title="Eliminar entidad">
                                             <i class="fas fa-trash"></i>
                                         </button>
                                     </td>
@@ -264,6 +274,217 @@
                 </div>
                 <!--  fin del modal -->
             </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de Cuenta Corriente / Movimientos -->
+<div class="modal fade show" tabindex="-1" style="display: block; background: rgba(0,0,0,0.5);"
+     *ngIf="mostrarModalCuentaCorriente">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Encabezado con Nombre del Proveedor -->
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-book me-2 text-info"></i>
+                    {{ proveedorSeleccionado?.nombreRazonSocial }}
+                </h5>
+                <button type="button" class="btn-close btn-close-white" (click)="cerrarModalCuentaCorriente()"></button>
+            </div>
+
+            <div class="modal-body bg-light p-4">
+
+                <!-- Banner Saldo Pendiente -->
+                <div class="text-center mb-4 p-3 bg-secondary bg-opacity-25 rounded border border-secondary shadow-sm">
+                    <small class="text-dark d-block fw-bold text-uppercase opacity-75">Saldo / Monto Pendiente</small>
+                    <span class="fs-2 text-dark fw-bolder">${{ saldoTotalProveedor | number:'1.2-2' }}</span>
+                </div>
+
+                <!-- Filtros de movimientos -->
+
+                <div class="d-flex justify-content-start gap-2 mb-4">
+
+                    <!-- TODOS -->
+                    <button type="button" class="btn btn-sm px-4" [class.btn-dark]="filtroMovimientos === 'todos'"
+                            [class.btn-outline-dark]="filtroMovimientos !== 'todos'"
+                            (click)="filtrarMovimientos('todos')">
+                        <i class="fas fa-list me-2"></i>
+                        Todos
+                    </button>
+
+                    <!-- PENDIENTES -->
+                    <button type="button" class="btn btn-sm px-4"
+                            [class.btn-warning]="filtroMovimientos === 'pendientes'"
+                            [class.btn-outline-warning]="filtroMovimientos !== 'pendientes'"
+                            (click)="filtrarMovimientos('pendientes')">
+                        <i class="fas fa-clock me-2"></i>
+                        Pendientes
+                    </button>
+
+                    <!-- CANCELADAS -->
+                    <button type="button" class="btn btn-sm px-4"
+                            [class.btn-success]="filtroMovimientos === 'canceladas'"
+                            [class.btn-outline-success]="filtroMovimientos !== 'canceladas'"
+                            (click)="filtrarMovimientos('canceladas')">
+                        <i class="fas fa-check-circle me-2"></i>
+                        Canceladas
+                    </button>
+
+                </div>
+
+                <!-- Grilla / Tabla de Movimientos dentro de Card Blanco -->
+                <div class="bg-white rounded border p-3 shadow-sm">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Tipo Entidad</th>
+                                    <th>Nro Comprobante</th>
+                                    <th class="text-end">Total Final</th>
+                                    <th class="text-end">Monto Pago</th>
+                                    <th class="text-end">Saldo Pendiente</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <ng-container *ngFor="let mov of movimientosFiltrados">
+                                    <!-- Fila Principal del Comprobante -->
+                                    <tr>
+                                        <td>
+                                            <span class="badge bg-info text-dark">{{ mov.tipoEntidad }}</span>
+                                        </td>
+                                        <td class="fw-bold font-monospace">{{ mov.nroComprobante }}</td>
+                                        <td class="text-end fw-bold">${{ mov.montoTotal | number:'1.2-2' }}</td>
+                                        <td class="text-end fw-bold text-danger">${{ mov.montoPago | number:'1.2-2' }}
+                                        </td>
+                                        <td class="text-end fw-bold text-success">
+                                            ${{ (mov.montoTotal - mov.montoPago) | number:'1.2-2' }}
+                                        </td>
+                                        <td class="text-center">
+                                            <!-- Botón Pagar si registra deuda -->
+                                            <button class="btn btn-sm btn-outline-success"
+                                                    *ngIf="(mov.montoTotal - mov.montoPago) > 0"
+                                                    (click)="toggleFormularioPago(mov)"
+                                                    [class.active]="movSeleccionadoPago?._id === mov._id">
+                                                <i class="fas fa-hand-holding-usd me-1"></i> Pagar
+                                            </button>
+                                            <!-- Badge Pagado si saldo <= 0 -->
+                                            <span *ngIf="(mov.montoTotal - mov.montoPago) <= 0"
+                                                  class="badge bg-success">
+                                                <i class="fas fa-check me-1"></i> Pagado
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Fila Desplegable con Formulario Inline -->
+                                    <tr *ngIf="movSeleccionadoPago?._id === mov._id">
+                                        <td colspan="6"
+                                            class="p-3 bg-secondary bg-opacity-10 border-top border-bottom border-primary-subtle">
+                                            <div
+                                                 class="card card-body border-0 border-start border-4 border-primary shadow-sm bg-white">
+                                                <h6 class="text-primary fw-bold mb-3 d-flex align-items-center">
+                                                    <i class="fas fa-receipt me-2"></i> Registrar Pago para {{
+                                                    mov.nroComprobante }}
+                                                </h6>
+
+                                                <form #formPago="ngForm" (ngSubmit)="guardarPago(mov, formPago)">
+                                                    <div class="row g-3">
+                                                        <div class="col-md-4">
+                                                            <label class="form-label small fw-bold text-secondary">Tipo
+                                                                Comprobante Pago</label>
+                                                            <select class="form-select form-select-sm"
+                                                                    name="tipoComprobante"
+                                                                    [(ngModel)]="nuevoPago.tipoComprobante" required>
+                                                                <option value="">Seleccione...</option>
+                                                                <option value="RECIBO">Recibo de Pago</option>
+                                                                <option value="COMPROBANTE_TRANSFERENCIA">Comprobante
+                                                                    Transferencia</option>
+                                                                <option value="ORDEN_PAGO">Orden de Pago</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-4">
+                                                            <label class="form-label small fw-bold text-secondary">Nro
+                                                                Comprobante Pago</label>
+                                                            <input type="text"
+                                                                   class="form-control form-control-sm font-monospace"
+                                                                   name="nroComprobante"
+                                                                   placeholder="Ej: OP-0001-00001234"
+                                                                   [(ngModel)]="nuevoPago.nroComprobante" required>
+                                                        </div>
+
+                                                        <div class="col-md-4">
+                                                            <label class="form-label small fw-bold text-secondary">Forma
+                                                                de Pago</label>
+                                                            <select class="form-select form-select-sm"
+                                                                    name="formaDePago"
+                                                                    [(ngModel)]="nuevoPago.formaDePago" required>
+                                                                <option value="EFECTIVO">Efectivo</option>
+                                                                <option value="TRANSFERENCIA">Transferencia</option>
+                                                                <option value="CHEQUE">Cheque</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <label class="form-label small fw-bold text-secondary">Monto
+                                                                a Pagar</label>
+                                                            <div class="input-group input-group-sm">
+                                                                <span class="input-group-text bg-light fw-bold">$</span>
+                                                                <input type="number" class="form-control" name="monto"
+                                                                       [(ngModel)]="nuevoPago.monto"
+                                                                       [max]="mov.montoTotal - mov.montoPago" min="1"
+                                                                       required>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <label class="form-label small fw-bold text-secondary">Fecha
+                                                                de Pago</label>
+                                                            <input type="date" class="form-control form-control-sm"
+                                                                   name="fechaPago" [(ngModel)]="nuevoPago.fechaPago"
+                                                                   required>
+                                                        </div>
+
+                                                        <div class="col-12 text-end mt-3 pt-2 border-top">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-outline-secondary me-2"
+                                                                    (click)="cancelarPago()">
+                                                                Cancelar
+                                                            </button>
+                                                            <button type="submit"
+                                                                    class="btn btn-sm btn-success px-3 fw-bold"
+                                                                    [disabled]="formPago.invalid">
+                                                                <i class="fas fa-check me-1"></i> Confirmar Pago
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </ng-container>
+
+                                <!-- Mensaje si no hay movimientos -->
+                                <tr *ngIf="movimientosProveedor.length === 0">
+                                    <td colspan="6" class="text-center text-muted py-3">
+                                        No se encontraron movimientos para el filtro seleccionado.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModalCuentaCorriente()">
+                    Cerrar
+                </button>
+            </div>
+
         </div>
     </div>
 </div>

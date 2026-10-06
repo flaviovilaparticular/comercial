@@ -66,25 +66,29 @@ export class UserAbmComponent implements OnInit {
     }
 
     guardarUsuario(): void {
+
+        console.log('USUARIO A ENVIAR', this.nuevoUsuario);
+
         if (this.esEdicion && this.usuarioSeleccionado) {
             this.userService.updateUser(this.usuarioSeleccionado._id, this.nuevoUsuario).subscribe({
                 next: () => {
-                    Swal.fire('✅ Éxito', 'Usuario actualizado correctamente', 'success');
+                    Swal.fire('Éxito', 'Usuario actualizado correctamente', 'success');
                     this.cargarUsuarios();
                     this.cerrarModal();
                 },
-                error: () => Swal.fire('❌ Error', 'No se pudo actualizar el usuario', 'error')
+                error: () => Swal.fire(' Error', 'No se pudo actualizar el usuario', 'error')
             });
         } else {
             this.userService.register(this.nuevoUsuario).subscribe({
                 next: () => {
-                    Swal.fire('✅ Éxito', 'Usuario creado correctamente', 'success');
+                    Swal.fire(' Éxito', 'Usuario creado correctamente', 'success');
                     this.cargarUsuarios();
                     this.cerrarModal();
                 },
                 error: (err) => {
-                    Swal.fire('❌ Error', 'No se pudo crear el usuario', 'error');
+                    Swal.fire('Error', 'No se pudo crear el usuario', 'error');
                     console.error(err);
+                    console.log(err.error);
                 }
             });
         }

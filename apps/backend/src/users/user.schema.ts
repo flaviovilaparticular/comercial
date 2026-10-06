@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 import * as bcrypt from 'bcryptjs';
 import { IUser } from './user.interface';
 
-// 🧱 Definición del esquema de Usuario (simplificado)
+// Definición del esquema de Usuario (simplificado)
 const UserSchema = new Schema<IUser>({
     dni: { type: String, required: true, unique: true, trim: true },
     password: { type: String, required: true },
@@ -13,7 +13,7 @@ const UserSchema = new Schema<IUser>({
     timestamps: true // 🔹 opcional: agrega createdAt y updatedAt
 });
 
-// 🔒 Hashear la contraseña antes de guardar
+//  Hashear la contraseña antes de guardar
 UserSchema.pre<IUser>('save', async function (next) {
     if (!this.isModified('password')) return next();
     try {
@@ -25,7 +25,7 @@ UserSchema.pre<IUser>('save', async function (next) {
     }
 });
 
-// 🔍 Método para comparar contraseñas
+// Método para comparar contraseñas
 UserSchema.methods.comparePassword = async function (password: string): Promise<boolean> {
     return bcrypt.compare(password, this.password);
 };

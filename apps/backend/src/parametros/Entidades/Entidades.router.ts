@@ -7,15 +7,15 @@ import { successResponse, errorResponse } from '../../Utilidades/apiResponse';
 const router = Router();
 
 /**
- * 🔹 GET /entidades
- * Obtener todas las entidades
+ * 1️⃣ GET /
+ * Obtener TODAS las entidades
  */
 router.get('/', verifyToken, async (req: Request, res: Response) => {
     try {
         const entidades = await EntidadModel.find().sort({ nombreRazonSocial: 1 });
-        res.json(entidades);
+        return res.json(entidades);
     } catch (error) {
-        res.status(500).json({
+        return res.status(500).json({
             ok: false,
             message: 'Error obteniendo entidades',
             error
@@ -24,8 +24,66 @@ router.get('/', verifyToken, async (req: Request, res: Response) => {
 });
 
 /**
- * 🔹 GET /entidades/:id
- * Obtener entidad por ID
+ * 2️⃣ GET /proveedores
+ * Trae solo las entidades que tienen al menos un movimiento con tipoEntidad: "Proveedor"
+ * (VA ANTES DE /:id PARA QUE EXPRESS NO CONFUNDA "proveedores" CON UN ID)
+ */
+
+
+router.get('/proveedores', verifyToken, async (req: Request, res: Response) => {
+    try {
+        const proveedores = await EntidadModel.aggregate([
+            {
+                $lookup: {
+                    from: 'movimientos', // Nombre de la colección en Mongo
+                    let: { entidadId: '$_id' },
+                    pipeline: [
+                        {
+                            $match: {
+                                $expr: {
+                                    $and: [
+                                        // 👈 Aquí está la corrección clave: $datosEntidad.idEntidad
+                                        { $eq: [{ $toString: '$datosEntidad.idEntidad' }, { $toString: '$$entidadId' }] },
+                                        { $eq: ['$tipoEntidad', 'Proveedor'] }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    as: 'movimientosProveedor'
+                }
+            },
+            {
+                // Solo conserva las entidades que tengan AL MENOS 1 movimiento de tipo "Proveedor"
+                $match: {
+                    'movimientosProveedor.0': { $exists: true }
+                }
+            },
+            {
+                // Limpiamos el array temporal de movimientos
+                $project: {
+                    movimientosProveedor: 0
+                }
+            },
+            {
+                $sort: { nombreRazonSocial: 1 }
+            }
+        ]);
+
+        return res.json(proveedores);
+
+    } catch (error) {
+        return res.status(500).json({
+            ok: false,
+            message: 'Error al obtener proveedores',
+            error: String(error)
+        });
+    }
+});
+
+/**
+ * 3️⃣ GET /:id
+ * Obtener entidad por ID (SIEMPRE AL FINAL DE LOS GET)
  */
 router.get('/:id', verifyToken, async (req: Request, res: Response) => {
     try {
@@ -47,16 +105,15 @@ router.get('/:id', verifyToken, async (req: Request, res: Response) => {
             });
         }
 
-        res.json(entidad);
+        return res.json(entidad);
     } catch (error) {
-        res.status(500).json({
+        return res.status(500).json({
             ok: false,
             message: 'Error obteniendo entidad',
             error
         });
     }
 });
-
 /**
  * 🔹 POST /entidades
  * Crear entidad

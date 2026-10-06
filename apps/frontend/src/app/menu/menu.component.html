@@ -98,106 +98,76 @@
         <!-- Opción 4: Gestión -->
         <div class="col-lg-4 col-md-6">
             <div class="card menu-item h-100 p-3 shadow-sm">
-                <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center mb-3" [routerLink]="['/movimientos', 'COMPRA']"
+                     style="cursor: pointer;">
                     <i class="bi bi-gear-fill fs-3 me-2 text-primary"></i>
-                    <h4 class="mb-0">Proveedores</h4>
+                    <h4 class="mb-0">Compras</h4>
                 </div>
 
                 <ul class="list-unstyled ps-2">
                     <li class="mb-2">
-                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
-                           data-bs-toggle="collapse" href="#menuOpsProveedores" role="button" aria-expanded="false">
-                            <span><i class="bi bi-truck me-2"></i>Gestión de Proveedores</span>
-                            <i class="bi bi-chevron-down small text-muted"></i>
+                        <!-- REGISTRAR COMPRA -->
+                        <a [routerLink]="['/movimientos', 'COMPRA']" routerLinkActive="active"
+                           class="d-flex align-items-center text-decoration-none text-secondary py-1 rounded ps-2 hover-menu"
+                           style="cursor: pointer;">
+                            <i class="bi bi-cart-plus me-2 text-primary"></i>
+                            <span>Registrar Compra</span>
                         </a>
-                        <div class="collapse" id="menuOpsProveedores">
-                            <ul class="list-unstyled ps-4 border-start">
-                                <li class="small text-uppercase text-muted fw-lighter mt-2 mb-1"
-                                    style="font-size: 0.7rem; letter-spacing: 0.5px;">Finanzas</li>
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Cuentas
-                                        Corrientes</a>
-                                </li>
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Saldos
-                                        Pendientes</a>
-                                </li>
 
-                                <li class="small text-uppercase text-muted fw-lighter mt-2 mb-1"
-                                    style="font-size: 0.7rem; letter-spacing: 0.5px;">Operaciones</li>
-                                <li><a href="#"
-                                       class="text-decoration-none d-block py-1 text-secondary font-monospace"><i
-                                           class="bi bi-plus-circle me-1"></i>Nota de Pedido</a></li>
-                                <li><a href="#"
-                                       class="text-decoration-none d-block py-1 text-secondary font-monospace"><i
-                                           class="bi bi-cart-plus me-1"></i>Registrar Compra</a></li>
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Historial de
-                                        Compras</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="mb-2">
-                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
-                           data-bs-toggle="collapse" href="#menuInventario" role="button" aria-expanded="false">
-                            <span><i class="bi bi-box-seam me-2"></i>Inventario</span>
-                            <i class="bi bi-chevron-down small text-muted"></i>
+                        <!-- PROVEEDORES -->
+                        <a [routerLink]="['/entidades']" [queryParams]="{ tipo: 'proveedor' }" routerLinkActive="active"
+                           class="d-flex align-items-center text-decoration-none text-secondary py-1 rounded ps-2 hover-menu"
+                           style="cursor: pointer;">
+                            <i class="bi bi-truck me-2 text-primary"></i>
+                            <span>Proveedores</span>
                         </a>
-                        <div class="collapse" id="menuInventario">
-                            <ul class="list-unstyled ps-4 border-start">
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Productos</a>
-                                </li>
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Categorías</a>
-                                </li>
-                                <li><a href="#"
-                                       class="text-decoration-none d-block py-1 text-secondary text-danger">Stock
-                                        Crítico</a></li>
-                            </ul>
-                        </div>
-                    </li>
 
+                        <!-- Listado de Compras -->
+                        <a [routerLink]="['/movimientos-proveedores']" routerLinkActive="active"
+                           class="d-flex align-items-center text-decoration-none text-secondary py-1 rounded ps-2 hover-menu"
+                           style="cursor: pointer;">
+                            <i class="bi bi-wallet2 me-2 text-primary"></i>
+                            <span>Listado de compras</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <!-- Opción 5 Gestión -->
+        <!-- ventas -->
         <div class="col-lg-4 col-md-6">
             <div class="card menu-item h-100 p-3 shadow-sm">
-                <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-gear-fill fs-3 me-2 text-primary"></i>
-                    <h4 class="mb-0">Administración</h4>
+                <!-- TÍTULO DE LA TARJETA -->
+                <div class="d-flex align-items-center mb-3" [routerLink]="['/movimientos', 'VENTA']"
+                     style="cursor: pointer;">
+                    <i class="bi bi-bag-check-fill fs-3 me-2 text-success"></i>
+                    <h4 class="mb-0">Ventas</h4>
                 </div>
 
                 <ul class="list-unstyled ps-2">
                     <li class="mb-2">
-                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
-                           data-bs-toggle="collapse" href="#menuEntidades" role="button" aria-expanded="false">
-                            <span><i class="bi bi-people me-2"></i>Entidades</span>
-                            <i class="bi bi-chevron-down small text-muted"></i>
+                        <!-- REGISTRAR VENTA -->
+                        <a [routerLink]="['/movimientos', 'VENTA']" routerLinkActive="active"
+                           class="d-flex align-items-center text-decoration-none text-secondary py-1 rounded ps-2 hover-menu"
+                           style="cursor: pointer;">
+                            <i class="bi bi-cart-check me-2 text-success"></i>
+                            <span>Registrar Venta</span>
                         </a>
-                        <div class="collapse" id="menuEntidades">
-                            <ul class="list-unstyled ps-4 border-start">
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Clientes</a>
-                                </li>
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Proveedores</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
 
-                    <li class="mb-2">
-                        <a class="d-flex justify-content-between align-items-center text-decoration-none py-2 fw-bold text-dark"
-                           data-bs-toggle="collapse" href="#menuInventario" role="button" aria-expanded="false">
-                            <span><i class="bi bi-box-seam me-2"></i>Inventario</span>
-                            <i class="bi bi-chevron-down small text-muted"></i>
+                        <!-- CLIENTES -->
+                        <a [routerLink]="['/entidades']" [queryParams]="{ tipo: 'cliente' }" routerLinkActive="active"
+                           class="d-flex align-items-center text-decoration-none text-secondary py-1 rounded ps-2 hover-menu"
+                           style="cursor: pointer;">
+                            <i class="bi bi-people me-2 text-success"></i>
+                            <span>Clientes</span>
                         </a>
-                        <div class="collapse" id="menuInventario">
-                            <ul class="list-unstyled ps-4 border-start">
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Productos</a>
-                                </li>
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Categorías</a>
-                                </li>
-                                <li><a href="#" class="text-decoration-none d-block py-1 text-secondary">Stock
-                                        Crítico</a></li>
-                            </ul>
-                        </div>
+
+                        <!-- LISTADO DE VENTAS -->
+                        <a [routerLink]="['/movimientos-clientes']" routerLinkActive="active"
+                           class="d-flex align-items-center text-decoration-none text-secondary py-1 rounded ps-2 hover-menu"
+                           style="cursor: pointer;">
+                            <i class="bi bi-receipt me-2 text-success"></i>
+                            <span>Listado de Ventas</span>
+                        </a>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,21 @@
+[4m[34mapps/backend/src/movimientos/movimientos.router.ts:96:47[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'tipo' does not exist on type 'Document<unknown, {}, IMovimiento, {}, {}> & IMovimiento & Required<{ _id: unknown; }> & { __v: number; }'.
+
+[0m [90m 94 | [39m[0m
+[0m [90m 95 | [39m            [90m// 1. Extraer tipoOperacion con fallback seguro[39m[0m
+[0m[31m[1m>[22m[39m[90m 96 | [39m            [36mconst[39m tipoOp [33m=[39m movimientoGuardado[33m.[39mtipo [33m||[39m[0m
+[0m [90m    | [39m                                              [31m[1m^[22m[39m[0m
+[0m [90m 97 | [39m                (movimientoGuardado as any)[33m.[39mtipoMovimiento [33m||[39m[0m
+[0m [90m 98 | [39m                (movimientoGuardado as any)[33m.[39mtipoOperacion [33m||[39m[0m
+[0m [90m 99 | [39m                req[33m.[39mbody[33m.[39mtipo [33m||[39m[0m
+
+[4m[34mapps/backend/src/movimientos/movimientos.router.ts:105:49[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'totalGeneral' does not exist on type 'Document<unknown, {}, IMovimiento, {}, {}> & IMovimiento & Required<{ _id: unknown; }> & { __v: number; }'.
+
+[0m [90m 103 | [39m[0m
+[0m [90m 104 | [39m            [90m// 2. Extraer montoTotal parseando a número[39m[0m
+[0m[31m[1m>[22m[39m[90m 105 | [39m            [36mconst[39m totalRaw [33m=[39m movimientoGuardado[33m.[39mtotalGeneral [33m?[39m[33m?[39m[0m
+[0m [90m     | [39m                                                [31m[1m^[22m[39m[0m
+[0m [90m 106 | [39m                (movimientoGuardado as any)[33m.[39mmontoTotal [33m?[39m[33m?[39m[0m
+[0m [90m 107 | [39m                (movimientoGuardado as any)[33m.[39mtotal [33m?[39m[33m?[39m[0m
+[0m [90m 108 | [39m                req[33m.[39mbody[33m.[39mtotalGeneral [33m?[39m[33m?[39m[0m
+
+Found 2 errors.

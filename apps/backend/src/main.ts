@@ -28,6 +28,11 @@ import EntidadRouter from './parametros/Entidades/Entidades.router';
 // productos
 import { ProductosRouter } from './Productos/productos.router';
 
+// movimientos
+import movimientosRouter from './movimientos/movimientos.router';
+import { CuentaCorrienteRouter } from './movimientos/cuentacorrientes.router';
+
+
 
 
 
@@ -76,7 +81,9 @@ app.use('/api/parametros/rubros', RubrosRouter);
 // productos
 app.use('/api/productos', ProductosRouter);
 
-
+// movimientos 
+app.use('/api/movimientos', movimientosRouter);
+app.use('/api/cuentacorriente', CuentaCorrienteRouter);
 
 // 🔹 Levantar servidor
 app.listen(port, host, () => {

@@ -109,27 +109,63 @@
                         <div class="col-md-8 mb-3">
                             <label>Nombre</label>
                             <input type="text" class="form-control" [(ngModel)]="nuevoProducto.nombre" name="nombre"
-                                   required>
+                                   [(ngModel)]="nuevoProducto.rubro._id" required>
                         </div>
 
                         <div class="col-md-6 mb-3">
+
                             <label>Rubro</label>
-                            <select class="form-control w-100" [(ngModel)]="nuevoProducto.rubro._id" name="rubro">
-                                <option value="">Seleccione</option>
-                                <option *ngFor="let r of rubros" [value]="r._id">
-                                    {{ r.nombre }}
-                                </option>
-                            </select>
+
+                            <div class="d-flex">
+
+                                <select class="form-control" [(ngModel)]="nuevoProducto.rubro._id" name="rubro">
+
+                                    <option value="">Seleccione</option>
+
+                                    <option *ngFor="let r of rubros" [value]="r._id">
+
+                                        {{ r.nombre }}
+
+                                    </option>
+
+                                </select>
+
+                                <button type="button" class="btn btn-success ms-2" (click)="abrirModalRubro()">
+
+                                    <i class="fas fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
                         </div>
 
                         <div class="col-md-6 mb-3">
+
                             <label>Marca</label>
-                            <select class="form-control w-100" [(ngModel)]="nuevoProducto.marca._id" name="marca">
-                                <option value="">Seleccione</option>
-                                <option *ngFor="let m of marcas" [value]="m._id">
-                                    {{ m.nombre }}
-                                </option>
-                            </select>
+
+                            <div class="d-flex">
+
+                                <select class="form-control" [(ngModel)]="nuevoProducto.marca._id" name="marca">
+
+                                    <option value="">Seleccione</option>
+
+                                    <option *ngFor="let m of marcas" [value]="m._id">
+
+                                        {{ m.nombre }}
+
+                                    </option>
+
+                                </select>
+
+                                <button type="button" class="btn btn-success ms-2" (click)="abrirModalMarca()">
+
+                                    <i class="fas fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
                         </div>
 
                         <div class="col-md-4 mb-3">
@@ -260,6 +296,86 @@
                     </div>
 
                 </form>
+            </div>
+
+        </div>
+        <!-- MODAL CREAR MARCA RAPIDA -->
+
+        <div *ngIf="mostrarModalMarca" class="modal-overlay">
+
+            <div class="modal-custom">
+
+                <div class="modal-header">
+
+                    <h5>Nueva Marca</h5>
+
+                    <button type="button" class="btn-close" (click)="cerrarModalMarca()">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <input type="text" class="form-control" [(ngModel)]="nombreNuevaMarca" placeholder="Nombre marca">
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-primary" (click)="guardarMarcaRapida()">
+
+                        Guardar
+
+                    </button>
+
+                    <button class="btn btn-secondary" (click)="cerrarModalMarca()">
+
+                        Cancelar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- MODAL CREAR RUBRO RAPIDO -->
+
+        <div *ngIf="mostrarModalRubro" class="modal-overlay">
+
+            <div class="modal-custom">
+
+                <div class="modal-header">
+
+                    <h5>Nuevo Rubro</h5>
+
+                    <button type="button" class="btn-close" (click)="cerrarModalRubro()">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <input type="text" class="form-control" [(ngModel)]="nombreNuevoRubro" placeholder="Nombre rubro">
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-primary" (click)="guardarRubroRapido()">
+
+                        Guardar
+
+                    </button>
+
+                    <button class="btn btn-secondary" (click)="cerrarModalRubro()">
+
+                        Cancelar
+
+                    </button>
+
+                </div>
+
             </div>
 
         </div>

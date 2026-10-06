@@ -1,0 +1,41 @@
+[4m[34mapps/backend/src/movimientos/movimientos.router.ts:99:46[39m[24m - [31m[1merror[22m[39m [90mTS2552[39m: Cannot find name 'CuentaCorrienteModel'. Did you mean 'CuentaCorrienteRouter'?
+
+[0m [90m  97 | [39m        [36mif[39m (movimientoGuardado[33m.[39mesCuentaCorriente) {[0m
+[0m [90m  98 | [39m[0m
+[0m[31m[1m>[22m[39m[90m  99 | [39m            [36mconst[39m nuevaCuentaCorriente [33m=[39m [36mnew[39m [33mCuentaCorrienteModel[39m({[0m
+[0m [90m     | [39m                                             [31m[1m^[22m[39m[0m
+[0m [90m 100 | [39m                idEntidad[33m:[39m movimientoGuardado[33m.[39mdatosEntidad[33m.[39midEntidad[33m,[39m[0m
+[0m [90m 101 | [39m                tipoEntidad[33m:[39m movimientoGuardado[33m.[39mtipo [33m===[39m [32m'VENTA'[39m [33m?[39m [32m'CLIENTE'[39m [33m:[39m [32m'PROVEEDOR'[39m[33m,[39m[0m
+[0m [90m 102 | [39m                tipoOperacion[33m:[39m movimientoGuardado[33m.[39mtipo[33m,[39m[0m
+
+[4m[34mapps/backend/src/movimientos/movimientos.router.ts:101:49[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'tipo' does not exist on type 'Document<unknown, {}, IMovimiento, {}, {}> & IMovimiento & Required<{ _id: unknown; }> & { __v: number; }'.
+
+[0m [90m  99 | [39m            [36mconst[39m nuevaCuentaCorriente [33m=[39m [36mnew[39m [33mCuentaCorrienteModel[39m({[0m
+[0m [90m 100 | [39m                idEntidad[33m:[39m movimientoGuardado[33m.[39mdatosEntidad[33m.[39midEntidad[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 101 | [39m                tipoEntidad[33m:[39m movimientoGuardado[33m.[39mtipo [33m===[39m [32m'VENTA'[39m [33m?[39m [32m'CLIENTE'[39m [33m:[39m [32m'PROVEEDOR'[39m[33m,[39m[0m
+[0m [90m     | [39m                                                [31m[1m^[22m[39m[0m
+[0m [90m 102 | [39m                tipoOperacion[33m:[39m movimientoGuardado[33m.[39mtipo[33m,[39m[0m
+[0m [90m 103 | [39m                idMovimiento[33m:[39m movimientoGuardado[33m.[39m_id[33m,[39m[0m
+[0m [90m 104 | [39m                montoTotal[33m:[39m movimientoGuardado[33m.[39mtotalGeneral[33m,[39m[0m
+
+[4m[34mapps/backend/src/movimientos/movimientos.router.ts:102:51[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'tipo' does not exist on type 'Document<unknown, {}, IMovimiento, {}, {}> & IMovimiento & Required<{ _id: unknown; }> & { __v: number; }'.
+
+[0m [90m 100 | [39m                idEntidad[33m:[39m movimientoGuardado[33m.[39mdatosEntidad[33m.[39midEntidad[33m,[39m[0m
+[0m [90m 101 | [39m                tipoEntidad[33m:[39m movimientoGuardado[33m.[39mtipo [33m===[39m [32m'VENTA'[39m [33m?[39m [32m'CLIENTE'[39m [33m:[39m [32m'PROVEEDOR'[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 102 | [39m                tipoOperacion[33m:[39m movimientoGuardado[33m.[39mtipo[33m,[39m[0m
+[0m [90m     | [39m                                                  [31m[1m^[22m[39m[0m
+[0m [90m 103 | [39m                idMovimiento[33m:[39m movimientoGuardado[33m.[39m_id[33m,[39m[0m
+[0m [90m 104 | [39m                montoTotal[33m:[39m movimientoGuardado[33m.[39mtotalGeneral[33m,[39m[0m
+[0m [90m 105 | [39m                estado[33m:[39m [32m'PENDIENTE'[39m[33m,[39m[0m
+
+[4m[34mapps/backend/src/movimientos/movimientos.router.ts:104:48[39m[24m - [31m[1merror[22m[39m [90mTS2339[39m: Property 'totalGeneral' does not exist on type 'Document<unknown, {}, IMovimiento, {}, {}> & IMovimiento & Required<{ _id: unknown; }> & { __v: number; }'.
+
+[0m [90m 102 | [39m                tipoOperacion[33m:[39m movimientoGuardado[33m.[39mtipo[33m,[39m[0m
+[0m [90m 103 | [39m                idMovimiento[33m:[39m movimientoGuardado[33m.[39m_id[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 104 | [39m                montoTotal[33m:[39m movimientoGuardado[33m.[39mtotalGeneral[33m,[39m[0m
+[0m [90m     | [39m                                               [31m[1m^[22m[39m[0m
+[0m [90m 105 | [39m                estado[33m:[39m [32m'PENDIENTE'[39m[33m,[39m[0m
+[0m [90m 106 | [39m                fechaEmision[33m:[39m movimientoGuardado[33m.[39mfechaAlta[0m
+[0m [90m 107 | [39m            })[33m;[39m[0m
+
+Found 4 errors.

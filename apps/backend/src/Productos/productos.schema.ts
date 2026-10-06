@@ -6,7 +6,6 @@ export type TipoIVA = '0' | '10.5' | '21' | '27';
 
 export interface IProducto extends mongoose.Document {
     codigo: string;
-
     nombre: string;
     descripcion?: string;
 
@@ -21,6 +20,9 @@ export interface IProducto extends mongoose.Document {
     };
 
     unidadMedida: TipoUnidad;
+
+    // CAMPOS DE STOCK
+    stock: number;         // <-- NUEVO: Stock real actual en el sistema
     stockMinimo?: number;
     stockMaximo?: number;
 
@@ -120,9 +122,17 @@ const ProductoSchema = new mongoose.Schema<IProducto>(
             default: 'UNIDAD'
         },
 
+        // <-- NUEVO: Agregado el campo stock con valor inicial 0
+        stock: {
+            type: Number,
+            required: true,
+            default: 0
+        },
+
         stockMinimo: {
             type: Number,
-            min: 0
+            min: 0,
+            default: 0 // Opcional: Un valor por defecto ayuda a comparar lógicas fácilmente
         },
 
         stockMaximo: {
@@ -163,5 +173,8 @@ const ProductoSchema = new mongoose.Schema<IProducto>(
         timestamps: true
     }
 );
+
+// ÍNDICE SUGERIDO: Facilita reportes de stock crítico o faltantes en Angular
+ProductoSchema.index({ stock: 1 });
 
 export const ProductoModel = mongoose.model<IProducto>('productos', ProductoSchema);

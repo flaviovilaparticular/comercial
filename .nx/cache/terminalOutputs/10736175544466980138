@@ -1,0 +1,21 @@
+
+[0m[7m[1m[33m NX [39m[22m[27m[0m  [33mNx Daemon is not enabled. Assets will not be updated when they are changed.[39m
+
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/4aa56eb2-2240-4138-9fc0-c445d107b8d3[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[ ready ] http://localhost:3000
+✅ Conectado a MongoDB
+🔹 Login recibido: { dni: [32m'1'[39m, password: [32m'1'[39m }
+/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/node_modules/@nx/esbuild/src/executors/esbuild/esbuild.impl.js:108
+                assetsResult?.stop();
+                              ^
+
+TypeError: assetsResult?.stop is not a function
+    at [90m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/[39mnode_modules/[4m@nx[24m/esbuild/src/executors/esbuild/esbuild.impl.js:108:31
+    at process.wrapped [90m(/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/[39mnode_modules/[4m@nx[24m/esbuild/src/executors/esbuild/esbuild.impl.js:178:9[90m)[39m
+[90m    at process.emit (node:events:536:35)[39m
+    at process.emit [90m(/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/[39mnode_modules/[4mnx[24m/src/native/index.js:20:23[90m)[39m
+
+Node.js v20.19.5

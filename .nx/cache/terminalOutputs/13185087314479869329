@@ -1,0 +1,884 @@
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+- Generating browser application bundles (phase: setup)...
+[1m[33m    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility[39m[22m
+[1m[33m    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mvendor.js[39m[37m            [2m | [22m[2mvendor[22m       [2m | [22m  [36m3.69 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mmain.js[39m[37m              [2m | [22m[2mmain[22m         [2m | [22m  [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m       [2m | [22m[36m528.59 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mpolyfills.js[39m[37m         [2m | [22m[2mpolyfills[22m    [2m | [22m[36m238.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mscripts.js[39m[37m           [2m | [22m[2mscripts[22m      [2m | [22m [36m80.53 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m      [2m | [22m  [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                    [2m | [22m[1mInitial total[22m[2m | [22m  [1m6.34 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T18:52:57.213Z[39m[37m[22m - Hash: [1m[37md64bd2f51471cc16[39m[37m[22m - Time: [1m[37m5820[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/app.config.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/auth.guard.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mW[39m[22m[1m[33marning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/nx-welcome.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/services/auth.serice.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m/home/andes/sistemas/ComercialCompraVenta/ComercialCompraVenta/apps/frontend/src/app/users/register/register.component.ts is part of the TypeScript compilation but it's unused.[39m[22m
+[1m[33mAdd only entry points to the 'files' or 'include' properties in your tsconfig.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:04:36.187Z[39m[37m[22m - Hash: [1m[37m13b1d7fd241bbb5c[39m[37m[22m - Time: [1m[37m2189[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:21:15.889Z[39m[37m[22m - Hash: [1m[37m3ef98a4b288db2bc[39m[37m[22m - Time: [1m[37m1305[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/movimientos/movimientos.component.html[0m:[93m116[0m:[93m104[0m - [91merror[0m[90m TS2339: [0mProperty 'busquedaProducto' does not exist on type 'MovimientosComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m116[0m                                 <input class="form-control" placeholder="Código o nombre" [(ngModel)]="busquedaProducto"[39m[22m
+[1m[31m[7m   [0m [91m                                                                                                       ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/movimientos/movimientos.component.ts[0m:[93m12[0m:[93m18[0m[39m[22m
+[1m[31m    [7m12[0m     templateUrl: './movimientos.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MovimientosComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/movimientos/movimientos.component.html[0m:[93m116[0m:[93m104[0m - [91merror[0m[90m TS2339: [0mProperty 'busquedaProducto' does not exist on type 'MovimientosComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m116[0m                                 <input class="form-control" placeholder="Código o nombre" [(ngModel)]="busquedaProducto"[39m[22m
+[1m[31m[7m   [0m [91m                                                                                                       ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/movimientos/movimientos.component.ts[0m:[93m12[0m:[93m18[0m[39m[22m
+[1m[31m    [7m12[0m     templateUrl: './movimientos.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MovimientosComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/movimientos/movimientos.component.html[0m:[93m117[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'buscarProducto' does not exist on type 'MovimientosComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m117[0m                                        (keyup.enter)="buscarProducto()">[39m[22m
+[1m[31m[7m   [0m [91m                                                      ~~~[39m[22m[1m[31m~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/movimientos/movimientos.component.ts[0m:[93m12[0m:[93m18[0m[39m[22m
+[1m[31m    [7m12[0m     templateUrl: './movimientos.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MovimientosComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:24:34.449Z[39m[37m[22m - Hash: [1m[37m19a207e9163595b2[39m[37m[22m - Time: [1m[37m1192[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:33:48.550Z[39m[37m[22m - Hash: [1m[37m1b03adfa440af68c[39m[37m[22m - Time: [1m[37m1654[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:35:20.431Z[39m[37m[22m - Hash: [1m[37mfb7d2ea7b01604ea[39m[37m[22m - Time: [1m[37m1108[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:39:21.532Z[39m[37m[22m - Hash: [1m[37m6eb435d1f9eaf66a[39m[37m[22m - Time: [1m[37m1359[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:41:47.368Z[39m[37m[22m - Hash: [1m[37m4cc2bb74ef9ae391[39m[37m[22m - Time: [1m[37m1165[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:45:46.870Z[39m[37m[22m - Hash: [1m[37mb2b140ddab78d449[39m[37m[22m - Time: [1m[37m1379[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/movimientos/movimientos.component.html[0m:[93m65[0m:[93m77[0m - [91merror[0m[90m TS2339: [0mProperty 'busquedaEntidad' does not exist on type 'MovimientosComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m65[0m                                                                [(ngModel)]="busquedaEntidad">[39m[22m
+[1m[31m[7m  [0m [91m                                                                            ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/movimientos/movimientos.component.ts[0m:[93m12[0m:[93m18[0m[39m[22m
+[1m[31m    [7m12[0m     templateUrl: './movimientos.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MovimientosComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/movimientos/movimientos.component.html[0m:[93m65[0m:[93m77[0m - [91merror[0m[90m TS2339: [0mProperty 'busquedaEntidad' does not exist on type 'MovimientosComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m65[0m                                                                [(ngModel)]="busquedaEntidad">[39m[22m
+[1m[31m[7m  [0m [91m                                                                            ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/movimientos/movimientos.component.ts[0m:[93m12[0m:[93m18[0m[39m[22m
+[1m[31m    [7m12[0m     templateUrl: './movimientos.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MovimientosComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/movimientos/movimientos.component.html[0m:[93m69[0m:[93m74[0m - [91merror[0m[90m TS2339: [0mProperty 'buscarEntidad' does not exist on type 'MovimientosComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m69[0m                                                                 (click)="buscarEntidad()">[39m[22m
+[1m[31m[7m  [0m [91m                                                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/movimientos/movimientos.component.ts[0m:[39m[22m[1m[31m[93m12[0m:[93m18[0m[39m[22m
+[1m[31m    [7m12[0m     templateUrl: './movimientos.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MovimientosComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/frontend/src/app/movimientos/movimientos.component.html[0m:[93m77[0m:[93m74[0m - [91merror[0m[90m TS2339: [0mProperty 'nuevaEntidad' does not exist on type 'MovimientosComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m77[0m                                                                 (click)="nuevaEntidad()">[39m[22m
+[1m[31m[7m  [0m [91m                                                                         ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/frontend/src/app/movimientos/movimientos.component.ts[0m:[93m12[0m:[93m18[0m[39m[22m
+[1m[31m    [7m12[0m     templateUrl: './movimientos.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MovimientosComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:47:44.147Z[39m[37m[22m - Hash: [1m[37m5ae08e1780ba005d[39m[37m[22m - Time: [1m[37m1401[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:48:42.551Z[39m[37m[22m - Hash: [1m[37mffaf9bfe311b0f81[39m[37m[22m - Time: [1m[37m1132[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:49:48.709Z[39m[37m[22m - Hash: [1m[37m10d1e895bccfca46[39m[37m[22m - Time: [1m[37m1097[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:50:50.034Z[39m[37m[22m - Hash: [1m[37m8b22d83a61a6b2df[39m[37m[22m - Time: [1m[37m1098[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:51:04.238Z[39m[37m[22m - Hash: [1m[37mdbae713757824290[39m[37m[22m - Time: [1m[37m1004[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:51:09.562Z[39m[37m[22m - Hash: [1m[37m2c57234c4f24175a[39m[37m[22m - Time: [1m[37m873[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:52:12.940Z[39m[37m[22m - Hash: [1m[37m0082446ed82c139f[39m[37m[22m - Time: [1m[37m1259[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:52:20.195Z[39m[37m[22m - Hash: [1m[37m2c57234c4f24175a[39m[37m[22m - Time: [1m[37m858[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mmain.js[39m[37m            [2m | [22m[2mmain[22m   [2m | [22m [36m1.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m [36m6.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2026-05-12T19:53:50.924Z[39m[37m[22m - Hash: [1m[37mdd4b3d7fcb16e501[39m[37m[22m - Time: [1m[37m1395[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m13[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mMenuComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     MenuComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m14[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mLayoutComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     LayoutComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m15[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mUserAbmComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m15[0m     UserAbmComponent,[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/app.component.ts[0m:[93m16[0m:[93m5[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of AppComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m16[0m     HomeComponent], // eliminamos NxWelcome[39m[22m
+[1m[33m[7m  [0m [93m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mapps/frontend/src/app/users/login/login.component.ts[0m:[93m13[0m:[93m42[0m - [93mwarning[0m[90m NG8113: [0mHomeComponent is not used within the template of LoginComponent[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m13[0m     imports: [CommonModule, FormsModule, HomeComponent],[39m[22m
+[1m[33m[7m  [0m [93m                                         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m

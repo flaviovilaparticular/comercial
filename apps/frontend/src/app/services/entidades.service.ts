@@ -67,6 +67,9 @@ export class EntidadesService {
         return this.http.get<Entidad[]>(this.apiUrl);
     }
 
+    getProveedores(): Observable<Entidad[]> {
+        return this.http.get<Entidad[]>(`${this.apiUrl}/proveedores`);
+    }
     // 🔹 Obtener por ID
     getEntidadById(id: string): Observable<Entidad> {
         return this.http.get<Entidad>(`${this.apiUrl}/${id}`);
