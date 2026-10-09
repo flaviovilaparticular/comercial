@@ -1,17 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MovimientosService, Movimiento, ItemMovimiento } from '../services/movimientos.service';
-import { HeaderComponent } from '../header/header.component';
-import { HeaderSistemaComponent } from '../header/header-sistema.component';
+import { RouterModule, ActivatedRoute, Router } from '@angular/router';
 
+import { MovimientosService, Movimiento, ItemMovimiento } from '../services/movimientos.service';
 import { ProductosService, Producto } from '../services/productos.service';
 import { EntidadesService, Entidad } from '../services/entidades.service';
 import Swal from 'sweetalert2';
-import { ElementRef, ViewChild /* ...otros imports */ } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { ActivatedRoute, Router } from '@angular/router';
-
 
 declare var bootstrap: any;
 
@@ -23,8 +18,6 @@ declare var bootstrap: any;
     imports: [
         CommonModule,
         FormsModule,
-        HeaderComponent,
-        HeaderSistemaComponent,
         RouterModule
     ]
 })

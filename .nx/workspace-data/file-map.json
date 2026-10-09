@@ -65,7 +65,7 @@
         },
         {
           "file": "apps/frontend/project.json",
-          "hash": "12811168662479047371"
+          "hash": "10212988086016541827"
         },
         {
           "file": "apps/frontend/public/1fondo.jpg",
@@ -223,7 +223,7 @@
         },
         {
           "file": "apps/frontend/src/app/app.component.ts",
-          "hash": "9562244026252233549",
+          "hash": "1475998279853690989",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -412,13 +412,13 @@
         },
         {
           "file": "apps/frontend/src/app/movimientos/movimientos.component.ts",
-          "hash": "13774757343329647456",
+          "hash": "15637864037681961777",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
             "npm:@angular/forms",
-            "npm:sweetalert2",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:sweetalert2"
           ]
         },
         {
@@ -960,7 +960,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "4067013731070042399"
+        "hash": "55419664441019965"
       },
       {
         "file": ".prettierignore",
@@ -1028,7 +1028,7 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "1774063539944766754"
+        "hash": "2940252927058252050"
       },
       {
         "file": "package.json",
@@ -1048,5 +1048,5 @@
       }
     ]
   },
-  "externalNodesHash": "8389987488812398455"
+  "externalNodesHash": "1364589802687676542"
 }
