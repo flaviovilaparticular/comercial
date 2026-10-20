@@ -2,10 +2,15 @@ import mongoose from 'mongoose';
 
 export async function connectDB() {
     try {
-        // Prioriza MONGO_URI (que es la que está cargada en Render)
-        const mongoURI = process.env.MONGO_URI || process.env.MONGO_URL || 'mongodb://localhost:27017/comercial';
+        const mongoURI = process.env.MONGO_URI || process.env.MONGO_URL;
 
-        console.log('Intentando conectar a:', mongoURI.includes('mongodb+srv') ? 'MongoDB Atlas (Nube)' : 'Localhost');
+        // Imprimimos en los logs qué está leyendo Node
+        if (!mongoURI) {
+            console.error('CRÍTICO: No se encontró la variable MONGO_URI en el entorno de Render.');
+            process.exit(1);
+        }
+
+        console.log('Intentando conectar a MongoDB Atlas...');
 
         await mongoose.connect(mongoURI, {
             autoIndex: true,
