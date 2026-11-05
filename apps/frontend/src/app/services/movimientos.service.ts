@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment.prod';
+
 
 export interface ItemMovimiento {
     producto: string; // ID del producto
@@ -67,8 +69,7 @@ export interface RespuestaMovimientos {
 })
 export class MovimientosService {
 
-    private apiUrl = 'http://localhost:3000/api/movimientos'; // Ajustar según tu entorno
-
+    private apiUrl = `${environment.apiUrl}/parametros/movimientos`;
     constructor(private http: HttpClient) { }
 
     /**

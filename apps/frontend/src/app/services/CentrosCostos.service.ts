@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment.prod';
 
 // 🔹 Interfaz para Sucursal
 export interface Sucursal {
@@ -30,7 +31,8 @@ export interface CentroCostos {
     providedIn: 'root'
 })
 export class CentroCostosService {
-    private apiUrl = 'http://localhost:3000/api/parametros/centro-costos';
+    private apiUrl = `${environment.apiUrl}/parametros/centro-costos`;
+
 
 
     constructor(private http: HttpClient) { }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs'; import { environment } from '../environments/environment.prod';
+
 
 export interface Rubro {
     _id?: string;
@@ -12,7 +13,7 @@ export interface Rubro {
 })
 export class RubrosService {
 
-    private apiUrl = 'http://localhost:3000/api/parametros/rubros';
+    private apiUrl = `${environment.apiUrl}/parametros/rubros`;
 
     constructor(private http: HttpClient) { }
 

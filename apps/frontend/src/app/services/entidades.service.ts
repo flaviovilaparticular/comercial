@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment.prod';
+
 
 /* =========================
    Interfaces
@@ -53,9 +55,7 @@ export interface Entidad {
     providedIn: 'root'
 })
 export class EntidadesService {
-
-    private apiUrl = 'http://localhost:3000/api/parametros/entidades';
-
+    private apiUrl = `${environment.apiUrl}/parametros/entidades`;
     constructor(private http: HttpClient) { }
 
     /* =========================

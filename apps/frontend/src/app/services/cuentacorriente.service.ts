@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment.prod';
+
 
 // --- Interfaces ---
 
@@ -48,8 +50,7 @@ export interface RespuestaGenerica {
 })
 export class CuentaCorrienteService {
 
-    // URL ajustada al prefijo en singular de tu main.ts
-    private apiUrl = 'http://localhost:3000/api/cuentacorriente';
+    private apiUrl = `${environment.apiUrl}/parametros/cuentacorriente`;
 
     constructor(private http: HttpClient) { }
 

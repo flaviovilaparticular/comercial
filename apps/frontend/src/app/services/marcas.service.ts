@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment.prod';
+
 
 export interface Marca {
     _id?: string;
@@ -12,8 +14,8 @@ export interface Marca {
 })
 export class MarcasService {
 
-    private apiUrl = 'http://localhost:3000/api/parametros/marcas';
 
+    private apiUrl = `${environment.apiUrl}/parametros/marcas`;
     constructor(private http: HttpClient) { }
 
     /* ===========================

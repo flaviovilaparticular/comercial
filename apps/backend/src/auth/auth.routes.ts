@@ -9,9 +9,9 @@ dotenv.config();
 
 const router = express.Router();
 
-/**
- * 🔐 LOGIN
- */
+
+// LOGIN
+
 router.post('/login', async (req: Request, res: Response) => {
     const { dni, password } = req.body;
 

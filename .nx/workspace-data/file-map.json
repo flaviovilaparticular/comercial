@@ -18,607 +18,11 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "frontend-e2e": [
-        {
-          "file": "apps/frontend-e2e/eslint.config.cjs",
-          "hash": "5108899909509588183",
-          "deps": [
-            "npm:eslint-plugin-playwright"
-          ]
-        },
-        {
-          "file": "apps/frontend-e2e/playwright.config.ts",
-          "hash": "4535250053304126287",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/frontend-e2e/project.json",
-          "hash": "16623643415870234688"
-        },
-        {
-          "file": "apps/frontend-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "apps/frontend-e2e/tsconfig.json",
-          "hash": "2249461092017240593"
-        }
-      ],
-      "frontend": [
-        {
-          "file": "apps/frontend/eslint.config.cjs",
-          "hash": "6863544995924746399",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "apps/frontend/jest.config.ts",
-          "hash": "14458212970000463922"
-        },
-        {
-          "file": "apps/frontend/project.json",
-          "hash": "10212988086016541827"
-        },
-        {
-          "file": "apps/frontend/public/1fondo.jpg",
-          "hash": "2657183088120438635"
-        },
-        {
-          "file": "apps/frontend/public/assets/img/fondo.jpg",
-          "hash": "2657183088120438635"
-        },
-        {
-          "file": "apps/frontend/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/frontend/public/fondo.jpg",
-          "hash": "11268789831368261628"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Bancos/Bancos.component.css",
-          "hash": "15198976140059887085"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Bancos/Bancos.component.html",
-          "hash": "3090354810066597717"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Bancos/Bancos.component.ts",
-          "hash": "2544017439846711442",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/CentroCostos/CentroCostos.component.css",
-          "hash": "953136583978555364"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/CentroCostos/CentroCostos.component.html",
-          "hash": "1873311442174456654"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/CentroCostos/CentroCostos.component.ts",
-          "hash": "659560880752670559",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Entidades/Entidades.component.css",
-          "hash": "12239201185418362843"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Entidades/Entidades.component.html",
-          "hash": "12051811820639570312"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Entidades/Entidades.component.ts",
-          "hash": "8094674372218559349",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Indices/indices.component.css",
-          "hash": "5875105495870348194"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Indices/indices.component.html",
-          "hash": "14857565605086779670"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Indices/indices.component.ts",
-          "hash": "783420704737478416",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Marcas/marcas.component.css",
-          "hash": "15198976140059887085"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Marcas/marcas.component.html",
-          "hash": "17214556035399556118"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Marcas/marcas.component.ts",
-          "hash": "17339072783593453251",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Rubros/rubros.component.css",
-          "hash": "15198976140059887085"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Rubros/rubros.component.html",
-          "hash": "961333413032535459"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Rubros/rubros.component.ts",
-          "hash": "11917464750957712278",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Sucursales/Sucursales.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Sucursales/Sucursales.component.html",
-          "hash": "5209168857813835790"
-        },
-        {
-          "file": "apps/frontend/src/app/Parametros/Sucursales/Sucursales.component.ts",
-          "hash": "17451355951696684262",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/app.component.html",
-          "hash": "16498897523005705592"
-        },
-        {
-          "file": "apps/frontend/src/app/app.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/app/app.component.ts",
-          "hash": "1475998279853690989",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/app.config.ts",
-          "hash": "9179942204212291300",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/app.routes.ts",
-          "hash": "5020092003472846048",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/app.spec.ts",
-          "hash": "12452868872971256122",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/auth.guard.ts",
-          "hash": "7931491091700152540",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/auth.interceptor.ts",
-          "hash": "7306823480718762507",
-          "deps": [
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/auth.service.ts",
-          "hash": "4819519483496568316",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/router",
-            "npm:rxjs",
-            "npm:jwt-decode"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/environments/environment.ts",
-          "hash": "4490110839702656576"
-        },
-        {
-          "file": "apps/frontend/src/app/gestion/Productos/productos.component.css",
-          "hash": "2683869713679974521"
-        },
-        {
-          "file": "apps/frontend/src/app/gestion/Productos/productos.component.html",
-          "hash": "7113612290907338419"
-        },
-        {
-          "file": "apps/frontend/src/app/gestion/Productos/productos.component.ts",
-          "hash": "10243509399880011388",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/header/header-sistema.component.css",
-          "hash": "13127178805322699814"
-        },
-        {
-          "file": "apps/frontend/src/app/header/header-sistema.component.html",
-          "hash": "16229682307657959585"
-        },
-        {
-          "file": "apps/frontend/src/app/header/header-sistema.component.ts",
-          "hash": "3569924713650563878",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/header/header.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/app/header/header.component.html",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/app/header/header.component.ts",
-          "hash": "12052765805124241375",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/home/home.component.css",
-          "hash": "4956047619746518043"
-        },
-        {
-          "file": "apps/frontend/src/app/home/home.component.html",
-          "hash": "12305908748339164265"
-        },
-        {
-          "file": "apps/frontend/src/app/home/home.component.ts",
-          "hash": "8118467294348759101",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/layout/layout.component.css",
-          "hash": "14118926445238425488"
-        },
-        {
-          "file": "apps/frontend/src/app/layout/layout.component.html",
-          "hash": "17696711238539890582"
-        },
-        {
-          "file": "apps/frontend/src/app/layout/layout.component.ts",
-          "hash": "6352329673413999942",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/menu/menu.component.css",
-          "hash": "6815101803814749120"
-        },
-        {
-          "file": "apps/frontend/src/app/menu/menu.component.html",
-          "hash": "1426979259528216425"
-        },
-        {
-          "file": "apps/frontend/src/app/menu/menu.component.ts",
-          "hash": "1592585921931974059",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/movimientos/listadoMovimientos.component.css",
-          "hash": "5494309590128263035"
-        },
-        {
-          "file": "apps/frontend/src/app/movimientos/listadoMovimientos.component.html",
-          "hash": "7171776529942578254"
-        },
-        {
-          "file": "apps/frontend/src/app/movimientos/listadoMovimientos.component.ts",
-          "hash": "1633217741159895887",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/movimientos/movimientos.component.css",
-          "hash": "5494309590128263035"
-        },
-        {
-          "file": "apps/frontend/src/app/movimientos/movimientos.component.html",
-          "hash": "5780232149695908146"
-        },
-        {
-          "file": "apps/frontend/src/app/movimientos/movimientos.component.ts",
-          "hash": "15637864037681961777",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/nx-welcome.ts",
-          "hash": "7357349489891353751",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/Bancos.service.ts",
-          "hash": "18268000740547871642",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/CentrosCostos.service.ts",
-          "hash": "17553775131827868163",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/auth.serice.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/app/services/cuentacorriente.service.ts",
-          "hash": "16339324277483719310",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/entidades.service.ts",
-          "hash": "11041189924198890455",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/indices.services.ts",
-          "hash": "5134975001261094248",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/marcas.service.ts",
-          "hash": "5040019263703003010",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/movimientos.service.ts",
-          "hash": "12714914234445328108",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/productos.service.ts",
-          "hash": "11363522417653141318",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/rubros.service.ts",
-          "hash": "7473127139155205756",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/services/user.services.ts",
-          "hash": "4527188193835887282",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/user-abm/user-abm.component.css",
-          "hash": "15198976140059887085"
-        },
-        {
-          "file": "apps/frontend/src/app/user-abm/user-abm.component.html",
-          "hash": "3634830940341957058"
-        },
-        {
-          "file": "apps/frontend/src/app/user-abm/user-abm.component.ts",
-          "hash": "1956506855263998345",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/users/login/login.component.css",
-          "hash": "18412910073852213045"
-        },
-        {
-          "file": "apps/frontend/src/app/users/login/login.component.html",
-          "hash": "1348782687039382366"
-        },
-        {
-          "file": "apps/frontend/src/app/users/login/login.component.ts",
-          "hash": "8529376701959321441",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@angular/common",
-            "npm:@angular/router",
-            "npm:sweetalert2"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/app/users/register/register.component.css",
-          "hash": "7627706482786325077"
-        },
-        {
-          "file": "apps/frontend/src/app/users/register/register.component.html",
-          "hash": "13162859366627482253"
-        },
-        {
-          "file": "apps/frontend/src/app/users/register/register.component.ts",
-          "hash": "7155829820550301456",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/index.html",
-          "hash": "10958459893752702268"
-        },
-        {
-          "file": "apps/frontend/src/main.ts",
-          "hash": "16212528751736330947",
-          "deps": [
-            "npm:@angular/platform-browser",
-            "npm:@angular/router",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/styles.scss",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "apps/frontend/src/test-setup.ts",
-          "hash": "1917999429567095215",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "apps/frontend/tsconfig.app.json",
-          "hash": "12834270188132019223"
-        },
-        {
-          "file": "apps/frontend/tsconfig.json",
-          "hash": "6343381516642186316"
-        },
-        {
-          "file": "apps/frontend/tsconfig.spec.json",
-          "hash": "1029128818174064697"
-        }
-      ],
       "backend": [
+        {
+          "file": "apps/backend/.env",
+          "hash": "1839951063083469294"
+        },
         {
           "file": "apps/backend/eslint.config.js",
           "hash": "17012108287991280227"
@@ -671,7 +75,7 @@
         },
         {
           "file": "apps/backend/src/auth/auth.routes.ts",
-          "hash": "1303729985810983540",
+          "hash": "600498649634022444",
           "deps": [
             "npm:express",
             "npm:dotenv",
@@ -680,14 +84,14 @@
         },
         {
           "file": "apps/backend/src/config/database.ts",
-          "hash": "1482009503795452692",
+          "hash": "12589729359641096438",
           "deps": [
             "npm:mongoose"
           ]
         },
         {
           "file": "apps/backend/src/main.ts",
-          "hash": "476784501535295714",
+          "hash": "3945487370739398239",
           "deps": [
             "npm:express",
             "npm:cors",
@@ -954,6 +358,610 @@
         {
           "file": "apps/backend/tsconfig.spec.json",
           "hash": "17313551537729802733"
+        }
+      ],
+      "frontend-e2e": [
+        {
+          "file": "apps/frontend-e2e/eslint.config.cjs",
+          "hash": "5108899909509588183",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/playwright.config.ts",
+          "hash": "4535250053304126287",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/project.json",
+          "hash": "16623643415870234688"
+        },
+        {
+          "file": "apps/frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/tsconfig.json",
+          "hash": "2249461092017240593"
+        }
+      ],
+      "frontend": [
+        {
+          "file": "apps/frontend/eslint.config.cjs",
+          "hash": "6863544995924746399",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/frontend/jest.config.ts",
+          "hash": "14458212970000463922"
+        },
+        {
+          "file": "apps/frontend/project.json",
+          "hash": "10212988086016541827"
+        },
+        {
+          "file": "apps/frontend/public/1fondo.jpg",
+          "hash": "2657183088120438635"
+        },
+        {
+          "file": "apps/frontend/public/assets/img/fondo.jpg",
+          "hash": "2657183088120438635"
+        },
+        {
+          "file": "apps/frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/frontend/public/fondo.jpg",
+          "hash": "11268789831368261628"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Bancos/Bancos.component.css",
+          "hash": "15198976140059887085"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Bancos/Bancos.component.html",
+          "hash": "3090354810066597717"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Bancos/Bancos.component.ts",
+          "hash": "2544017439846711442",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/CentroCostos/CentroCostos.component.css",
+          "hash": "953136583978555364"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/CentroCostos/CentroCostos.component.html",
+          "hash": "1873311442174456654"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/CentroCostos/CentroCostos.component.ts",
+          "hash": "659560880752670559",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Entidades/Entidades.component.css",
+          "hash": "12239201185418362843"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Entidades/Entidades.component.html",
+          "hash": "12051811820639570312"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Entidades/Entidades.component.ts",
+          "hash": "8094674372218559349",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Indices/indices.component.css",
+          "hash": "5875105495870348194"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Indices/indices.component.html",
+          "hash": "14857565605086779670"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Indices/indices.component.ts",
+          "hash": "783420704737478416",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Marcas/marcas.component.css",
+          "hash": "15198976140059887085"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Marcas/marcas.component.html",
+          "hash": "17214556035399556118"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Marcas/marcas.component.ts",
+          "hash": "17339072783593453251",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Rubros/rubros.component.css",
+          "hash": "15198976140059887085"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Rubros/rubros.component.html",
+          "hash": "961333413032535459"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Rubros/rubros.component.ts",
+          "hash": "11917464750957712278",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Sucursales/Sucursales.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Sucursales/Sucursales.component.html",
+          "hash": "5209168857813835790"
+        },
+        {
+          "file": "apps/frontend/src/app/Parametros/Sucursales/Sucursales.component.ts",
+          "hash": "17451355951696684262",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.component.html",
+          "hash": "16498897523005705592"
+        },
+        {
+          "file": "apps/frontend/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/app.component.ts",
+          "hash": "1475998279853690989",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.config.ts",
+          "hash": "9179942204212291300",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.routes.ts",
+          "hash": "5020092003472846048",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/app.spec.ts",
+          "hash": "12452868872971256122",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/auth.guard.ts",
+          "hash": "7931491091700152540",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/auth.interceptor.ts",
+          "hash": "7306823480718762507",
+          "deps": [
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/auth.service.ts",
+          "hash": "4819519483496568316",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:jwt-decode"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/environments/environment.prod.ts",
+          "hash": "9094161383031072098"
+        },
+        {
+          "file": "apps/frontend/src/app/environments/environment.ts",
+          "hash": "4490110839702656576"
+        },
+        {
+          "file": "apps/frontend/src/app/gestion/Productos/productos.component.css",
+          "hash": "2683869713679974521"
+        },
+        {
+          "file": "apps/frontend/src/app/gestion/Productos/productos.component.html",
+          "hash": "7113612290907338419"
+        },
+        {
+          "file": "apps/frontend/src/app/gestion/Productos/productos.component.ts",
+          "hash": "10243509399880011388",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/header/header-sistema.component.css",
+          "hash": "13127178805322699814"
+        },
+        {
+          "file": "apps/frontend/src/app/header/header-sistema.component.html",
+          "hash": "16229682307657959585"
+        },
+        {
+          "file": "apps/frontend/src/app/header/header-sistema.component.ts",
+          "hash": "3569924713650563878",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/header/header.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/header/header.component.html",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/header/header.component.ts",
+          "hash": "12052765805124241375",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/home/home.component.css",
+          "hash": "4956047619746518043"
+        },
+        {
+          "file": "apps/frontend/src/app/home/home.component.html",
+          "hash": "12305908748339164265"
+        },
+        {
+          "file": "apps/frontend/src/app/home/home.component.ts",
+          "hash": "8118467294348759101",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/layout/layout.component.css",
+          "hash": "14118926445238425488"
+        },
+        {
+          "file": "apps/frontend/src/app/layout/layout.component.html",
+          "hash": "17696711238539890582"
+        },
+        {
+          "file": "apps/frontend/src/app/layout/layout.component.ts",
+          "hash": "6352329673413999942",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/menu/menu.component.css",
+          "hash": "6815101803814749120"
+        },
+        {
+          "file": "apps/frontend/src/app/menu/menu.component.html",
+          "hash": "1426979259528216425"
+        },
+        {
+          "file": "apps/frontend/src/app/menu/menu.component.ts",
+          "hash": "1592585921931974059",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/movimientos/listadoMovimientos.component.css",
+          "hash": "5494309590128263035"
+        },
+        {
+          "file": "apps/frontend/src/app/movimientos/listadoMovimientos.component.html",
+          "hash": "7171776529942578254"
+        },
+        {
+          "file": "apps/frontend/src/app/movimientos/listadoMovimientos.component.ts",
+          "hash": "1633217741159895887",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/movimientos/movimientos.component.css",
+          "hash": "5494309590128263035"
+        },
+        {
+          "file": "apps/frontend/src/app/movimientos/movimientos.component.html",
+          "hash": "5780232149695908146"
+        },
+        {
+          "file": "apps/frontend/src/app/movimientos/movimientos.component.ts",
+          "hash": "15637864037681961777",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/nx-welcome.ts",
+          "hash": "7357349489891353751",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/Bancos.service.ts",
+          "hash": "17220874177059885590",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/CentrosCostos.service.ts",
+          "hash": "10137475253424107917",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/auth.serice.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/app/services/cuentacorriente.service.ts",
+          "hash": "5281388590680906375",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/entidades.service.ts",
+          "hash": "13298726471686039212",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/indices.services.ts",
+          "hash": "13826982935034308257",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/marcas.service.ts",
+          "hash": "12564602410272029260",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/movimientos.service.ts",
+          "hash": "12338810605197658759",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/productos.service.ts",
+          "hash": "12826723394889872632",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/rubros.service.ts",
+          "hash": "7722897449908356967",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/services/user.services.ts",
+          "hash": "13632916470353611033",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/user-abm/user-abm.component.css",
+          "hash": "15198976140059887085"
+        },
+        {
+          "file": "apps/frontend/src/app/user-abm/user-abm.component.html",
+          "hash": "3634830940341957058"
+        },
+        {
+          "file": "apps/frontend/src/app/user-abm/user-abm.component.ts",
+          "hash": "1956506855263998345",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/users/login/login.component.css",
+          "hash": "18412910073852213045"
+        },
+        {
+          "file": "apps/frontend/src/app/users/login/login.component.html",
+          "hash": "1348782687039382366"
+        },
+        {
+          "file": "apps/frontend/src/app/users/login/login.component.ts",
+          "hash": "8529376701959321441",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:sweetalert2"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/users/register/register.component.css",
+          "hash": "7627706482786325077"
+        },
+        {
+          "file": "apps/frontend/src/app/users/register/register.component.html",
+          "hash": "13162859366627482253"
+        },
+        {
+          "file": "apps/frontend/src/app/users/register/register.component.ts",
+          "hash": "7155829820550301456",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/index.html",
+          "hash": "10958459893752702268"
+        },
+        {
+          "file": "apps/frontend/src/main.ts",
+          "hash": "16212528751736330947",
+          "deps": [
+            "npm:@angular/platform-browser",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/frontend/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/frontend/tsconfig.app.json",
+          "hash": "12834270188132019223"
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "6343381516642186316"
+        },
+        {
+          "file": "apps/frontend/tsconfig.spec.json",
+          "hash": "1029128818174064697"
         }
       ]
     },
