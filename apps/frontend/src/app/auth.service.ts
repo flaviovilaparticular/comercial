@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
+import { environment } from '../app/environments/environment';
 
 interface DecodedToken {
     dni?: string;
@@ -15,7 +16,7 @@ interface DecodedToken {
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'http://localhost:3000/api';
+    private apiUrl = environment.apiUrl;
     private tokenKey = 'token';
     private loggedInSubject = new BehaviorSubject<boolean>(false);
     public authStatus = this.loggedInSubject.asObservable();
@@ -27,38 +28,29 @@ export class AuthService {
         this.decodeStoredToken();
     }
 
-    // 🔹 Login
+    // 🔹 Login apuntando a /auth/login
     login(dni: string, password: string): Observable<any> {
-        return this.http.post<any>(`${this.apiUrl}/login`, { dni, password });
+        return this.http.post<any>(`${this.apiUrl}/auth/login`, { dni, password });
     }
 
     // 🔹 Guardar token + usuario
     guardarToken(token: string, usuario: any) {
-
-        // Asegurarse que tenga _id
         const usuarioGuardado = {
             ...usuario,
-            _id: usuario.id || usuario._id // toma el id que venga del backend
+            _id: usuario.id || usuario._id
         };
 
-        // Guardar en localStorage
         localStorage.setItem('usuario', JSON.stringify(usuarioGuardado));
-
-        // Guardar token
         localStorage.setItem(this.tokenKey, token);
 
-        // Loguear
         this.decodeToken(token);
         this.setLoggedIn(true);
 
-        // Opcional para UI
         if (usuario.nombre) localStorage.setItem('nombreUsuario', usuario.nombre);
         if (usuario.rol) localStorage.setItem('rolUsuario', usuario.rol);
 
-        // Actualizar this.usuario
         this.usuario = usuarioGuardado;
     }
-
 
     // 🔹 Logout
     logout() {
@@ -91,15 +83,13 @@ export class AuthService {
         try {
             const decoded = jwtDecode(token) as DecodedToken;
 
-            // NO pisamos el id
             this.usuario = {
-                ...this.usuario, // <-- mantiene el _id guardado en localStorage
+                ...this.usuario,
                 dni: decoded.dni,
                 nombre: decoded.nombre,
                 email: decoded.email,
                 rol: decoded.rol
             };
-
         } catch (error) {
             console.error('❌ Error al decodificar token:', error);
             this.usuario = {};
@@ -140,5 +130,4 @@ export class AuthService {
     getId(): string | null {
         return this.usuario?._id || this.usuario?.id || null;
     }
-
-}
+}   
