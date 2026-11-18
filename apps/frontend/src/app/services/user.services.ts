@@ -9,8 +9,7 @@ import { environment } from '../environments/environment.prod';
 export class UserService {
 
 
-
-    private apiUrl = `${environment.apiUrl}/parametros/auth`;
+    private apiUrl = `${environment.apiUrl}/auth`;
 
     constructor(private http: HttpClient) { }
 

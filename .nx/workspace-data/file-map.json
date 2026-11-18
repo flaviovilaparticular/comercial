@@ -423,6 +423,10 @@
           ]
         },
         {
+          "file": "apps/frontend/src/app/services/auth.serice.ts",
+          "hash": "3244421341483603138"
+        },
+        {
           "file": "apps/frontend/src/app/services/cuentacorriente.service.ts",
           "hash": "5281388590680906375",
           "deps": [
